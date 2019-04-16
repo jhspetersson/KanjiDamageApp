@@ -1,5 +1,7 @@
 package com.kanjidamage.app;
 
+import android.content.Context;
+import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,7 +20,6 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView cards;
-    private List<Map<String, String>> data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         cards = findViewById(R.id.cards);
         cards.setLayoutManager(new LinearLayoutManager(this));
 
-        data = loadData();
+        loadData();
     }
 
     private void updateSearchResults(String keyword) {
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         List<Map<String, String>> result = new ArrayList<>();
 
         if (!keyword.isEmpty()) {
-            for (Map<String, String> row : data) {
+            for (Map<String, String> row : Data.data) {
                 if (row.get("label").contains(keyword)) {
                     result.add(row);
                 }
@@ -58,38 +59,49 @@ public class MainActivity extends AppCompatActivity {
         return result;
     }
 
-    private List<Map<String, String>> loadData() {
-        JSONObject json = loadJSONFromAsset();
-        List<Map<String, String>> data = new ArrayList<>();
-
-        try {
-            JSONArray kanjis = json.getJSONArray("kanji");
-            for (int i = 0; i < kanjis.length(); i++) {
-                JSONObject kanji = kanjis.getJSONObject(i);
-                Map<String, String> row = new HashMap<>();
-                row.put("label", kanji.getString("kanji"));
-                row.put("description", kanji.getString("meaning"));
-                data.add(row);
-            }
-
-            JSONArray jukugos = json.getJSONArray("jukugo");
-            for (int i = 0; i < jukugos.length(); i++) {
-                JSONObject jukugo = jukugos.getJSONObject(i);
-                Map<String, String> row = new HashMap<>();
-                row.put("label", jukugo.getString("kanji"));
-                row.put("description", jukugo.getString("meaning"));
-                data.add(row);
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+    private void loadData() {
+        if (Data.data.isEmpty()) {
+            new LoadDataTask().doInBackground(this);
         }
-
-        return data;
     }
 
-    public JSONObject loadJSONFromAsset() {
+    private static class LoadDataTask extends AsyncTask<Context, Void, Void> {
+        @Override
+        protected Void doInBackground(Context... params) {
+            JSONObject json = loadJSONFromAsset(params[0]);
+            List<Map<String, String>> data = new ArrayList<>();
+
+            try {
+                JSONArray kanjis = json.getJSONArray("kanji");
+                for (int i = 0; i < kanjis.length(); i++) {
+                    JSONObject kanji = kanjis.getJSONObject(i);
+                    Map<String, String> row = new HashMap<>();
+                    row.put("label", kanji.getString("kanji"));
+                    row.put("description", kanji.getString("meaning"));
+                    data.add(row);
+                }
+
+                JSONArray jukugos = json.getJSONArray("jukugo");
+                for (int i = 0; i < jukugos.length(); i++) {
+                    JSONObject jukugo = jukugos.getJSONObject(i);
+                    Map<String, String> row = new HashMap<>();
+                    row.put("label", jukugo.getString("kanji"));
+                    row.put("description", jukugo.getString("meaning"));
+                    data.add(row);
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            Data.data = data;
+
+            return null;
+        }
+    }
+
+    public static JSONObject loadJSONFromAsset(Context context) {
         try {
-            InputStream is = getAssets().open("kanjidamage.json");
+            InputStream is = context.getAssets().open("kanjidamage.json");
             int size = is.available();
             byte[] buffer = new byte[size];
             is.read(buffer);
