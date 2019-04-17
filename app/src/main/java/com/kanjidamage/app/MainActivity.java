@@ -13,11 +13,9 @@ import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.StringJoiner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < kanjis.length(); i++) {
                     JSONObject kanji = kanjis.getJSONObject(i);
                     Map<String, String> row = new HashMap<>();
+                    row.put("json", kanji.toString());
                     row.put("label", kanji.getString("kanji"));
                     row.put("description", kanji.getString("meaning"));
 
@@ -126,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
                 for (int i = 0; i < jukugos.length(); i++) {
                     JSONObject jukugo = jukugos.getJSONObject(i);
                     Map<String, String> row = new HashMap<>();
+                    row.put("json", jukugo.toString());
                     row.put("label", jukugo.getString("kanji"));
                     row.put("description", jukugo.getString("meaning"));
                     row.put("comment", jukugo.getString("reading"));

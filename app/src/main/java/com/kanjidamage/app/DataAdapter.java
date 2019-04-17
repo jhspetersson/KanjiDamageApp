@@ -29,6 +29,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataRow> {
     @Override
     public void onBindViewHolder(@NonNull DataRow holder, int position) {
         Map<String, String> rowData = data.get(position);
+        holder.setJson(rowData.get("json"));
         holder.setLabel(rowData.get("label"));
         holder.setDescription(rowData.get("description"));
         holder.setComment(rowData.get("comment"));
