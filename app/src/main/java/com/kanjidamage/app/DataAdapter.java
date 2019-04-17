@@ -31,6 +31,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataRow> {
         Map<String, String> rowData = data.get(position);
         holder.setLabel(rowData.get("label"));
         holder.setDescription(rowData.get("description"));
+        holder.setComment(rowData.get("comment"));
     }
 
     @Override

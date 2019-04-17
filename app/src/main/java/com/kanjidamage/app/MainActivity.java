@@ -13,9 +13,11 @@ import org.json.JSONObject;
 
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.StringJoiner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -78,6 +80,45 @@ public class MainActivity extends AppCompatActivity {
                     Map<String, String> row = new HashMap<>();
                     row.put("label", kanji.getString("kanji"));
                     row.put("description", kanji.getString("meaning"));
+
+                    List<String> kun = new ArrayList<>();
+                    JSONArray kunyomis = kanji.optJSONArray("kunyomi");
+                    if (kunyomis != null) {
+                        for (int j = 0; j < kunyomis.length(); j++) {
+                            JSONObject kunyomi = kunyomis.getJSONObject(j);
+                            String reading = kunyomi.getString("reading");
+                            String okurigana = kunyomi.optString("okurigana");
+                            if (okurigana == null || okurigana.isEmpty()) {
+                                kun.add(reading);
+                            } else {
+                                kun.add(reading + "." + okurigana);
+                            }
+                        }
+                    }
+
+                    List<String> on = new ArrayList<>();
+                    JSONArray onyomis = kanji.optJSONArray("onyomi");
+                    if (onyomis != null) {
+                        for (int j = 0; j < onyomis.length(); j++) {
+                            on.add(onyomis.getString(j));
+                        }
+                    }
+
+                    String comment = "";
+                    if (!kun.isEmpty()) {
+                        comment += Utils.join(kun);
+
+                        if (!on.isEmpty()) {
+                            comment += " / ";
+                        }
+                    }
+
+                    if (!on.isEmpty()) {
+                        comment += Utils.join(on);
+                    }
+
+                    row.put("comment", comment);
+
                     data.add(row);
                 }
 
@@ -87,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
                     Map<String, String> row = new HashMap<>();
                     row.put("label", jukugo.getString("kanji"));
                     row.put("description", jukugo.getString("meaning"));
+                    row.put("comment", jukugo.getString("reading"));
                     data.add(row);
                 }
             } catch (Exception e) {

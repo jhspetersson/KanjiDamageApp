@@ -8,12 +8,14 @@ public class DataRow extends RecyclerView.ViewHolder {
 
     private TextView label;
     private TextView description;
+    private TextView comment;
 
     public DataRow(View itemView) {
         super(itemView);
 
         label = itemView.findViewById(R.id.label);
         description = itemView.findViewById(R.id.description);
+        comment = itemView.findViewById(R.id.comment);
     }
 
     public void setLabel(String text) {
@@ -22,5 +24,9 @@ public class DataRow extends RecyclerView.ViewHolder {
 
     public void setDescription(String text) {
         description.setText(text);
+    }
+
+    public void setComment(String text) {
+        comment.setText(text);
     }
 }
