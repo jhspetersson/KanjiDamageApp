@@ -12,8 +12,34 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/reading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/onyomi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/mnemonic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TableLayout
+        android:id="@+id/kunyomi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TableLayout>
 
 </LinearLayout>
