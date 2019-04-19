@@ -1,7 +1,9 @@
 package com.kanjidamage.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -39,6 +41,13 @@ public class MainActivity extends AppCompatActivity {
         cards.setLayoutManager(new LinearLayoutManager(this));
 
         loadData();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            CharSequence keyword = getIntent().getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
+            if (keyword != null) {
+                search.setText(keyword.toString());
+            }
+        }
     }
 
     private void updateSearchResults(String keyword) {

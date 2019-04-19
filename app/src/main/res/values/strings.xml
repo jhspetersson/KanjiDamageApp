@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KanjiDamage</string>
     <string name="search">Search</string>
+    <string name="kanjidamage">KanjiDamage</string>
 </resources>
