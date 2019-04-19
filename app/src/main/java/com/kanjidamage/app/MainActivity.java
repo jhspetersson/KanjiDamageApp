@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (!keyword.isEmpty()) {
             for (Map<String, String> row : Data.data) {
-                if (row.get("label").contains(keyword)) {
+                if (row.get("label").contains(keyword) || row.get("comment").contains(keyword)) {
                     result.add(row);
                 }
             }
