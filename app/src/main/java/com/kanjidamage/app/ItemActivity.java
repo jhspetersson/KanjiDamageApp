@@ -38,6 +38,27 @@ public class ItemActivity extends AppCompatActivity {
             TextView meaning = findViewById(R.id.meaning);
             meaning.setText(itemMeaning);
 
+            TableLayout components = findViewById(R.id.components);
+            JSONArray comps = jsonObject.optJSONArray("components");
+            if (comps != null && comps.length() > 0) {
+                for (int i = 0; i < comps.length(); i++) {
+                    TableRow row = new TableRow(this);
+                    components.addView(row);
+
+                    JSONObject comp = comps.getJSONObject(i);
+
+                    TextView compKanji = new TextView(this);
+                    compKanji.setText(comp.optString("kanji", ""));
+                    row.addView(compKanji);
+
+                    TextView compMeaning = new TextView(this);
+                    compMeaning.setText(comp.optString("meaning", ""));
+                    row.addView(compMeaning);
+                }
+            } else {
+                components.setVisibility(View.GONE);
+            }
+
             TextView description = findViewById(R.id.description);
             String descr = jsonObject.optString("description");
             if (descr != null && !descr.isEmpty()) {

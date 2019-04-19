@@ -21,6 +21,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TableLayout
+        android:id="@+id/components"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </TableLayout>
+
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
