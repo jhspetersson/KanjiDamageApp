@@ -15,7 +15,6 @@
         >
         <TableLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:shrinkColumns="0"
@@ -30,7 +29,9 @@
                     <TextView
                         android:id="@+id/label"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
+                        android:layout_height="wrap_content"
+                        style="@style/rowLabel"
+                        />
 
                     <TextView
                         android:id="@+id/description"

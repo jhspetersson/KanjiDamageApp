@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    style="@style/item"
     >
     <TextView
         android:id="@+id/label"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        style="@style/mainLabel"
+        />
 
     <TextView
         android:id="@+id/reading"
@@ -33,15 +34,36 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/onyomi_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/onyomi"
+        />
+    <TextView
         android:id="@+id/onyomi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/mnemonic_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/mnemonic"
+        />
+    <TextView
         android:id="@+id/mnemonic"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/kunyomi_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/kunyomi"
+        />
     <TableLayout
         android:id="@+id/kunyomi"
         android:layout_width="match_parent"

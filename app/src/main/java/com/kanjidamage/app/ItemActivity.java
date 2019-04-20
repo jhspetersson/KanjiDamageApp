@@ -72,6 +72,9 @@ public class ItemActivity extends AppCompatActivity {
             if (on != null && on.length() > 0) {
                 onyomi.setText(Utils.join(on));
             } else {
+                TextView onyomiLabel = findViewById(R.id.onyomi_label);
+
+                onyomiLabel.setVisibility(View.GONE);
                 onyomi.setVisibility(View.GONE);
             }
 
@@ -80,6 +83,9 @@ public class ItemActivity extends AppCompatActivity {
             if (mnemo != null && !mnemo.isEmpty()) {
                 mnemonic.setText(mnemo);
             } else {
+                TextView mnemonicLabel = findViewById(R.id.mnemonic_label);
+
+                mnemonicLabel.setVisibility(View.GONE);
                 mnemonic.setVisibility(View.GONE);
             }
 
@@ -124,6 +130,9 @@ public class ItemActivity extends AppCompatActivity {
                     row2.addView(kunDescription, layoutParams);
                 }
             } else {
+                TextView kunyomiLabel = findViewById(R.id.kunyomi_label);
+
+                kunyomiLabel.setVisibility(View.GONE);
                 kunyomi.setVisibility(View.GONE);
             }
         } catch (Exception e) {

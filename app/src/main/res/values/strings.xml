@@ -2,4 +2,7 @@
     <string name="app_name">KanjiDamage</string>
     <string name="search">Search</string>
     <string name="kanjidamage">KanjiDamage</string>
+    <string name="onyomi">Onyomi</string>
+    <string name="mnemonic">Mnemonic</string>
+    <string name="kunyomi">Kunyomi</string>
 </resources>
