@@ -135,9 +135,22 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject jukugo = jukugos.getJSONObject(i);
                     Map<String, String> row = new HashMap<>();
                     row.put("json", jukugo.toString());
-                    row.put("label", jukugo.getString("kanji"));
+
+                    String label = jukugo.getString("kanji");
+                    JSONObject okurigana = jukugo.optJSONObject("okurigana");
+                    if (okurigana != null) {
+                        label = okurigana.optString("pre", "") + label + okurigana.optString("post", "");
+                    }
+
+                    row.put("label", label);
                     row.put("description", jukugo.getString("meaning"));
-                    row.put("comment", jukugo.getString("reading"));
+
+                    String reading = jukugo.getString("reading");
+                    if (okurigana != null) {
+                        reading = okurigana.optString("pre", "") + reading + okurigana.optString("post", "");
+                    }
+
+                    row.put("comment", reading);
                     data.add(row);
                 }
             } catch (Exception e) {

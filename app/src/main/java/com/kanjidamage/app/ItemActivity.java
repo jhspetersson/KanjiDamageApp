@@ -21,15 +21,23 @@ public class ItemActivity extends AppCompatActivity {
         Intent intent = getIntent();
         try {
             JSONObject jsonObject = new JSONObject(intent.getStringExtra("json"));
-            String kanji = jsonObject.getString("kanji");
+            String labelString = jsonObject.getString("kanji");
+            JSONObject okurigana = jsonObject.optJSONObject("okurigana");
+            if (okurigana != null) {
+                labelString = okurigana.optString("pre", "") + labelString + okurigana.optString("post", "");
+            }
+
             String itemMeaning = jsonObject.getString("meaning");
 
             TextView label = findViewById(R.id.label);
-            label.setText(kanji);
+            label.setText(labelString);
 
             TextView reading = findViewById(R.id.reading);
             String read = jsonObject.optString("reading");
             if (read != null && !read.isEmpty()) {
+                if (okurigana != null) {
+                    read = okurigana.optString("pre", "") + read + okurigana.optString("post", "");
+                }
                 reading.setText(read);
             } else {
                 reading.setVisibility(View.GONE);
@@ -109,9 +117,9 @@ public class ItemActivity extends AppCompatActivity {
                     kreading.setText(kunReading.optString("reading", ""));
                     row.addView(kreading);
 
-                    TextView okurigana = new TextView(this);
-                    okurigana.setText(kunReading.optString("okurigana", ""));
-                    row.addView(okurigana);
+                    TextView kokurigana = new TextView(this);
+                    kokurigana.setText(kunReading.optString("okurigana", ""));
+                    row.addView(kokurigana);
 
                     TextView postParticle = new TextView(this);
                     postParticle.setText(kunReading.optString("postParticle", ""));
