@@ -1,9 +1,15 @@
 package com.kanjidamage.app;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.PopupMenu;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -31,6 +37,12 @@ public class ItemActivity extends AppCompatActivity {
 
             TextView label = findViewById(R.id.label);
             label.setText(labelString);
+            label.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    showPopupMenu(view);
+                }
+            });
 
             TextView reading = findViewById(R.id.reading);
             String read = jsonObject.optString("reading");
@@ -156,5 +168,38 @@ public class ItemActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private void showPopupMenu(final View v) {
+        PopupMenu popupMenu = new PopupMenu(this, v);
+        popupMenu.inflate(R.menu.label_menu);
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                CharSequence text = ((TextView) v).getText();
+                switch (item.getItemId()) {
+                    case R.id.menu_item_search:
+                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        intent.putExtra(MainActivity.KEYWORD_EXTRA, text);
+                        startActivity(intent);
+                        break;
+
+                    case R.id.menu_item_jisho:
+                        Intent i = new Intent(Intent.ACTION_VIEW);
+                        i.setData(Uri.parse("https://jisho.org/search/" + Uri.encode(text.toString())));
+                        startActivity(i);
+                        break;
+
+                    case R.id.menu_item_copy:
+                        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                        ClipData clip = ClipData.newPlainText(text, text);
+                        clipboard.setPrimaryClip(clip);
+                        break;
+                }
+
+                return true;
+            }
+        });
+        popupMenu.show();
     }
 }

@@ -5,4 +5,6 @@
     <string name="onyomi">Onyomi</string>
     <string name="mnemonic">Mnemonic</string>
     <string name="kunyomi">Kunyomi</string>
+    <string name="jisho">Jisho.org</string>
+    <string name="copy">Copy</string>
 </resources>
