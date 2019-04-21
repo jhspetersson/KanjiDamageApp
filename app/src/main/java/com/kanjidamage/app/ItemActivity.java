@@ -55,8 +55,18 @@ public class ItemActivity extends AppCompatActivity {
 
                     JSONObject comp = comps.getJSONObject(i);
 
+                    final String compString = comp.optString("kanji", "");
                     TextView compKanji = new TextView(this);
-                    compKanji.setText(comp.optString("kanji", ""));
+                    compKanji.setText(compString);
+                    compKanji.setTextAppearance(this, R.style.link);
+                    compKanji.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            intent.putExtra(MainActivity.KEYWORD_EXTRA, compString);
+                            startActivity(intent);
+                        }
+                    });
                     row.addView(compKanji);
 
                     TextView compMeaning = new TextView(this);

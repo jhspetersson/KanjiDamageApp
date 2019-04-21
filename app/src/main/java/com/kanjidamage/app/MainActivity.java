@@ -21,6 +21,8 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
+    static final String KEYWORD_EXTRA = "keyword";
+
     private RecyclerView cards;
 
     @Override
@@ -42,11 +44,14 @@ public class MainActivity extends AppCompatActivity {
 
         loadData();
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            CharSequence keyword = getIntent().getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
-            if (keyword != null) {
-                search.setText(keyword.toString());
+        CharSequence keyword = getIntent().getStringExtra(KEYWORD_EXTRA);
+        if (keyword == null) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                keyword = getIntent().getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
             }
+        }
+        if (keyword != null) {
+            search.setText(keyword.toString());
         }
     }
 
