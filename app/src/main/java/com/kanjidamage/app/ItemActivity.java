@@ -177,6 +177,35 @@ public class ItemActivity extends AppCompatActivity {
                     kunMeaning.setText(kunReading.optString("meaning", ""));
                     row.addView(kunMeaning);
 
+                    JSONArray ktags = kunReading.optJSONArray("tags");
+                    if (ktags != null) {
+                        LinearLayout ktagsHolder = new LinearLayout(this);
+
+                        for (int j = 0; j < ktags.length(); j++) {
+                            String tag = ktags.getString(j);
+
+                            TextView tagView = new TextView(this);
+                            tagView.setText(tag);
+                            tagView.setTextColor(Color.WHITE);
+                            tagView.setTextAppearance(this, R.style.tag);
+                            tagView.setBackgroundResource(R.drawable.rounded_corners);
+                            ((GradientDrawable) tagView.getBackground()).setColor(Color.parseColor("#2d6987"));
+
+                            ktagsHolder.addView(tagView);
+
+                            Space space = new Space(this);
+                            space.setMinimumWidth(5);
+                            ktagsHolder.addView(space);
+                        }
+
+                        TableRow tagsRow = new TableRow(this);
+                        kunyomi.addView(tagsRow);
+                        tagsRow.addView(new TextView(this));
+                        TableRow.LayoutParams layoutParams = new TableRow.LayoutParams();
+                        layoutParams.span = 4;
+                        tagsRow.addView(ktagsHolder, layoutParams);
+                    }
+
                     row2.addView(new TextView(this));
 
                     TextView kunDescription = new TextView(this);
