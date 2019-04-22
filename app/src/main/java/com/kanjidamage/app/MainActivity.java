@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
     private List<Map<String, String>> filter(String keyword) {
         List<Map<String, String>> result = new ArrayList<>();
 
+        keyword = keyword.trim();
         if (!keyword.isEmpty()) {
             for (Map<String, String> row : Data.data) {
                 if (row.get("label").contains(keyword) || row.get("comment").contains(keyword)) {
