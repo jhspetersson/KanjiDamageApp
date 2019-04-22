@@ -4,12 +4,16 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
+import android.widget.Space;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -33,8 +37,6 @@ public class ItemActivity extends AppCompatActivity {
                 labelString = okurigana.optString("pre", "") + labelString + okurigana.optString("post", "");
             }
 
-            String itemMeaning = jsonObject.getString("meaning");
-
             TextView label = findViewById(R.id.label);
             label.setText(labelString);
             label.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +57,30 @@ public class ItemActivity extends AppCompatActivity {
                 reading.setVisibility(View.GONE);
             }
 
+            LinearLayout tagsHolder = findViewById(R.id.tags_holder);
+            JSONArray tags = jsonObject.optJSONArray("tags");
+            if (tags != null) {
+                for (int i = 0; i < tags.length(); i++) {
+                    String tag = tags.getString(i);
+
+                    TextView tagView = new TextView(this);
+                    tagView.setText(tag);
+                    tagView.setTextColor(Color.WHITE);
+                    tagView.setTextAppearance(this, R.style.tag);
+                    tagView.setBackgroundResource(R.drawable.rounded_corners);
+                    ((GradientDrawable) tagView.getBackground()).setColor(Color.parseColor("#2d6987"));
+
+                    tagsHolder.addView(tagView);
+
+                    Space space = new Space(this);
+                    space.setMinimumWidth(5);
+                    tagsHolder.addView(space);
+                }
+            } else {
+                tagsHolder.setVisibility(View.GONE);
+            }
+
+            String itemMeaning = jsonObject.getString("meaning");
             TextView meaning = findViewById(R.id.meaning);
             meaning.setText(itemMeaning);
 
