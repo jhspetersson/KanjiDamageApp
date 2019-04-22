@@ -93,7 +93,7 @@ public class ItemActivity extends AppCompatActivity {
 
                     JSONObject comp = comps.getJSONObject(i);
 
-                    final String compString = comp.optString("kanji", "");
+                    final String compString = !comp.optString("kanji", "").equals("null") ? comp.optString("kanji") : "";
                     TextView compKanji = new TextView(this);
                     compKanji.setText(compString);
                     compKanji.setTextAppearance(this, R.style.link);
@@ -159,10 +159,12 @@ public class ItemActivity extends AppCompatActivity {
 
                     TextView preParticle = new TextView(this);
                     preParticle.setText(kunReading.optString("preParticle", ""));
+                    preParticle.setTextAppearance(R.style.particle);
                     row.addView(preParticle);
 
                     TextView kreading = new TextView(this);
                     kreading.setText(kunReading.optString("reading", ""));
+                    kreading.setTextAppearance(R.style.reading);
                     row.addView(kreading);
 
                     TextView kokurigana = new TextView(this);
@@ -171,6 +173,7 @@ public class ItemActivity extends AppCompatActivity {
 
                     TextView postParticle = new TextView(this);
                     postParticle.setText(kunReading.optString("postParticle", ""));
+                    postParticle.setTextAppearance(R.style.particle);
                     row.addView(postParticle);
 
                     TextView kunMeaning = new TextView(this);
@@ -212,6 +215,7 @@ public class ItemActivity extends AppCompatActivity {
                     kunDescription.setText(kunReading.optString("description", ""));
                     TableRow.LayoutParams layoutParams = new TableRow.LayoutParams();
                     layoutParams.span = 4;
+                    layoutParams.weight = 1;
                     row2.addView(kunDescription, layoutParams);
                 }
             } else {
