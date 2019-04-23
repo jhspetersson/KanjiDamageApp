@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
         keyword = keyword.trim();
         if (!keyword.isEmpty()) {
             for (Map<String, String> row : Data.data) {
-                if (row.get("label").contains(keyword) || row.get("comment").contains(keyword)) {
+                if (row.get("label").contains(keyword) || row.get("comment").contains(keyword) ||
+                        (row.containsKey("onyomi") && row.get("onyomi").contains(keyword))) {
                     result.add(row);
                 }
             }
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
                     List<String> kun = new ArrayList<>();
                     JSONArray kunyomis = kanji.optJSONArray("kun");
-                    if (kunyomis != null) {
+                    if (Utils.isNotEmpty(kunyomis)) {
                         for (int j = 0; j < kunyomis.length(); j++) {
                             JSONObject kunyomi = kunyomis.getJSONObject(j);
                             String reading = kunyomi.getString("r");
@@ -122,16 +123,16 @@ public class MainActivity extends AppCompatActivity {
                     if (!kun.isEmpty()) {
                         comment += Utils.join(kun);
 
-                        if (!on.isEmpty()) {
+                        if (Utils.isNotEmpty(on)) {
                             comment += " / ";
                         }
                     }
 
-                    if (!on.isEmpty()) {
-                        comment += Utils.join(on);
-                    }
-
                     row.put("comment", comment);
+
+                    if (Utils.isNotEmpty(on)) {
+                        row.put("onyomi", Utils.join(on));
+                    }
 
                     data.add(row);
                 }

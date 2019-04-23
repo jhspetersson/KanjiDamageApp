@@ -132,7 +132,7 @@ public class ItemActivity extends AppCompatActivity {
 
             TextView onyomi = findViewById(R.id.onyomi);
             JSONArray on = jsonObject.optJSONArray("on");
-            if (on != null && on.length() > 0) {
+            if (Utils.isNotEmpty(on)) {
                 onyomi.setText(Utils.join(on));
             } else {
                 TextView onyomiLabel = findViewById(R.id.onyomi_label);
@@ -154,7 +154,7 @@ public class ItemActivity extends AppCompatActivity {
 
             TableLayout kunyomi = findViewById(R.id.kunyomi);
             JSONArray kun = jsonObject.optJSONArray("kun");
-            if (kun != null && kun.length() > 0) {
+            if (Utils.isNotEmpty(kun)) {
                 for (int i = 0; i < kun.length(); i++) {
                     TableRow row = new TableRow(this);
                     kunyomi.addView(row);

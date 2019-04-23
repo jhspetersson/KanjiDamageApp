@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.List;
 
 public class Utils {
-    public static <T> String join(JSONArray array) throws JSONException {
+    public static String join(JSONArray array) throws JSONException {
         List<String> list = new ArrayList<>();
         for (int i = 0; i < array.length(); i++) {
             list.add(array.getString(i));
@@ -33,4 +33,34 @@ public class Utils {
         }
 
         return sb.substring(0, sb.length() - delimeter.length());
-    }}
+    }
+
+    public static boolean isNotEmpty(JSONArray jsonArray) throws JSONException {
+        if (jsonArray == null || jsonArray.length() == 0) {
+            return false;
+        }
+
+        for (int i = 0; i < jsonArray.length(); i++) {
+            String value = jsonArray.getString(i);
+            if (value != null && !value.isEmpty()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean isNotEmpty(Collection<String> collection) {
+        if (collection == null || collection.isEmpty()) {
+            return false;
+        }
+
+        for (String value : collection) {
+            if (value != null && !value.isEmpty()) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}

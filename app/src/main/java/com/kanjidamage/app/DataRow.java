@@ -12,6 +12,7 @@ public class DataRow extends RecyclerView.ViewHolder implements View.OnClickList
     private TextView label;
     private TextView description;
     private TextView comment;
+    private TextView onyomi;
 
     public DataRow(View itemView) {
         super(itemView);
@@ -20,6 +21,7 @@ public class DataRow extends RecyclerView.ViewHolder implements View.OnClickList
         label = itemView.findViewById(R.id.label);
         description = itemView.findViewById(R.id.description);
         comment = itemView.findViewById(R.id.comment);
+        onyomi = itemView.findViewById(R.id.onyomi);
     }
 
     public void setJson(String json) {
@@ -36,6 +38,10 @@ public class DataRow extends RecyclerView.ViewHolder implements View.OnClickList
 
     public void setComment(String text) {
         comment.setText(text);
+    }
+
+    public void setOnyomi(String text) {
+        onyomi.setText(text);
     }
 
     @Override

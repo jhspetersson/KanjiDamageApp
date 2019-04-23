@@ -33,6 +33,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataRow> {
         holder.setLabel(rowData.get("label"));
         holder.setDescription(rowData.get("description"));
         holder.setComment(rowData.get("comment"));
+        holder.setOnyomi(rowData.get("onyomi"));
     }
 
     @Override
