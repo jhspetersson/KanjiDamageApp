@@ -9,6 +9,8 @@ import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.Spanned;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -107,8 +109,13 @@ public class ItemActivity extends AppCompatActivity {
                     });
                     row.addView(compKanji);
 
+                    Space space = new Space(this);
+                    space.setMinimumWidth(10);
+                    row.addView(space);
+
                     TextView compMeaning = new TextView(this);
                     compMeaning.setText(comp.optString("meaning", ""));
+                    compMeaning.setTextAppearance(R.style.component_label);
                     row.addView(compMeaning);
                 }
             } else {
@@ -118,7 +125,7 @@ public class ItemActivity extends AppCompatActivity {
             TextView description = findViewById(R.id.description);
             String descr = jsonObject.optString("description");
             if (descr != null && !descr.isEmpty()) {
-                description.setText(descr);
+                description.setText(formatHtmlString(descr));
             } else {
                 description.setVisibility(View.GONE);
             }
@@ -137,7 +144,7 @@ public class ItemActivity extends AppCompatActivity {
             TextView mnemonic = findViewById(R.id.mnemonic);
             String mnemo = jsonObject.optString("mnemonic");
             if (mnemo != null && !mnemo.isEmpty()) {
-                mnemonic.setText(mnemo);
+                mnemonic.setText(formatHtmlString(mnemo));
             } else {
                 TextView mnemonicLabel = findViewById(R.id.mnemonic_label);
 
@@ -227,6 +234,21 @@ public class ItemActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private static Spanned formatHtmlString(String string) {
+        String s = string
+                .replaceAll("<b>", "<font color=\\\"#f89406\\\">")
+                .replaceAll("</b>", "</font>")
+
+                .replaceAll("<i>", "<font color=\\\"#46a546\\\">")
+                .replaceAll("</i>", "</font>")
+
+                .replaceAll("<ins>", "<font color=\\\"#9d261d\\\">")
+                .replaceAll("</ins>", "</font>")
+                ;
+
+        return Html.fromHtml(s);
     }
 
     private void showPopupMenu(final View v) {

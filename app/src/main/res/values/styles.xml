@@ -46,4 +46,12 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="component_label">
+        <item name="android:textColor">#9d261d</item>
+    </style>
+
+    <style name="onyomi_label">
+        <item name="android:textColor">#f89406</item>
+    </style>
+
 </resources>
