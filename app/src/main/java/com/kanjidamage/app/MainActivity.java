@@ -142,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
                     Map<String, String> row = new HashMap<>();
                     row.put("json", jukugo.toString());
 
-                    String label = jukugo.getString("kanji");
+                    String label = jukugo.getString("k");
                     JSONObject okurigana = jukugo.optJSONObject("o");
                     if (okurigana != null) {
                         label = okurigana.optString("pre", "") + label + okurigana.optString("post", "");
