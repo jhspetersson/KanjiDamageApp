@@ -90,16 +90,11 @@ public class ItemActivity extends AppCompatActivity {
             JSONArray comps = jsonObject.optJSONArray("c");
             if (comps != null && comps.length() > 0) {
                 for (int i = 0; i < comps.length(); i++) {
-                    TableRow row = new TableRow(this);
-                    components.addView(row);
-
                     JSONObject comp = comps.getJSONObject(i);
-
                     final String compString = !comp.optString("k", "").equals("null") ? comp.optString("k") : "";
-                    TextView compKanji = new TextView(this);
-                    compKanji.setText(compString);
-                    compKanji.setTextAppearance(this, R.style.link);
-                    compKanji.setOnClickListener(new View.OnClickListener() {
+
+                    TableRow row = new TableRow(this);
+                    row.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
@@ -107,6 +102,11 @@ public class ItemActivity extends AppCompatActivity {
                             startActivity(intent);
                         }
                     });
+                    components.addView(row);
+
+                    TextView compKanji = new TextView(this);
+                    compKanji.setText(compString);
+                    compKanji.setTextAppearance(this, R.style.link);
                     row.addView(compKanji);
 
                     Space space = new Space(this);
@@ -115,7 +115,7 @@ public class ItemActivity extends AppCompatActivity {
 
                     TextView compMeaning = new TextView(this);
                     compMeaning.setText(comp.optString("m", ""));
-                    compMeaning.setTextAppearance(R.style.component_label);
+                    compMeaning.setTextAppearance(this, R.style.component_label);
                     row.addView(compMeaning);
                 }
             } else {
@@ -166,12 +166,12 @@ public class ItemActivity extends AppCompatActivity {
 
                     TextView preParticle = new TextView(this);
                     preParticle.setText(kunReading.optString("preParticle", ""));
-                    preParticle.setTextAppearance(R.style.particle);
+                    preParticle.setTextAppearance(this, R.style.particle);
                     row.addView(preParticle);
 
                     TextView kreading = new TextView(this);
                     kreading.setText(kunReading.optString("r", ""));
-                    kreading.setTextAppearance(R.style.reading);
+                    kreading.setTextAppearance(this, R.style.reading);
                     row.addView(kreading);
 
                     TextView kokurigana = new TextView(this);
