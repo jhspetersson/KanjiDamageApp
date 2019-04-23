@@ -122,10 +122,6 @@ public class MainActivity extends AppCompatActivity {
                     String comment = "";
                     if (!kun.isEmpty()) {
                         comment += Utils.join(kun);
-
-                        if (Utils.isNotEmpty(on)) {
-                            comment += " / ";
-                        }
                     }
 
                     row.put("comment", comment);

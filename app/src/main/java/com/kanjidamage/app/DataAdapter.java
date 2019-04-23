@@ -32,8 +32,18 @@ public class DataAdapter extends RecyclerView.Adapter<DataRow> {
         holder.setJson(rowData.get("json"));
         holder.setLabel(rowData.get("label"));
         holder.setDescription(rowData.get("description"));
-        holder.setComment(rowData.get("comment"));
-        holder.setOnyomi(rowData.get("onyomi"));
+
+        String comment = rowData.get("comment");
+
+        String onyomi = rowData.get("onyomi");
+        if (onyomi != null && !onyomi.isEmpty()) {
+            if (!comment.isEmpty()) {
+                comment += " / ";
+            }
+            comment += "<font color=\"#f89406\">" + onyomi + "</font>";
+        }
+
+        holder.setComment(comment);
     }
 
     @Override
