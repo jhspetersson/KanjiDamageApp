@@ -33,8 +33,8 @@ public class ItemActivity extends AppCompatActivity {
         Intent intent = getIntent();
         try {
             JSONObject jsonObject = new JSONObject(intent.getStringExtra("json"));
-            String labelString = jsonObject.getString("kanji");
-            JSONObject okurigana = jsonObject.optJSONObject("okurigana");
+            String labelString = jsonObject.getString("k");
+            JSONObject okurigana = jsonObject.optJSONObject("o");
             if (okurigana != null) {
                 labelString = okurigana.optString("pre", "") + labelString + okurigana.optString("post", "");
             }
@@ -49,7 +49,7 @@ public class ItemActivity extends AppCompatActivity {
             });
 
             TextView reading = findViewById(R.id.reading);
-            String read = jsonObject.optString("reading");
+            String read = jsonObject.optString("r");
             if (read != null && !read.isEmpty()) {
                 if (okurigana != null) {
                     read = okurigana.optString("pre", "") + read + okurigana.optString("post", "");
@@ -60,7 +60,7 @@ public class ItemActivity extends AppCompatActivity {
             }
 
             LinearLayout tagsHolder = findViewById(R.id.tags_holder);
-            JSONArray tags = jsonObject.optJSONArray("tags");
+            JSONArray tags = jsonObject.optJSONArray("t");
             if (tags != null) {
                 for (int i = 0; i < tags.length(); i++) {
                     String tag = tags.getString(i);
@@ -82,12 +82,12 @@ public class ItemActivity extends AppCompatActivity {
                 tagsHolder.setVisibility(View.GONE);
             }
 
-            String itemMeaning = jsonObject.getString("meaning");
+            String itemMeaning = jsonObject.getString("m");
             TextView meaning = findViewById(R.id.meaning);
             meaning.setText(itemMeaning);
 
             TableLayout components = findViewById(R.id.components);
-            JSONArray comps = jsonObject.optJSONArray("components");
+            JSONArray comps = jsonObject.optJSONArray("c");
             if (comps != null && comps.length() > 0) {
                 for (int i = 0; i < comps.length(); i++) {
                     TableRow row = new TableRow(this);
@@ -95,7 +95,7 @@ public class ItemActivity extends AppCompatActivity {
 
                     JSONObject comp = comps.getJSONObject(i);
 
-                    final String compString = !comp.optString("kanji", "").equals("null") ? comp.optString("kanji") : "";
+                    final String compString = !comp.optString("k", "").equals("null") ? comp.optString("k") : "";
                     TextView compKanji = new TextView(this);
                     compKanji.setText(compString);
                     compKanji.setTextAppearance(this, R.style.link);
@@ -114,7 +114,7 @@ public class ItemActivity extends AppCompatActivity {
                     row.addView(space);
 
                     TextView compMeaning = new TextView(this);
-                    compMeaning.setText(comp.optString("meaning", ""));
+                    compMeaning.setText(comp.optString("m", ""));
                     compMeaning.setTextAppearance(R.style.component_label);
                     row.addView(compMeaning);
                 }
@@ -123,7 +123,7 @@ public class ItemActivity extends AppCompatActivity {
             }
 
             TextView description = findViewById(R.id.description);
-            String descr = jsonObject.optString("description");
+            String descr = jsonObject.optString("d");
             if (descr != null && !descr.isEmpty()) {
                 description.setText(formatHtmlString(descr));
             } else {
@@ -131,7 +131,7 @@ public class ItemActivity extends AppCompatActivity {
             }
 
             TextView onyomi = findViewById(R.id.onyomi);
-            JSONArray on = jsonObject.optJSONArray("onyomi");
+            JSONArray on = jsonObject.optJSONArray("on");
             if (on != null && on.length() > 0) {
                 onyomi.setText(Utils.join(on));
             } else {
@@ -142,7 +142,7 @@ public class ItemActivity extends AppCompatActivity {
             }
 
             TextView mnemonic = findViewById(R.id.mnemonic);
-            String mnemo = jsonObject.optString("mnemonic");
+            String mnemo = jsonObject.optString("mn");
             if (mnemo != null && !mnemo.isEmpty()) {
                 mnemonic.setText(formatHtmlString(mnemo));
             } else {
@@ -153,7 +153,7 @@ public class ItemActivity extends AppCompatActivity {
             }
 
             TableLayout kunyomi = findViewById(R.id.kunyomi);
-            JSONArray kun = jsonObject.optJSONArray("kunyomi");
+            JSONArray kun = jsonObject.optJSONArray("kun");
             if (kun != null && kun.length() > 0) {
                 for (int i = 0; i < kun.length(); i++) {
                     TableRow row = new TableRow(this);
@@ -170,12 +170,12 @@ public class ItemActivity extends AppCompatActivity {
                     row.addView(preParticle);
 
                     TextView kreading = new TextView(this);
-                    kreading.setText(kunReading.optString("reading", ""));
+                    kreading.setText(kunReading.optString("r", ""));
                     kreading.setTextAppearance(R.style.reading);
                     row.addView(kreading);
 
                     TextView kokurigana = new TextView(this);
-                    kokurigana.setText(kunReading.optString("okurigana", ""));
+                    kokurigana.setText(kunReading.optString("o", ""));
                     row.addView(kokurigana);
 
                     TextView postParticle = new TextView(this);
@@ -184,10 +184,10 @@ public class ItemActivity extends AppCompatActivity {
                     row.addView(postParticle);
 
                     TextView kunMeaning = new TextView(this);
-                    kunMeaning.setText(kunReading.optString("meaning", ""));
+                    kunMeaning.setText(kunReading.optString("m", ""));
                     row.addView(kunMeaning);
 
-                    JSONArray ktags = kunReading.optJSONArray("tags");
+                    JSONArray ktags = kunReading.optJSONArray("t");
                     if (ktags != null) {
                         LinearLayout ktagsHolder = new LinearLayout(this);
 
@@ -219,7 +219,7 @@ public class ItemActivity extends AppCompatActivity {
                     row2.addView(new TextView(this));
 
                     TextView kunDescription = new TextView(this);
-                    kunDescription.setText(kunReading.optString("description", ""));
+                    kunDescription.setText(kunReading.optString("d", ""));
                     TableRow.LayoutParams layoutParams = new TableRow.LayoutParams();
                     layoutParams.span = 4;
                     layoutParams.weight = 1;

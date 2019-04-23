@@ -92,16 +92,16 @@ public class MainActivity extends AppCompatActivity {
                     JSONObject kanji = kanjis.getJSONObject(i);
                     Map<String, String> row = new HashMap<>();
                     row.put("json", kanji.toString());
-                    row.put("label", kanji.getString("kanji"));
-                    row.put("description", kanji.getString("meaning"));
+                    row.put("label", kanji.getString("k"));
+                    row.put("description", kanji.getString("m"));
 
                     List<String> kun = new ArrayList<>();
-                    JSONArray kunyomis = kanji.optJSONArray("kunyomi");
+                    JSONArray kunyomis = kanji.optJSONArray("kun");
                     if (kunyomis != null) {
                         for (int j = 0; j < kunyomis.length(); j++) {
                             JSONObject kunyomi = kunyomis.getJSONObject(j);
-                            String reading = kunyomi.getString("reading");
-                            String okurigana = kunyomi.optString("okurigana");
+                            String reading = kunyomi.getString("r");
+                            String okurigana = kunyomi.optString("o");
                             if (okurigana == null || okurigana.isEmpty()) {
                                 kun.add(reading);
                             } else {
@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                     }
 
                     List<String> on = new ArrayList<>();
-                    JSONArray onyomis = kanji.optJSONArray("onyomi");
+                    JSONArray onyomis = kanji.optJSONArray("on");
                     if (onyomis != null) {
                         for (int j = 0; j < onyomis.length(); j++) {
                             on.add(onyomis.getString(j));
@@ -143,15 +143,15 @@ public class MainActivity extends AppCompatActivity {
                     row.put("json", jukugo.toString());
 
                     String label = jukugo.getString("kanji");
-                    JSONObject okurigana = jukugo.optJSONObject("okurigana");
+                    JSONObject okurigana = jukugo.optJSONObject("o");
                     if (okurigana != null) {
                         label = okurigana.optString("pre", "") + label + okurigana.optString("post", "");
                     }
 
                     row.put("label", label);
-                    row.put("description", jukugo.getString("meaning"));
+                    row.put("description", jukugo.getString("m"));
 
-                    String reading = jukugo.getString("reading");
+                    String reading = jukugo.getString("r");
                     if (okurigana != null) {
                         reading = okurigana.optString("pre", "") + reading + okurigana.optString("post", "");
                     }
