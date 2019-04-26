@@ -180,7 +180,7 @@ public class ItemActivity extends AppCompatActivity {
 
                     TextView postParticle = new TextView(this);
                     postParticle.setText(kunReading.optString("postParticle", ""));
-                    postParticle.setTextAppearance(R.style.particle);
+                    postParticle.setTextAppearance(this, R.style.particle);
                     row.addView(postParticle);
 
                     TextView kunMeaning = new TextView(this);
