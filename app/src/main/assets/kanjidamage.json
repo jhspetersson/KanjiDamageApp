@@ -18,7 +18,7 @@
 				}
 			],
 			"frequencyRating": "6",
-			"usedIn": [{
+			"ui": [{
 					"k": "子"
 				}, {
 					"k": "言"
@@ -171,7 +171,7 @@
 				}
 			],
 			"frequencyRating": "29",
-			"usedIn": [{
+			"ui": [{
 					"k": "示"
 				}, {
 					"k": "重"
@@ -203,7 +203,7 @@
 				}
 			],
 			"frequencyRating": "43",
-			"usedIn": [{
+			"ui": [{
 					"k": "言"
 				}, {
 					"k": "寿"
@@ -222,7 +222,7 @@
 			"t": ["BETA", "PK"],
 			"strokeCount": 2,
 			"frequencyRating": "24",
-			"usedIn": [{
+			"ui": [{
 					"k": "子"
 				}
 			],
@@ -273,7 +273,7 @@
 				}
 			],
 			"frequencyRating": "25",
-			"usedIn": [{
+			"ui": [{
 					"k": "好"
 				}, {
 					"k": "孫"
@@ -346,7 +346,7 @@
 				}
 			],
 			"frequencyRating": "79",
-			"usedIn": [{
+			"ui": [{
 					"k": "好"
 				}, {
 					"k": "姦"
@@ -484,7 +484,7 @@
 				}
 			],
 			"frequencyRating": "13",
-			"usedIn": [{
+			"ui": [{
 					"k": "品"
 				}, {
 					"k": "言"
@@ -719,7 +719,7 @@
 			"t": ["BETA", "PN", "DUH"],
 			"strokeCount": 9,
 			"frequencyRating": "433",
-			"usedIn": [{
+			"ui": [{
 					"k": "繰"
 				}, {
 					"k": "操"
@@ -775,7 +775,7 @@
 				}
 			],
 			"frequencyRating": "45",
-			"usedIn": [{
+			"ui": [{
 					"k": "計"
 				}, {
 					"k": "談"
@@ -928,7 +928,7 @@
 				}
 			],
 			"frequencyRating": "71",
-			"usedIn": [{
+			"ui": [{
 					"k": "不"
 				}
 			]
@@ -950,7 +950,7 @@
 			"t": ["BETA", "PRE"],
 			"strokeCount": 4,
 			"frequencyRating": "146",
-			"usedIn": [{
+			"ui": [{
 					"k": "歪"
 				}, {
 					"k": "杯"
@@ -1003,7 +1003,7 @@
 				}
 			],
 			"frequencyRating": "49",
-			"usedIn": [{
+			"ui": [{
 					"k": "古"
 				}, {
 					"k": "叶"
@@ -1105,7 +1105,7 @@
 				}
 			],
 			"frequencyRating": "404",
-			"usedIn": [{
+			"ui": [{
 					"k": "湖"
 				}, {
 					"k": "苦"
@@ -1240,7 +1240,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "208",
-			"usedIn": [{
+			"ui": [{
 					"k": "化"
 				}, {
 					"k": "宅"
@@ -1346,7 +1346,7 @@
 				}
 			],
 			"frequencyRating": "430",
-			"usedIn": [{
+			"ui": [{
 					"k": "皆"
 				}, {
 					"k": "能"
@@ -1408,7 +1408,7 @@
 				}
 			],
 			"frequencyRating": "14",
-			"usedIn": [{
+			"ui": [{
 					"k": "旨"
 				}, {
 					"k": "昆"
@@ -1561,7 +1561,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "359",
-			"usedIn": [{
+			"ui": [{
 					"k": "脂"
 				}, {
 					"k": "指"
@@ -1585,7 +1585,7 @@
 			"t": ["BETA"],
 			"strokeCount": 8,
 			"frequencyRating": "1040",
-			"usedIn": [{
+			"ui": [{
 					"k": "混"
 				}
 			],
@@ -1671,7 +1671,7 @@
 			"t": ["BETA", "PRE"],
 			"strokeCount": 5,
 			"frequencyRating": "986",
-			"usedIn": [{
+			"ui": [{
 					"k": "児"
 				}, {
 					"k": "陥"
@@ -1720,7 +1720,7 @@
 				}
 			],
 			"frequencyRating": "318",
-			"usedIn": [{
+			"ui": [{
 					"k": "朝"
 				}, {
 					"k": "草"
@@ -1788,7 +1788,7 @@
 			"t": ["BETA"],
 			"strokeCount": 5,
 			"frequencyRating": "878",
-			"usedIn": [{
+			"ui": [{
 					"k": "量"
 				}, {
 					"k": "宣"
@@ -1827,7 +1827,7 @@
 				}
 			],
 			"frequencyRating": "113",
-			"usedIn": [{
+			"ui": [{
 					"k": "皆"
 				}, {
 					"k": "習"
@@ -1883,7 +1883,7 @@
 				}
 			],
 			"frequencyRating": "615",
-			"usedIn": [{
+			"ui": [{
 					"k": "階"
 				}
 			],
@@ -1950,7 +1950,7 @@
 				}
 			],
 			"frequencyRating": "243",
-			"usedIn": [{
+			"ui": [{
 					"k": "泉"
 				}, {
 					"k": "泳"
@@ -2195,7 +2195,7 @@
 				}
 			],
 			"frequencyRating": "522",
-			"usedIn": [{
+			"ui": [{
 					"k": "線"
 				}
 			]
@@ -2224,7 +2224,7 @@
 				}
 			],
 			"frequencyRating": "833",
-			"usedIn": [{
+			"ui": [{
 					"k": "永"
 				}
 			],
@@ -2267,7 +2267,7 @@
 			"t": ["BETA", "PN"],
 			"strokeCount": 5,
 			"frequencyRating": "834",
-			"usedIn": [{
+			"ui": [{
 					"k": "泳"
 				}
 			],
@@ -2494,7 +2494,7 @@
 				}
 			],
 			"frequencyRating": "57",
-			"usedIn": [{
+			"ui": [{
 					"k": "湖"
 				}, {
 					"k": "明"
@@ -2661,7 +2661,7 @@
 				}
 			],
 			"frequencyRating": "116",
-			"usedIn": [{
+			"ui": [{
 					"k": "盟"
 				}
 			]
@@ -2754,7 +2754,7 @@
 				}
 			],
 			"frequencyRating": "319",
-			"usedIn": [{
+			"ui": [{
 					"k": "乾"
 				}, {
 					"k": "幹"
@@ -2786,7 +2786,7 @@
 				}
 			],
 			"frequencyRating": "191",
-			"usedIn": [{
+			"ui": [{
 					"k": "炎"
 				}, {
 					"k": "淡"
@@ -2871,7 +2871,7 @@
 				}
 			],
 			"frequencyRating": "647",
-			"usedIn": [{
+			"ui": [{
 					"k": "談"
 				}
 			]
@@ -2932,7 +2932,7 @@
 			"t": ["BETA", "PK", "STRONG", "MR"],
 			"strokeCount": 2,
 			"frequencyRating": "39",
-			"usedIn": [{
+			"ui": [{
 					"k": "灯"
 				}, {
 					"k": "可"
@@ -3013,7 +3013,7 @@
 			"t": ["BETA", "PN", "STRONG"],
 			"strokeCount": 5,
 			"frequencyRating": "60",
-			"usedIn": [{
+			"ui": [{
 					"k": "河"
 				}, {
 					"k": "何"
@@ -3109,7 +3109,7 @@
 				}
 			],
 			"frequencyRating": "16",
-			"usedIn": [{
+			"ui": [{
 					"k": "町"
 				}, {
 					"k": "畑"
@@ -3262,7 +3262,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "1603",
-			"usedIn": [{
+			"ui": [{
 					"k": "膚"
 				}
 			],
@@ -3315,7 +3315,7 @@
 				}
 			],
 			"frequencyRating": "72",
-			"usedIn": [{
+			"ui": [{
 					"k": "込"
 				}
 			],
@@ -3353,7 +3353,7 @@
 				}
 			],
 			"frequencyRating": "5",
-			"usedIn": [{
+			"ui": [{
 					"k": "火"
 				}, {
 					"k": "何"
@@ -3568,7 +3568,7 @@
 				}
 			],
 			"frequencyRating": "61",
-			"usedIn": [{
+			"ui": [{
 					"k": "荷"
 				}
 			],
@@ -3645,7 +3645,7 @@
 				}
 			],
 			"frequencyRating": "240",
-			"usedIn": [{
+			"ui": [{
 					"k": "花"
 				}, {
 					"k": "靴"
@@ -3682,7 +3682,7 @@
 				}
 			],
 			"frequencyRating": "241",
-			"usedIn": [{
+			"ui": [{
 					"k": "花"
 				}, {
 					"k": "苦"
@@ -3887,7 +3887,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "103",
-			"usedIn": [{
+			"ui": [{
 					"k": "内"
 				}, {
 					"k": "肉"
@@ -3986,7 +3986,7 @@
 				}
 			],
 			"frequencyRating": "174",
-			"usedIn": [{
+			"ui": [{
 					"k": "納"
 				}
 			]
@@ -4018,7 +4018,7 @@
 				}
 			],
 			"frequencyRating": "642",
-			"usedIn": [{
+			"ui": [{
 					"k": "腐"
 				}
 			]
@@ -4056,7 +4056,7 @@
 				}
 			],
 			"frequencyRating": "614",
-			"usedIn": [{
+			"ui": [{
 					"k": "錆"
 				}
 			]
@@ -4079,7 +4079,7 @@
 			"t": ["BETA", "JERK RADICAL"],
 			"strokeCount": 5,
 			"frequencyRating": "336",
-			"usedIn": [{
+			"ui": [{
 					"k": "姉"
 				}, {
 					"k": "肺"
@@ -4191,7 +4191,7 @@
 				}
 			],
 			"frequencyRating": "9",
-			"usedIn": [{
+			"ui": [{
 					"k": "盲"
 				}, {
 					"k": "督"
@@ -4261,7 +4261,7 @@
 				}
 			],
 			"frequencyRating": "1374",
-			"usedIn": [{
+			"ui": [{
 					"k": "帽"
 				}
 			]
@@ -4310,7 +4310,7 @@
 				}
 			],
 			"frequencyRating": "36",
-			"usedIn": [{
+			"ui": [{
 					"k": "息"
 				}, {
 					"k": "臭"
@@ -4337,7 +4337,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "52",
-			"usedIn": [{
+			"ui": [{
 					"k": "亭"
 				}, {
 					"k": "卒"
@@ -4416,7 +4416,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 9,
 			"frequencyRating": "1233",
-			"usedIn": [{
+			"ui": [{
 					"k": "停"
 				}
 			]
@@ -4489,7 +4489,7 @@
 				}
 			],
 			"frequencyRating": "54",
-			"usedIn": [{
+			"ui": [{
 					"k": "訪"
 				}, {
 					"k": "妨"
@@ -4563,7 +4563,7 @@
 				}
 			],
 			"frequencyRating": "453",
-			"usedIn": [{
+			"ui": [{
 					"k": "励"
 				}
 			],
@@ -4757,7 +4757,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "104",
-			"usedIn": [{
+			"ui": [{
 					"k": "双"
 				}, {
 					"k": "奴"
@@ -4880,7 +4880,7 @@
 				}
 			],
 			"frequencyRating": "812",
-			"usedIn": [{
+			"ui": [{
 					"k": "怒"
 				}, {
 					"k": "努"
@@ -4921,7 +4921,7 @@
 			"t": ["BETA", "JERK"],
 			"strokeCount": 4,
 			"frequencyRating": "203",
-			"usedIn": [{
+			"ui": [{
 					"k": "蚊"
 				}, {
 					"k": "斉"
@@ -4966,7 +4966,7 @@
 			"t": ["PN", "SIDEKICK", "STRONG"],
 			"strokeCount": 8,
 			"frequencyRating": "757",
-			"usedIn": [{
+			"ui": [{
 					"k": "済"
 				}, {
 					"k": "剤"
@@ -5069,7 +5069,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "835",
-			"usedIn": [{
+			"ui": [{
 					"k": "収"
 				}, {
 					"k": "叫"
@@ -5189,7 +5189,7 @@
 				}
 			],
 			"frequencyRating": "17",
-			"usedIn": [{
+			"ui": [{
 					"k": "心"
 				}, {
 					"k": "必"
@@ -5351,7 +5351,7 @@
 				}
 			],
 			"frequencyRating": "382",
-			"usedIn": [{
+			"ui": [{
 					"k": "秘"
 				}, {
 					"k": "密"
@@ -5439,7 +5439,7 @@
 				}
 			],
 			"frequencyRating": "461",
-			"usedIn": [{
+			"ui": [{
 					"k": "憩"
 				}
 			]
@@ -5471,7 +5471,7 @@
 				}
 			],
 			"frequencyRating": "19",
-			"usedIn": [{
+			"ui": [{
 					"k": "慮"
 				}
 			]
@@ -5491,7 +5491,7 @@
 			"t": ["PK", "SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "158",
-			"usedIn": [{
+			"ui": [{
 					"k": "亡"
 				}, {
 					"k": "断"
@@ -5534,7 +5534,7 @@
 				}
 			],
 			"frequencyRating": "553",
-			"usedIn": [{
+			"ui": [{
 					"k": "忙"
 				}, {
 					"k": "忘"
@@ -5707,7 +5707,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "322",
-			"usedIn": [{
+			"ui": [{
 					"k": "慢"
 				}, {
 					"k": "漫"
@@ -5835,7 +5835,7 @@
 			"strokeCount": 7,
 			"jukugo": [],
 			"frequencyRating": "323",
-			"usedIn": [{
+			"ui": [{
 					"k": "悪"
 				}
 			]
@@ -5886,7 +5886,7 @@
 				}
 			],
 			"frequencyRating": "163",
-			"usedIn": [{
+			"ui": [{
 					"k": "夢"
 				}, {
 					"k": "夜"
@@ -5936,7 +5936,7 @@
 				}
 			],
 			"frequencyRating": "219",
-			"usedIn": [{
+			"ui": [{
 					"k": "移"
 				}
 			]
@@ -6006,7 +6006,7 @@
 				}
 			],
 			"frequencyRating": "272",
-			"usedIn": [{
+			"ui": [{
 					"k": "液"
 				}
 			],
@@ -6093,7 +6093,7 @@
 				}
 			],
 			"frequencyRating": "246",
-			"usedIn": [{
+			"ui": [{
 					"k": "葬"
 				}
 			],
@@ -6130,7 +6130,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "18",
-			"usedIn": [{
+			"ui": [{
 					"k": "外"
 				}, {
 					"k": "上"
@@ -6245,7 +6245,7 @@
 				}
 			],
 			"frequencyRating": "20",
-			"usedIn": [{
+			"ui": [{
 					"k": "寂"
 				}, {
 					"k": "督"
@@ -6305,7 +6305,7 @@
 				}
 			],
 			"frequencyRating": "410",
-			"usedIn": [{
+			"ui": [{
 					"k": "点"
 				}, {
 					"k": "粘"
@@ -6381,7 +6381,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "66",
-			"usedIn": [{
+			"ui": [{
 					"k": "宅"
 				}, {
 					"k": "安"
@@ -6508,7 +6508,7 @@
 				}
 			],
 			"frequencyRating": "308",
-			"usedIn": [{
+			"ui": [{
 					"k": "案"
 				}
 			],
@@ -6592,7 +6592,7 @@
 			"t": ["BETA"],
 			"strokeCount": 9,
 			"frequencyRating": "1260",
-			"usedIn": [{
+			"ui": [{
 					"k": "喧"
 				}
 			]
@@ -6642,7 +6642,7 @@
 				}
 			],
 			"frequencyRating": "21",
-			"usedIn": [{
+			"ui": [{
 					"k": "穴"
 				}, {
 					"k": "六"
@@ -6686,7 +6686,7 @@
 				}
 			],
 			"frequencyRating": "281",
-			"usedIn": [{
+			"ui": [{
 					"k": "窮"
 				}, {
 					"k": "突"
@@ -6741,7 +6741,7 @@
 				}
 			],
 			"frequencyRating": "274",
-			"usedIn": [{
+			"ui": [{
 					"k": "譲"
 				}, {
 					"k": "嬢"
@@ -6831,7 +6831,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "88",
-			"usedIn": [{
+			"ui": [{
 					"k": "公"
 				}, {
 					"k": "能"
@@ -6893,7 +6893,7 @@
 				}
 			],
 			"frequencyRating": "415",
-			"usedIn": [{
+			"ui": [{
 					"k": "訟"
 				}, {
 					"k": "松"
@@ -6937,7 +6937,7 @@
 			"t": ["BETA", "JERK", "COUNTER"],
 			"strokeCount": 5,
 			"frequencyRating": "407",
-			"usedIn": [{
+			"ui": [{
 					"k": "治"
 				}, {
 					"k": "始"
@@ -7114,7 +7114,7 @@
 			"t": ["BETA"],
 			"strokeCount": 10,
 			"frequencyRating": "431",
-			"usedIn": [{
+			"ui": [{
 					"k": "熊"
 				}, {
 					"k": "態"
@@ -7267,7 +7267,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "58",
-			"usedIn": [{
+			"ui": [{
 					"k": "立"
 				}, {
 					"k": "豆"
@@ -7314,7 +7314,7 @@
 				}
 			],
 			"frequencyRating": "68",
-			"usedIn": [{
+			"ui": [{
 					"k": null,
 					"kanjiImageSource": "amount-small.jpg"
 				}, {
@@ -7402,7 +7402,7 @@
 				}
 			],
 			"frequencyRating": "425",
-			"usedIn": [{
+			"ui": [{
 					"k": "幸"
 				}, {
 					"k": "宰"
@@ -7470,7 +7470,7 @@
 				}
 			],
 			"frequencyRating": "426",
-			"usedIn": [{
+			"ui": [{
 					"k": "執"
 				}, {
 					"k": "達"
@@ -7618,7 +7618,7 @@
 				}
 			],
 			"frequencyRating": "117",
-			"usedIn": [{
+			"ui": [{
 					"k": "暗"
 				}, {
 					"k": "意"
@@ -7646,7 +7646,7 @@
 			"t": ["BETA", "JERK", "PN"],
 			"strokeCount": 11,
 			"frequencyRating": "945",
-			"usedIn": [{
+			"ui": [{
 					"k": "障"
 				}
 			],
@@ -7727,7 +7727,7 @@
 			"t": ["BETA"],
 			"strokeCount": 13,
 			"frequencyRating": "118",
-			"usedIn": [{
+			"ui": [{
 					"k": "億"
 				}, {
 					"k": "憶"
@@ -7830,7 +7830,7 @@
 				}
 			],
 			"frequencyRating": "26",
-			"usedIn": [{
+			"ui": [{
 					"k": "闇"
 				}, {
 					"k": "間"
@@ -7952,7 +7952,7 @@
 				}
 			],
 			"frequencyRating": "27",
-			"usedIn": [{
+			"ui": [{
 					"k": "簡"
 				}
 			],
@@ -8044,7 +8044,7 @@
 				}
 			],
 			"frequencyRating": "22",
-			"usedIn": [{
+			"ui": [{
 					"k": "劇"
 				}, {
 					"k": "切"
@@ -8245,7 +8245,7 @@
 				}
 			],
 			"frequencyRating": "903",
-			"usedIn": [{
+			"ui": [{
 					"k": "超"
 				}, {
 					"k": "昭"
@@ -8273,7 +8273,7 @@
 			"t": ["Same-ON", "PN", "SIDEKICK"],
 			"strokeCount": 9,
 			"frequencyRating": "904",
-			"usedIn": [{
+			"ui": [{
 					"k": "照"
 				}
 			]
@@ -8358,7 +8358,7 @@
 				}
 			],
 			"frequencyRating": "23",
-			"usedIn": [{
+			"ui": [{
 					"k": "紛"
 				}, {
 					"k": "粉"
@@ -8464,7 +8464,7 @@
 				}
 			],
 			"frequencyRating": "651",
-			"usedIn": [{
+			"ui": [{
 					"k": "忍"
 				}
 			],
@@ -8512,7 +8512,7 @@
 				}
 			],
 			"frequencyRating": "652",
-			"usedIn": [{
+			"ui": [{
 					"k": "認"
 				}
 			]
@@ -8582,7 +8582,7 @@
 				}
 			],
 			"frequencyRating": "121",
-			"usedIn": [{
+			"ui": [{
 					"k": "加"
 				}, {
 					"k": "協"
@@ -8805,7 +8805,7 @@
 				}
 			],
 			"frequencyRating": "184",
-			"usedIn": [{
+			"ui": [{
 					"k": "勇"
 				}
 			]
@@ -8833,7 +8833,7 @@
 				}
 			],
 			"frequencyRating": "307",
-			"usedIn": [{
+			"ui": [{
 					"k": "丸"
 				}, {
 					"k": "枠"
@@ -8964,7 +8964,7 @@
 				}
 			],
 			"frequencyRating": "515",
-			"usedIn": [{
+			"ui": [{
 					"k": "熟"
 				}, {
 					"k": "執"
@@ -9124,7 +9124,7 @@
 				}
 			],
 			"frequencyRating": "73",
-			"usedIn": [{
+			"ui": [{
 					"k": "京"
 				}, {
 					"k": "示"
@@ -9192,7 +9192,7 @@
 				}
 			],
 			"frequencyRating": "186",
-			"usedIn": [{
+			"ui": [{
 					"k": "劣"
 				}, {
 					"k": "妙"
@@ -9379,7 +9379,7 @@
 			"t": ["BETA", "PN"],
 			"strokeCount": 8,
 			"frequencyRating": "451",
-			"usedIn": [{
+			"ui": [{
 					"k": "涼"
 				}, {
 					"k": "景"
@@ -9450,7 +9450,7 @@
 			"t": ["BETA"],
 			"strokeCount": 12,
 			"frequencyRating": "580",
-			"usedIn": [{
+			"ui": [{
 					"k": "影"
 				}
 			]
@@ -9481,7 +9481,7 @@
 				}
 			],
 			"frequencyRating": "472",
-			"usedIn": [{
+			"ui": [{
 					"k": "宗"
 				}, {
 					"k": "禁"
@@ -9621,7 +9621,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "76",
-			"usedIn": [{
+			"ui": [{
 					"k": "幼"
 				}, {
 					"k": "玄"
@@ -9708,7 +9708,7 @@
 			"t": ["BETA", "JERK"],
 			"strokeCount": 5,
 			"frequencyRating": "1003",
-			"usedIn": [{
+			"ui": [{
 					"k": "畜"
 				}
 			]
@@ -9730,7 +9730,7 @@
 			"t": ["BETA"],
 			"strokeCount": 10,
 			"frequencyRating": "1645",
-			"usedIn": [{
+			"ui": [{
 					"k": "蓄"
 				}
 			]
@@ -9790,7 +9790,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "253",
-			"usedIn": [{
+			"ui": [{
 					"k": "約"
 				}, {
 					"k": "縦"
@@ -10212,7 +10212,7 @@
 			"t": ["BETA"],
 			"strokeCount": 7,
 			"frequencyRating": "537",
-			"usedIn": [{
+			"ui": [{
 					"k": "孫"
 				}, {
 					"k": "係"
@@ -10325,7 +10325,7 @@
 				}
 			],
 			"frequencyRating": "82",
-			"usedIn": [{
+			"ui": [{
 					"k": "刊"
 				}, {
 					"k": "用"
@@ -10414,7 +10414,7 @@
 				}
 			],
 			"frequencyRating": "127",
-			"usedIn": [{
+			"ui": [{
 					"k": "角"
 				}, {
 					"k": "備"
@@ -10580,7 +10580,7 @@
 			"t": ["PN", "COUNTER"],
 			"strokeCount": 3,
 			"frequencyRating": "97",
-			"usedIn": [{
+			"ui": [{
 					"k": "舌"
 				}, {
 					"k": "挿"
@@ -10627,7 +10627,7 @@
 				}
 			],
 			"frequencyRating": "98",
-			"usedIn": [{
+			"ui": [{
 					"k": "話"
 				}, {
 					"k": "活"
@@ -10794,7 +10794,7 @@
 				}
 			],
 			"frequencyRating": "251",
-			"usedIn": [{
+			"ui": [{
 					"k": "判"
 				}, {
 					"k": "伴"
@@ -10931,7 +10931,7 @@
 				}
 			],
 			"frequencyRating": "252",
-			"usedIn": [{
+			"ui": [{
 					"k": "評"
 				}, {
 					"k": "呼"
@@ -11041,7 +11041,7 @@
 				}
 			],
 			"frequencyRating": "30",
-			"usedIn": [{
+			"ui": [{
 					"k": "均"
 				}, {
 					"k": "壊"
@@ -11181,7 +11181,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "149",
-			"usedIn": [{
+			"ui": [{
 					"k": "量"
 				}, {
 					"k": "童"
@@ -11307,7 +11307,7 @@
 				}
 			],
 			"frequencyRating": "1415",
-			"usedIn": [{
+			"ui": [{
 					"k": "憧"
 				}
 			],
@@ -11577,7 +11577,7 @@
 			"t": ["BETA", "PK", "STRONG", "SUF"],
 			"strokeCount": 3,
 			"frequencyRating": "220",
-			"usedIn": [{
+			"ui": [{
 					"k": "鼓"
 				}, {
 					"k": "仕"
@@ -11674,7 +11674,7 @@
 				}
 			],
 			"frequencyRating": "709",
-			"usedIn": [{
+			"ui": [{
 					"k": "誌"
 				}
 			],
@@ -11726,7 +11726,7 @@
 				}
 			],
 			"frequencyRating": "254",
-			"usedIn": [{
+			"ui": [{
 					"k": "詰"
 				}, {
 					"k": "結"
@@ -11929,7 +11929,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "62",
-			"usedIn": [{
+			"ui": [{
 					"k": "老"
 				}, {
 					"k": "孝"
@@ -12011,7 +12011,7 @@
 			"t": ["BETA", "PN"],
 			"strokeCount": 7,
 			"frequencyRating": "1128",
-			"usedIn": [{
+			"ui": [{
 					"k": "教"
 				}
 			]
@@ -12044,7 +12044,7 @@
 				}
 			],
 			"frequencyRating": "63",
-			"usedIn": [{
+			"ui": [{
 					"k": "著"
 				}, {
 					"k": "緒"
@@ -12290,7 +12290,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "192",
-			"usedIn": [{
+			"ui": [{
 					"k": "離"
 				}, {
 					"k": "焦"
@@ -12440,7 +12440,7 @@
 				}
 			],
 			"frequencyRating": "194",
-			"usedIn": [{
+			"ui": [{
 					"k": "舞"
 				}
 			],
@@ -12674,7 +12674,7 @@
 				}
 			],
 			"frequencyRating": "384",
-			"usedIn": [{
+			"ui": [{
 					"k": "駅"
 				}, {
 					"k": "駄"
@@ -12720,7 +12720,7 @@
 				}
 			],
 			"frequencyRating": "232",
-			"usedIn": [{
+			"ui": [{
 					"k": "雌"
 				}, {
 					"k": "肯"
@@ -12817,7 +12817,7 @@
 				}
 			],
 			"frequencyRating": "292",
-			"usedIn": [{
+			"ui": [{
 					"k": "渉"
 				}
 			]
@@ -12905,7 +12905,7 @@
 				}
 			],
 			"frequencyRating": "233",
-			"usedIn": [{
+			"ui": [{
 					"k": "促"
 				}, {
 					"k": "踏"
@@ -13012,7 +13012,7 @@
 				}
 			],
 			"frequencyRating": "237",
-			"usedIn": [{
+			"ui": [{
 					"k": "是"
 				}, {
 					"k": "定"
@@ -13058,7 +13058,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 8,
 			"frequencyRating": "395",
-			"usedIn": [{
+			"ui": [{
 					"k": "提"
 				}, {
 					"k": "題"
@@ -13173,7 +13173,7 @@
 				}
 			],
 			"frequencyRating": "315",
-			"usedIn": [{
+			"ui": [{
 					"k": "超"
 				}, {
 					"k": "趣"
@@ -13231,7 +13231,7 @@
 			"t": ["PK", "PN", "STRONG", "OBSOLETE"],
 			"jukugo": [],
 			"frequencyRating": "731",
-			"usedIn": [{
+			"ui": [{
 					"k": "駅"
 				}, {
 					"k": "昼"
@@ -13368,7 +13368,7 @@
 				}
 			],
 			"frequencyRating": "28",
-			"usedIn": [{
+			"ui": [{
 					"k": "投"
 				}, {
 					"k": "拝"
@@ -14052,7 +14052,7 @@
 				}
 			],
 			"frequencyRating": "166",
-			"usedIn": [{
+			"ui": [{
 					"k": "取"
 				}, {
 					"k": "恥"
@@ -14095,7 +14095,7 @@
 				}
 			],
 			"frequencyRating": "196",
-			"usedIn": [{
+			"ui": [{
 					"k": "最"
 				}, {
 					"k": "趣"
@@ -14127,7 +14127,7 @@
 				}
 			],
 			"frequencyRating": "205",
-			"usedIn": [{
+			"ui": [{
 					"k": "撮"
 				}
 			]
@@ -14278,7 +14278,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "159",
-			"usedIn": [{
+			"ui": [{
 					"k": "竹"
 				}, {
 					"k": "祈"
@@ -14334,7 +14334,7 @@
 				}
 			],
 			"frequencyRating": "755",
-			"usedIn": [{
+			"ui": [{
 					"k": "哲"
 				}, {
 					"k": "誓"
@@ -14392,7 +14392,7 @@
 				}
 			],
 			"frequencyRating": "519",
-			"usedIn": [{
+			"ui": [{
 					"k": "兵"
 				}, {
 					"k": "岳"
@@ -14522,7 +14522,7 @@
 				}
 			],
 			"frequencyRating": "263",
-			"usedIn": [{
+			"ui": [{
 					"k": "答"
 				}, {
 					"k": "等"
@@ -14653,7 +14653,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "177",
-			"usedIn": [{
+			"ui": [{
 					"k": "作"
 				}, {
 					"k": "昨"
@@ -14724,7 +14724,7 @@
 			"t": ["PK", "SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "129",
-			"usedIn": [{
+			"ui": [{
 					"k": "逆"
 				}, {
 					"k": "逃"
@@ -15116,7 +15116,7 @@
 				}
 			],
 			"frequencyRating": "47",
-			"usedIn": [{
+			"ui": [{
 					"k": "楽"
 				}, {
 					"k": "横"
@@ -15316,7 +15316,7 @@
 				}
 			],
 			"frequencyRating": "852",
-			"usedIn": [{
+			"ui": [{
 					"k": "歴"
 				}, {
 					"k": "礎"
@@ -15375,7 +15375,7 @@
 				}
 			],
 			"frequencyRating": "48",
-			"usedIn": [{
+			"ui": [{
 					"k": "体"
 				}
 			]
@@ -15880,7 +15880,7 @@
 				}
 			],
 			"frequencyRating": "202",
-			"usedIn": [{
+			"ui": [{
 					"k": "箱"
 				}, {
 					"k": "想"
@@ -16076,7 +16076,7 @@
 				}
 			],
 			"frequencyRating": "440",
-			"usedIn": [{
+			"ui": [{
 					"k": "課"
 				}, {
 					"k": "菓"
@@ -16149,7 +16149,7 @@
 				}
 			],
 			"frequencyRating": "299",
-			"usedIn": [{
+			"ui": [{
 					"k": "練"
 				}, {
 					"k": "凍"
@@ -16314,7 +16314,7 @@
 				}
 			],
 			"frequencyRating": "569",
-			"usedIn": [{
+			"ui": [{
 					"k": "褒"
 				}
 			]
@@ -16520,7 +16520,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "89",
-			"usedIn": [{
+			"ui": [{
 					"k": "稚"
 				}, {
 					"k": "和"
@@ -16862,7 +16862,7 @@
 				}
 			],
 			"frequencyRating": "409",
-			"usedIn": [{
+			"ui": [{
 					"k": "痢"
 				}
 			],
@@ -17028,7 +17028,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "753",
-			"usedIn": [{
+			"ui": [{
 					"k": "愁"
 				}
 			]
@@ -17133,7 +17133,7 @@
 				}
 			],
 			"frequencyRating": "206",
-			"usedIn": [{
+			"ui": [{
 					"k": "妹"
 				}, {
 					"k": "味"
@@ -17284,7 +17284,7 @@
 				}
 			],
 			"frequencyRating": "69",
-			"usedIn": [{
+			"ui": [{
 					"k": "断"
 				}, {
 					"k": "継"
@@ -17350,7 +17350,7 @@
 				}
 			],
 			"frequencyRating": "979",
-			"usedIn": [{
+			"ui": [{
 					"k": "謎"
 				}
 			],
@@ -17716,7 +17716,7 @@
 				}
 			],
 			"frequencyRating": "70",
-			"usedIn": [{
+			"ui": [{
 					"k": "番"
 				}
 			]
@@ -17738,7 +17738,7 @@
 			"t": ["BETA"],
 			"strokeCount": 12,
 			"frequencyRating": "420",
-			"usedIn": [{
+			"ui": [{
 					"k": "審"
 				}
 			]
@@ -17806,7 +17806,7 @@
 				}
 			],
 			"frequencyRating": "12",
-			"usedIn": [{
+			"ui": [{
 					"k": "因"
 				}, {
 					"k": "夫"
@@ -17951,7 +17951,7 @@
 			"t": ["BETA"],
 			"strokeCount": 8,
 			"frequencyRating": "508",
-			"usedIn": [{
+			"ui": [{
 					"k": "寄"
 				}
 			],
@@ -18205,7 +18205,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 5,
 			"frequencyRating": "557",
-			"usedIn": [{
+			"ui": [{
 					"k": "映"
 				}, {
 					"k": "英"
@@ -18296,7 +18296,7 @@
 				}
 			],
 			"frequencyRating": "230",
-			"usedIn": [{
+			"ui": [{
 					"k": "黙"
 				}, {
 					"k": "伏"
@@ -18427,7 +18427,7 @@
 			"t": ["BETA"],
 			"strokeCount": 12,
 			"frequencyRating": "231",
-			"usedIn": [{
+			"ui": [{
 					"k": "燃"
 				}
 			],
@@ -18526,7 +18526,7 @@
 				}
 			],
 			"frequencyRating": "335",
-			"usedIn": [{
+			"ui": [{
 					"k": "駄"
 				}
 			],
@@ -18592,7 +18592,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "558",
-			"usedIn": [{
+			"ui": [{
 					"k": "漢"
 				}, {
 					"k": "難"
@@ -18759,7 +18759,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "729",
-			"usedIn": [{
+			"ui": [{
 					"k": "模"
 				}, {
 					"k": "墓"
@@ -19057,7 +19057,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "181",
-			"usedIn": [{
+			"ui": [{
 					"k": "因"
 				}, {
 					"k": "菌"
@@ -19104,7 +19104,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 6,
 			"frequencyRating": "974",
-			"usedIn": [{
+			"ui": [{
 					"k": "恩"
 				}
 			]
@@ -19320,7 +19320,7 @@
 				}
 			],
 			"frequencyRating": "829",
-			"usedIn": [{
+			"ui": [{
 					"k": "個"
 				}
 			]
@@ -19353,7 +19353,7 @@
 			"t": ["BETA", "PK", "PN"],
 			"strokeCount": 4,
 			"frequencyRating": "525",
-			"usedIn": [{
+			"ui": [{
 					"k": "囲"
 				}, {
 					"k": "丼"
@@ -19423,7 +19423,7 @@
 			"t": ["BETA", "ILL PAIR", "PK", "PN"],
 			"strokeCount": 4,
 			"frequencyRating": "31",
-			"usedIn": [{
+			"ui": [{
 					"k": "理"
 				}, {
 					"k": "任"
@@ -19505,7 +19505,7 @@
 				}
 			],
 			"frequencyRating": "197",
-			"usedIn": [{
+			"ui": [{
 					"k": "宝"
 				}, {
 					"k": "国"
@@ -19622,7 +19622,7 @@
 				}
 			],
 			"frequencyRating": "654",
-			"usedIn": [{
+			"ui": [{
 					"k": "賃"
 				}
 			],
@@ -19859,7 +19859,7 @@
 				}
 			],
 			"frequencyRating": "33",
-			"usedIn": [{
+			"ui": [{
 					"k": "柱"
 				}, {
 					"k": "毒"
@@ -19930,7 +19930,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 9,
 			"frequencyRating": "1555",
-			"usedIn": [{
+			"ui": [{
 					"k": "喫"
 				}
 			]
@@ -19952,7 +19952,7 @@
 			"t": ["BETA"],
 			"strokeCount": 12,
 			"frequencyRating": "1556",
-			"usedIn": [{
+			"ui": [{
 					"k": "潔"
 				}
 			],
@@ -20186,7 +20186,7 @@
 			"t": ["BETA"],
 			"strokeCount": 10,
 			"frequencyRating": "762",
-			"usedIn": [{
+			"ui": [{
 					"k": "割"
 				}
 			],
@@ -20336,7 +20336,7 @@
 				}
 			],
 			"frequencyRating": "212",
-			"usedIn": [{
+			"ui": [{
 					"k": "請"
 				}, {
 					"k": "清"
@@ -20518,7 +20518,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "34",
-			"usedIn": [{
+			"ui": [{
 					"k": "塩"
 				}, {
 					"k": "監"
@@ -20626,7 +20626,7 @@
 				}
 			],
 			"frequencyRating": "35",
-			"usedIn": [{
+			"ui": [{
 					"k": "星"
 				}, {
 					"k": "産"
@@ -20761,7 +20761,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 6,
 			"frequencyRating": "1435",
-			"usedIn": [{
+			"ui": [{
 					"k": "株"
 				}
 			],
@@ -20911,7 +20911,7 @@
 				}
 			],
 			"frequencyRating": "1339",
-			"usedIn": [{
+			"ui": [{
 					"k": "乾"
 				}
 			]
@@ -20973,7 +20973,7 @@
 				}
 			],
 			"frequencyRating": "365",
-			"usedIn": [{
+			"ui": [{
 					"k": "毒"
 				}, {
 					"k": "毎"
@@ -21034,7 +21034,7 @@
 			"t": ["BETA", "PRE"],
 			"strokeCount": 6,
 			"frequencyRating": "366",
-			"usedIn": [{
+			"ui": [{
 					"k": "梅"
 				}, {
 					"k": "海"
@@ -21217,7 +21217,7 @@
 				}
 			],
 			"frequencyRating": "15",
-			"usedIn": [{
+			"ui": [{
 					"k": "仲"
 				}, {
 					"k": "忠"
@@ -21246,7 +21246,7 @@
 			"t": ["Same-ON", "BETA"],
 			"strokeCount": 8,
 			"frequencyRating": "1074",
-			"usedIn": [{
+			"ui": [{
 					"k": "患"
 				}
 			]
@@ -21327,7 +21327,7 @@
 				}
 			],
 			"frequencyRating": "259",
-			"usedIn": [{
+			"ui": [{
 					"k": "蚊"
 				}, {
 					"k": "遣"
@@ -21473,7 +21473,7 @@
 			"t": ["PK", "MR"],
 			"jukugo": [],
 			"frequencyRating": "157",
-			"usedIn": [{
+			"ui": [{
 					"k": "属"
 				}, {
 					"k": "居"
@@ -21630,7 +21630,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "1285",
-			"usedIn": [{
+			"ui": [{
 					"k": "泥"
 				}
 			],
@@ -21841,7 +21841,7 @@
 				}
 			],
 			"frequencyRating": "160",
-			"usedIn": [{
+			"ui": [{
 					"k": "所"
 				}, {
 					"k": "肩"
@@ -21937,7 +21937,7 @@
 				}
 			],
 			"frequencyRating": "1505",
-			"usedIn": [{
+			"ui": [{
 					"k": "顧"
 				}
 			]
@@ -22019,7 +22019,7 @@
 				}
 			],
 			"frequencyRating": "677",
-			"usedIn": [{
+			"ui": [{
 					"k": "涙"
 				}
 			],
@@ -22085,7 +22085,7 @@
 				}
 			],
 			"frequencyRating": "816",
-			"usedIn": [{
+			"ui": [{
 					"k": "尾"
 				}
 			],
@@ -22148,7 +22148,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "102",
-			"usedIn": [{
+			"ui": [{
 					"k": "革"
 				}, {
 					"k": "甘"
@@ -22194,7 +22194,7 @@
 				}
 			],
 			"frequencyRating": "1185",
-			"usedIn": [{
+			"ui": [{
 					"k": "靴"
 				}
 			]
@@ -22270,7 +22270,7 @@
 				}
 			],
 			"frequencyRating": "1125",
-			"usedIn": [{
+			"ui": [{
 					"k": "某"
 				}
 			]
@@ -22300,7 +22300,7 @@
 				}
 			],
 			"frequencyRating": "1411",
-			"usedIn": [{
+			"ui": [{
 					"k": "謀"
 				}
 			]
@@ -22348,7 +22348,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "10",
-			"usedIn": [{
+			"ui": [{
 					"k": "見"
 				}, {
 					"k": "兄"
@@ -22422,7 +22422,7 @@
 				}
 			],
 			"frequencyRating": "11",
-			"usedIn": [{
+			"ui": [{
 					"k": "境"
 				}, {
 					"k": "現"
@@ -22715,7 +22715,7 @@
 				}
 			],
 			"frequencyRating": "339",
-			"usedIn": [{
+			"ui": [{
 					"k": "況"
 				}, {
 					"k": "競"
@@ -22854,7 +22854,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "172",
-			"usedIn": [{
+			"ui": [{
 					"k": "貝"
 				}, {
 					"k": "兵"
@@ -22906,7 +22906,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "187",
-			"usedIn": [{
+			"ui": [{
 					"k": "財"
 				}, {
 					"k": "質"
@@ -23347,7 +23347,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 9,
 			"frequencyRating": "1570",
-			"usedIn": [{
+			"ui": [{
 					"k": "偵"
 				}
 			],
@@ -23430,7 +23430,7 @@
 			"t": ["BETA", "SUF"],
 			"strokeCount": 10,
 			"frequencyRating": "562",
-			"usedIn": [{
+			"ui": [{
 					"k": "損"
 				}
 			]
@@ -23487,7 +23487,7 @@
 			"t": ["BETA", "STRONG"],
 			"strokeCount": 9,
 			"frequencyRating": "535",
-			"usedIn": [{
+			"ui": [{
 					"k": "側"
 				}, {
 					"k": "測"
@@ -23627,7 +23627,7 @@
 				}
 			],
 			"frequencyRating": "1130",
-			"usedIn": [{
+			"ui": [{
 					"k": "慣"
 				}
 			]
@@ -23717,7 +23717,7 @@
 				}
 			],
 			"frequencyRating": "861",
-			"usedIn": [{
+			"ui": [{
 					"k": "績"
 				}, {
 					"k": "積"
@@ -23863,7 +23863,7 @@
 				}
 			],
 			"frequencyRating": "743",
-			"usedIn": [{
+			"ui": [{
 					"k": "遺"
 				}
 			]
@@ -23940,7 +23940,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 7,
 			"frequencyRating": "520",
-			"usedIn": [{
+			"ui": [{
 					"k": "浜"
 				}
 			]
@@ -23989,7 +23989,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "276",
-			"usedIn": [{
+			"ui": [{
 					"k": "負"
 				}, {
 					"k": "角"
@@ -24095,7 +24095,7 @@
 				}
 			],
 			"frequencyRating": "1033",
-			"usedIn": [{
+			"ui": [{
 					"k": "鮮"
 				}, {
 					"k": "亀"
@@ -24134,7 +24134,7 @@
 				}
 			],
 			"frequencyRating": "311",
-			"usedIn": [{
+			"ui": [{
 					"k": "触"
 				}, {
 					"k": "解"
@@ -24223,7 +24223,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "154",
-			"usedIn": [{
+			"ui": [{
 					"k": "具"
 				}, {
 					"k": "元"
@@ -24262,7 +24262,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "397",
-			"usedIn": [{
+			"ui": [{
 					"k": "売"
 				}, {
 					"k": "探"
@@ -24306,7 +24306,7 @@
 				}
 			],
 			"frequencyRating": "441",
-			"usedIn": [{
+			"ui": [{
 					"k": "読"
 				}, {
 					"k": "続"
@@ -24661,7 +24661,7 @@
 				}
 			],
 			"frequencyRating": "376",
-			"usedIn": [{
+			"ui": [{
 					"k": "完"
 				}, {
 					"k": "頑"
@@ -24686,7 +24686,7 @@
 			"t": ["BETA"],
 			"strokeCount": 7,
 			"frequencyRating": "705",
-			"usedIn": [{
+			"ui": [{
 					"k": "院"
 				}
 			],
@@ -24733,7 +24733,7 @@
 				}
 			],
 			"frequencyRating": "301",
-			"usedIn": [{
+			"ui": [{
 					"k": "尊"
 				}, {
 					"k": "酔"
@@ -24779,7 +24779,7 @@
 				}
 			],
 			"frequencyRating": "1218",
-			"usedIn": [{
+			"ui": [{
 					"k": "漂"
 				}, {
 					"k": "標"
@@ -24880,7 +24880,7 @@
 				}
 			],
 			"frequencyRating": "434",
-			"usedIn": [{
+			"ui": [{
 					"k": "酸"
 				}, {
 					"k": "配"
@@ -25020,7 +25020,7 @@
 				}
 			],
 			"frequencyRating": "303",
-			"usedIn": [{
+			"ui": [{
 					"k": "腰"
 				}
 			]
@@ -25108,7 +25108,7 @@
 				}
 			],
 			"frequencyRating": "908",
-			"usedIn": [{
+			"ui": [{
 					"k": "財"
 				}, {
 					"k": "材"
@@ -25288,7 +25288,7 @@
 				}
 			],
 			"frequencyRating": "305",
-			"usedIn": [{
+			"ui": [{
 					"k": "賛"
 				}, {
 					"k": "替"
@@ -25396,7 +25396,7 @@
 				}
 			],
 			"frequencyRating": "1232",
-			"usedIn": [{
+			"ui": [{
 					"k": "潜"
 				}
 			],
@@ -25580,7 +25580,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "142",
-			"usedIn": [{
+			"ui": [{
 					"k": "巣"
 				}, {
 					"k": "桜"
@@ -25689,7 +25689,7 @@
 				}
 			],
 			"frequencyRating": "328",
-			"usedIn": [{
+			"ui": [{
 					"k": "輝"
 				}
 			]
@@ -25723,7 +25723,7 @@
 				}
 			],
 			"frequencyRating": "353",
-			"usedIn": [{
+			"ui": [{
 					"k": "弾"
 				}, {
 					"k": "戦"
@@ -25795,7 +25795,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "470",
-			"usedIn": [{
+			"ui": [{
 					"k": "削"
 				}, {
 					"k": "消"
@@ -25947,7 +25947,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "330",
-			"usedIn": [{
+			"ui": [{
 					"k": "浮"
 				}, {
 					"k": "受"
@@ -26071,7 +26071,7 @@
 				}
 			],
 			"frequencyRating": "331",
-			"usedIn": [{
+			"ui": [{
 					"k": "授"
 				}
 			],
@@ -26326,7 +26326,7 @@
 			"t": ["BETA", "PRE", "STRONG", "MR"],
 			"strokeCount": 6,
 			"frequencyRating": "77",
-			"usedIn": [{
+			"ui": [{
 					"k": "愛"
 				}, {
 					"k": "客"
@@ -26452,7 +26452,7 @@
 				}
 			],
 			"frequencyRating": "565",
-			"usedIn": [{
+			"ui": [{
 					"k": "額"
 				}
 			]
@@ -26674,7 +26674,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 13,
 			"frequencyRating": "544",
-			"usedIn": [{
+			"ui": [{
 					"k": "露"
 				}
 			],
@@ -26883,7 +26883,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "888",
-			"usedIn": [{
+			"ui": [{
 					"k": "秀"
 				}, {
 					"k": "携"
@@ -26920,7 +26920,7 @@
 				}
 			],
 			"frequencyRating": "1037",
-			"usedIn": [{
+			"ui": [{
 					"k": "誘"
 				}, {
 					"k": "透"
@@ -27062,7 +27062,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "889",
-			"usedIn": [{
+			"ui": [{
 					"k": "吸"
 				}, {
 					"k": "扱"
@@ -27218,7 +27218,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "143",
-			"usedIn": [{
+			"ui": [{
 					"k": "浸"
 				}, {
 					"k": "緑"
@@ -27584,7 +27584,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "337",
-			"usedIn": [{
+			"ui": [{
 					"k": "婦"
 				}, {
 					"k": "掃"
@@ -27771,7 +27771,7 @@
 			"t": ["BETA", "STRONG"],
 			"strokeCount": 9,
 			"frequencyRating": "1171",
-			"usedIn": [{
+			"ui": [{
 					"k": "締"
 				}
 			],
@@ -27850,7 +27850,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "1257",
-			"usedIn": [{
+			"ui": [{
 					"k": "濯"
 				}, {
 					"k": "曜"
@@ -27967,7 +27967,7 @@
 			"t": ["BETA", "PK", "PN", "STRONG"],
 			"strokeCount": 3,
 			"frequencyRating": "132",
-			"usedIn": [{
+			"ui": [{
 					"k": "空"
 				}, {
 					"k": "項"
@@ -28032,7 +28032,7 @@
 				}
 			],
 			"frequencyRating": "282",
-			"usedIn": [{
+			"ui": [{
 					"k": "控"
 				}
 			]
@@ -28151,7 +28151,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "173",
-			"usedIn": [{
+			"ui": [{
 					"k": "与"
 				}, {
 					"k": "汚"
@@ -28249,7 +28249,7 @@
 				}
 			],
 			"frequencyRating": "656",
-			"usedIn": [{
+			"ui": [{
 					"k": "写"
 				}
 			]
@@ -28473,7 +28473,7 @@
 				}
 			],
 			"frequencyRating": "175",
-			"usedIn": [{
+			"ui": [{
 					"k": "拷"
 				}
 			],
@@ -28533,7 +28533,7 @@
 			"t": ["BETA", "MR"],
 			"strokeCount": 6,
 			"frequencyRating": "133",
-			"usedIn": [{
+			"ui": [{
 					"k": "拭"
 				}, {
 					"k": "試"
@@ -28672,7 +28672,7 @@
 				}
 			],
 			"frequencyRating": "138",
-			"usedIn": [{
+			"ui": [{
 					"k": "貸"
 				}, {
 					"k": "袋"
@@ -28761,7 +28761,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "134",
-			"usedIn": [{
+			"ui": [{
 					"k": "我"
 				}, {
 					"k": "賊"
@@ -28874,7 +28874,7 @@
 				}
 			],
 			"frequencyRating": "416",
-			"usedIn": [{
+			"ui": [{
 					"k": "義"
 				}
 			]
@@ -29041,7 +29041,7 @@
 				}
 			],
 			"frequencyRating": "297",
-			"usedIn": [{
+			"ui": [{
 					"k": "機"
 				}
 			]
@@ -29087,7 +29087,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "572",
-			"usedIn": [{
+			"ui": [{
 					"k": "職"
 				}, {
 					"k": "織"
@@ -29241,7 +29241,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "765",
-			"usedIn": [{
+			"ui": [{
 					"k": "区"
 				}, {
 					"k": "巨"
@@ -29272,7 +29272,7 @@
 			"t": ["SUF"],
 			"strokeCount": 4,
 			"frequencyRating": "1035",
-			"usedIn": [{
+			"ui": [{
 					"k": "駆"
 				}, {
 					"k": "欧"
@@ -29328,7 +29328,7 @@
 			"t": ["BETA", "STRONG"],
 			"strokeCount": 5,
 			"frequencyRating": "766",
-			"usedIn": [{
+			"ui": [{
 					"k": "拒"
 				}, {
 					"k": "距"
@@ -29416,7 +29416,7 @@
 			"t": ["BETA"],
 			"strokeCount": 7,
 			"frequencyRating": "767",
-			"usedIn": [{
+			"ui": [{
 					"k": "緊"
 				}, {
 					"k": "賢"
@@ -29762,7 +29762,7 @@
 			"t": ["COUNTER"],
 			"strokeCount": 4,
 			"frequencyRating": "1288",
-			"usedIn": [{
+			"ui": [{
 					"k": "甚"
 				}, {
 					"k": "融"
@@ -29816,7 +29816,7 @@
 				}
 			],
 			"frequencyRating": "176",
-			"usedIn": [{
+			"ui": [{
 					"k": "喚"
 				}, {
 					"k": "換"
@@ -29954,7 +29954,7 @@
 				}
 			],
 			"frequencyRating": "248",
-			"usedIn": [{
+			"ui": [{
 					"k": "欲"
 				}, {
 					"k": "欺"
@@ -30138,7 +30138,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "286",
-			"usedIn": [{
+			"ui": [{
 					"k": "徹"
 				}, {
 					"k": "致"
@@ -30306,7 +30306,7 @@
 			"t": ["BETA", "JERK", "PN"],
 			"strokeCount": 10,
 			"frequencyRating": "1370",
-			"usedIn": [{
+			"ui": [{
 					"k": "繁"
 				}
 			]
@@ -30663,7 +30663,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "805",
-			"usedIn": [{
+			"ui": [{
 					"k": "適"
 				}, {
 					"k": "滴"
@@ -30808,7 +30808,7 @@
 				}
 			],
 			"frequencyRating": "316",
-			"usedIn": [{
+			"ui": [{
 					"k": "巷"
 				}, {
 					"k": "改"
@@ -31026,7 +31026,7 @@
 				}
 			],
 			"frequencyRating": "689",
-			"usedIn": [{
+			"ui": [{
 					"k": "救"
 				}, {
 					"k": "球"
@@ -31135,7 +31135,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "100",
-			"usedIn": [{
+			"ui": [{
 					"k": "厄"
 				}, {
 					"k": "涯"
@@ -31357,7 +31357,7 @@
 			"t": ["BETA"],
 			"strokeCount": 5,
 			"frequencyRating": "1061",
-			"usedIn": [{
+			"ui": [{
 					"k": "粧"
 				}
 			]
@@ -31503,7 +31503,7 @@
 				}
 			],
 			"frequencyRating": "283",
-			"usedIn": [{
+			"ui": [{
 					"k": "源"
 				}, {
 					"k": "願"
@@ -31555,7 +31555,7 @@
 			"t": ["BETA", "STRONG"],
 			"strokeCount": 4,
 			"frequencyRating": "333",
-			"usedIn": [{
+			"ui": [{
 					"k": "返"
 				}, {
 					"k": "坂"
@@ -31799,7 +31799,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "37",
-			"usedIn": [{
+			"ui": [{
 					"k": "司"
 				}, {
 					"k": "幻"
@@ -31849,7 +31849,7 @@
 				}
 			],
 			"frequencyRating": "135",
-			"usedIn": [{
+			"ui": [{
 					"k": "盛"
 				}, {
 					"k": "誠"
@@ -31964,7 +31964,7 @@
 				}
 			],
 			"frequencyRating": "768",
-			"usedIn": [{
+			"ui": [{
 					"k": "臓"
 				}
 			]
@@ -32382,7 +32382,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "106",
-			"usedIn": [{
+			"ui": [{
 					"k": "減"
 				}, {
 					"k": "感"
@@ -32550,7 +32550,7 @@
 				}
 			],
 			"frequencyRating": "136",
-			"usedIn": [{
+			"ui": [{
 					"k": "憾"
 				}
 			],
@@ -32657,7 +32657,7 @@
 				}
 			],
 			"frequencyRating": "107",
-			"usedIn": [{
+			"ui": [{
 					"k": "銅"
 				}, {
 					"k": "興"
@@ -32748,7 +32748,7 @@
 			"t": ["BETA", "STRONG"],
 			"strokeCount": 5,
 			"frequencyRating": "1045",
-			"usedIn": [{
+			"ui": [{
 					"k": "詞"
 				}, {
 					"k": "伺"
@@ -32862,7 +32862,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "444",
-			"usedIn": [{
+			"ui": [{
 					"k": "旅"
 				}, {
 					"k": "派"
@@ -33004,7 +33004,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "445",
-			"usedIn": [{
+			"ui": [{
 					"k": "遠"
 				}, {
 					"k": "園"
@@ -33109,7 +33109,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "93",
-			"usedIn": [{
+			"ui": [{
 					"k": "衣"
 				}, {
 					"k": "裏"
@@ -33235,7 +33235,7 @@
 				}
 			],
 			"frequencyRating": "799",
-			"usedIn": [{
+			"ui": [{
 					"k": "袋"
 				}, {
 					"k": "裁"
@@ -33464,7 +33464,7 @@
 				}
 			],
 			"frequencyRating": "1217",
-			"usedIn": [{
+			"ui": [{
 					"k": "衰"
 				}
 			],
@@ -33579,7 +33579,7 @@
 				}
 			],
 			"frequencyRating": "270",
-			"usedIn": [{
+			"ui": [{
 					"k": "娘"
 				}, {
 					"k": "退"
@@ -33823,7 +33823,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "124",
-			"usedIn": [{
+			"ui": [{
 					"k": "陣"
 				}, {
 					"k": "降"
@@ -33936,7 +33936,7 @@
 			"t": ["BETA", "PN", "F"],
 			"strokeCount": 11,
 			"frequencyRating": "794",
-			"usedIn": [{
+			"ui": [{
 					"k": "響"
 				}
 			]
@@ -34240,7 +34240,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "125",
-			"usedIn": [{
+			"ui": [{
 					"k": "倍"
 				}, {
 					"k": "部"
@@ -34367,7 +34367,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "483",
-			"usedIn": [{
+			"ui": [{
 					"k": "壮"
 				}, {
 					"k": "寝"
@@ -34396,7 +34396,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 6,
 			"frequencyRating": "800",
-			"usedIn": [{
+			"ui": [{
 					"k": "装"
 				}
 			],
@@ -34568,7 +34568,7 @@
 				}
 			],
 			"frequencyRating": "484",
-			"usedIn": [{
+			"ui": [{
 					"k": "背"
 				}
 			],
@@ -34631,7 +34631,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "155",
-			"usedIn": [{
+			"ui": [{
 					"k": "制"
 				}, {
 					"k": "告"
@@ -34670,7 +34670,7 @@
 				}
 			],
 			"frequencyRating": "669",
-			"usedIn": [{
+			"ui": [{
 					"k": "製"
 				}
 			],
@@ -34751,7 +34751,7 @@
 				}
 			],
 			"frequencyRating": "584",
-			"usedIn": [{
+			"ui": [{
 					"k": "酷"
 				}, {
 					"k": "造"
@@ -34901,7 +34901,7 @@
 				}
 			],
 			"frequencyRating": "156",
-			"usedIn": [{
+			"ui": [{
 					"k": "洗"
 				}
 			],
@@ -34964,7 +34964,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "182",
-			"usedIn": [{
+			"ui": [{
 					"k": "百"
 				}, {
 					"k": "石"
@@ -35030,7 +35030,7 @@
 			"t": ["COUNTER"],
 			"strokeCount": 6,
 			"frequencyRating": "394",
-			"usedIn": [{
+			"ui": [{
 					"k": "憂"
 				}, {
 					"k": "宿"
@@ -35071,7 +35071,7 @@
 				}
 			],
 			"frequencyRating": "692",
-			"usedIn": [{
+			"ui": [{
 					"k": "優"
 				}
 			],
@@ -35166,7 +35166,7 @@
 			"t": ["BETA"],
 			"strokeCount": 11,
 			"frequencyRating": "751",
-			"usedIn": [{
+			"ui": [{
 					"k": "縮"
 				}
 			]
@@ -35233,7 +35233,7 @@
 				}
 			],
 			"frequencyRating": "363",
-			"usedIn": [{
+			"ui": [{
 					"k": "破"
 				}, {
 					"k": "砕"
@@ -35438,7 +35438,7 @@
 				}
 			],
 			"frequencyRating": "153",
-			"usedIn": [{
+			"ui": [{
 					"k": "帯"
 				}, {
 					"k": "催"
@@ -35523,7 +35523,7 @@
 				}
 			],
 			"frequencyRating": "791",
-			"usedIn": [{
+			"ui": [{
 					"k": "滞"
 				}
 			],
@@ -35802,7 +35802,7 @@
 				}
 			],
 			"frequencyRating": "501",
-			"usedIn": [{
+			"ui": [{
 					"k": "鳴"
 				}, {
 					"k": "島"
@@ -35960,7 +35960,7 @@
 				}
 			],
 			"frequencyRating": "188",
-			"usedIn": [{
+			"ui": [{
 					"k": "鼓"
 				}, {
 					"k": "頭"
@@ -36014,7 +36014,7 @@
 				}
 			],
 			"frequencyRating": "701",
-			"usedIn": [{
+			"ui": [{
 					"k": "嬉"
 				}, {
 					"k": "膨"
@@ -36125,7 +36125,7 @@
 				}
 			],
 			"frequencyRating": "189",
-			"usedIn": [{
+			"ui": [{
 					"k": "夏"
 				}, {
 					"k": "願"
@@ -36705,7 +36705,7 @@
 				}
 			],
 			"frequencyRating": "295",
-			"usedIn": [{
+			"ui": [{
 					"k": "順"
 				}, {
 					"k": "訓"
@@ -36845,7 +36845,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "952",
-			"usedIn": [{
+			"ui": [{
 					"k": "慌"
 				}
 			],
@@ -36912,7 +36912,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "190",
-			"usedIn": [{
+			"ui": [{
 					"k": "首"
 				}, {
 					"k": "説"
@@ -36975,7 +36975,7 @@
 				}
 			],
 			"frequencyRating": "193",
-			"usedIn": [{
+			"ui": [{
 					"k": "道"
 				}
 			]
@@ -37006,7 +37006,7 @@
 				}
 			],
 			"frequencyRating": "195",
-			"usedIn": [{
+			"ui": [{
 					"k": "導"
 				}
 			],
@@ -37216,7 +37216,7 @@
 				}
 			],
 			"frequencyRating": "235",
-			"usedIn": [{
+			"ui": [{
 					"k": "差"
 				}, {
 					"k": "鮮"
@@ -37254,7 +37254,7 @@
 			"strokeCount": 4,
 			"jukugo": [],
 			"frequencyRating": "348",
-			"usedIn": [{
+			"ui": [{
 					"k": "南"
 				}, {
 					"k": "業"
@@ -37316,7 +37316,7 @@
 				}
 			],
 			"frequencyRating": "236",
-			"usedIn": [{
+			"ui": [{
 					"k": "兼"
 				}
 			]
@@ -37570,7 +37570,7 @@
 			"t": ["BETA", "ILL PAIR", "STRONG"],
 			"strokeCount": 13,
 			"frequencyRating": "417",
-			"usedIn": [{
+			"ui": [{
 					"k": "儀"
 				}, {
 					"k": "議"
@@ -37727,7 +37727,7 @@
 			"t": ["BETA"],
 			"strokeCount": 4,
 			"frequencyRating": "264",
-			"usedIn": [{
+			"ui": [{
 					"k": "笑"
 				}, {
 					"k": "呑"
@@ -37851,7 +37851,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "777",
-			"usedIn": [{
+			"ui": [{
 					"k": "橋"
 				}
 			]
@@ -37875,7 +37875,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "268",
-			"usedIn": [{
+			"ui": [{
 					"k": "送"
 				}, {
 					"k": "咲"
@@ -38019,7 +38019,7 @@
 				}
 			],
 			"frequencyRating": "644",
-			"usedIn": [{
+			"ui": [{
 					"k": "圏"
 				}
 			],
@@ -38158,7 +38158,7 @@
 				}
 			],
 			"frequencyRating": "244",
-			"usedIn": [{
+			"ui": [{
 					"k": "弾"
 				}, {
 					"k": "窮"
@@ -38207,7 +38207,7 @@
 				}
 			],
 			"frequencyRating": "302",
-			"usedIn": [{
+			"ui": [{
 					"k": "第"
 				}, {
 					"k": "沸"
@@ -38436,7 +38436,7 @@
 				}
 			],
 			"frequencyRating": "238",
-			"usedIn": [{
+			"ui": [{
 					"k": "跡"
 				}, {
 					"k": "恋"
@@ -38630,7 +38630,7 @@
 				}
 			],
 			"frequencyRating": "94",
-			"usedIn": [{
+			"ui": [{
 					"k": "張"
 				}, {
 					"k": "帳"
@@ -38700,7 +38700,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "80",
-			"usedIn": [{
+			"ui": [{
 					"k": "谷"
 				}, {
 					"k": "会"
@@ -38773,7 +38773,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "771",
-			"usedIn": [{
+			"ui": [{
 					"k": "検"
 				}, {
 					"k": "倹"
@@ -38972,7 +38972,7 @@
 				}
 			],
 			"frequencyRating": "211",
-			"usedIn": [{
+			"ui": [{
 					"k": "鉄"
 				}, {
 					"k": "鈍"
@@ -39403,7 +39403,7 @@
 				}
 			],
 			"frequencyRating": "271",
-			"usedIn": [{
+			"ui": [{
 					"k": "飲"
 				}, {
 					"k": "飾"
@@ -39632,7 +39632,7 @@
 				}
 			],
 			"frequencyRating": "948",
-			"usedIn": [{
+			"ui": [{
 					"k": "捨"
 				}, {
 					"k": "舗"
@@ -39711,7 +39711,7 @@
 				}
 			],
 			"frequencyRating": "634",
-			"usedIn": [{
+			"ui": [{
 					"k": "塗"
 				}, {
 					"k": "途"
@@ -39928,7 +39928,7 @@
 			"t": ["DUPE", "PN", "SIDEKICK"],
 			"strokeCount": 10,
 			"frequencyRating": "1053",
-			"usedIn": [{
+			"ui": [{
 					"k": "創"
 				}
 			],
@@ -39991,7 +39991,7 @@
 			"t": ["BETA", "PK", "DUH"],
 			"strokeCount": 4,
 			"frequencyRating": "357",
-			"usedIn": [{
+			"ui": [{
 					"k": "界"
 				}
 			]
@@ -40050,7 +40050,7 @@
 				}
 			],
 			"frequencyRating": "81",
-			"usedIn": [{
+			"ui": [{
 					"k": "給"
 				}, {
 					"k": "答"
@@ -40153,7 +40153,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "1354",
-			"usedIn": [{
+			"ui": [{
 					"k": "搭"
 				}
 			],
@@ -40252,7 +40252,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "86",
-			"usedIn": [{
+			"ui": [{
 					"k": "今"
 				}
 			]
@@ -40282,7 +40282,7 @@
 				}
 			],
 			"frequencyRating": "87",
-			"usedIn": [{
+			"ui": [{
 					"k": "含"
 				}, {
 					"k": "念"
@@ -40404,7 +40404,7 @@
 			"t": ["BETA", "SIDEKICK", "STRONG", "MR"],
 			"strokeCount": 5,
 			"frequencyRating": "326",
-			"usedIn": [{
+			"ui": [{
 					"k": "鈴"
 				}, {
 					"k": "命"
@@ -40550,7 +40550,7 @@
 			"t": ["PK", "SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "249",
-			"usedIn": [{
+			"ui": [{
 					"k": "冷"
 				}, {
 					"k": "凍"
@@ -40751,7 +40751,7 @@
 				}
 			],
 			"frequencyRating": "421",
-			"usedIn": [{
+			"ui": [{
 					"k": "終"
 				}
 			]
@@ -40833,7 +40833,7 @@
 				}
 			],
 			"frequencyRating": "250",
-			"usedIn": [{
+			"ui": [{
 					"k": "姿"
 				}, {
 					"k": "資"
@@ -40945,7 +40945,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "151",
-			"usedIn": [{
+			"ui": [{
 					"k": "寒"
 				}, {
 					"k": "奏"
@@ -41138,7 +41138,7 @@
 			"t": ["PK", "COUNTER"],
 			"strokeCount": 5,
 			"frequencyRating": "447",
-			"usedIn": [{
+			"ui": [{
 					"k": "扁"
 				}, {
 					"k": null,
@@ -41164,7 +41164,7 @@
 			"strokeCount": 9,
 			"jukugo": [],
 			"frequencyRating": "1056",
-			"usedIn": [{
+			"ui": [{
 					"k": "編"
 				}, {
 					"k": "偏"
@@ -41333,7 +41333,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "448",
-			"usedIn": [{
+			"ui": [{
 					"k": "論"
 				}, {
 					"k": "倫"
@@ -41432,7 +41432,7 @@
 			"strokeCount": 3,
 			"jukugo": [],
 			"frequencyRating": "38",
-			"usedIn": [{
+			"ui": [{
 					"k": "村"
 				}, {
 					"k": "尊"
@@ -41509,7 +41509,7 @@
 				}
 			],
 			"frequencyRating": "465",
-			"usedIn": [{
+			"ui": [{
 					"k": "附"
 				}, {
 					"k": "符"
@@ -41676,7 +41676,7 @@
 				}
 			],
 			"frequencyRating": "564",
-			"usedIn": [{
+			"ui": [{
 					"k": "狩"
 				}
 			]
@@ -41987,7 +41987,7 @@
 				}
 			],
 			"frequencyRating": "40",
-			"usedIn": [{
+			"ui": [{
 					"k": "等"
 				}, {
 					"k": "詩"
@@ -42205,7 +42205,7 @@
 				}
 			],
 			"frequencyRating": "1149",
-			"usedIn": [{
+			"ui": [{
 					"k": "噂"
 				}
 			],
@@ -42291,7 +42291,7 @@
 				}
 			],
 			"frequencyRating": "392",
-			"usedIn": [{
+			"ui": [{
 					"k": "交"
 				}
 			],
@@ -42361,7 +42361,7 @@
 				}
 			],
 			"frequencyRating": "529",
-			"usedIn": [{
+			"ui": [{
 					"k": "校"
 				}, {
 					"k": "郊"
@@ -42570,7 +42570,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "511",
-			"usedIn": [{
+			"ui": [{
 					"k": "専"
 				}, {
 					"k": "恵"
@@ -42610,7 +42610,7 @@
 				}
 			],
 			"frequencyRating": "802",
-			"usedIn": [{
+			"ui": [{
 					"k": "縛"
 				}, {
 					"k": "博"
@@ -42952,7 +42952,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "7",
-			"usedIn": [{
+			"ui": [{
 					"k": "世"
 				}, {
 					"k": "歯"
@@ -43027,7 +43027,7 @@
 			"t": ["BETA"],
 			"strokeCount": 6,
 			"frequencyRating": "450",
-			"usedIn": [{
+			"ui": [{
 					"k": "満"
 				}
 			],
@@ -43116,7 +43116,7 @@
 				}
 			],
 			"frequencyRating": "8",
-			"usedIn": [{
+			"ui": [{
 					"k": "屈"
 				}
 			]
@@ -43139,7 +43139,7 @@
 			"t": ["BETA"],
 			"strokeCount": 8,
 			"frequencyRating": "1026",
-			"usedIn": [{
+			"ui": [{
 					"k": "掘"
 				}
 			]
@@ -43190,7 +43190,7 @@
 			"t": ["PRE", "NEO"],
 			"strokeCount": 6,
 			"frequencyRating": "1121",
-			"usedIn": [{
+			"ui": [{
 					"k": "揺"
 				}, {
 					"k": "陶"
@@ -43308,7 +43308,7 @@
 			"t": ["BETA"],
 			"strokeCount": 5,
 			"frequencyRating": "162",
-			"usedIn": [{
+			"ui": [{
 					"k": "葉"
 				}
 			]
@@ -43342,7 +43342,7 @@
 				}
 			],
 			"frequencyRating": "242",
-			"usedIn": [{
+			"ui": [{
 					"k": "喋"
 				}
 			],
@@ -43438,7 +43438,7 @@
 				}
 			],
 			"frequencyRating": "1138",
-			"usedIn": [{
+			"ui": [{
 					"k": "噛"
 				}, {
 					"k": "齢"
@@ -43558,7 +43558,7 @@
 			"t": ["BETA"],
 			"strokeCount": 4,
 			"frequencyRating": "494",
-			"usedIn": [{
+			"ui": [{
 					"k": "脳"
 				}, {
 					"k": "胸"
@@ -43747,7 +43747,7 @@
 				}
 			],
 			"frequencyRating": "74",
-			"usedIn": [{
+			"ui": [{
 					"k": "短"
 				}, {
 					"k": "医"
@@ -43819,7 +43819,7 @@
 				}
 			],
 			"frequencyRating": "711",
-			"usedIn": [{
+			"ui": [{
 					"k": "擬"
 				}
 			],
@@ -43997,7 +43997,7 @@
 				}
 			],
 			"frequencyRating": "75",
-			"usedIn": [{
+			"ui": [{
 					"k": "痴"
 				}
 			],
@@ -44049,7 +44049,7 @@
 				}
 			],
 			"frequencyRating": "468",
-			"usedIn": [{
+			"ui": [{
 					"k": "鉄"
 				}
 			],
@@ -44135,7 +44135,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "464",
-			"usedIn": [{
+			"ui": [{
 					"k": "勧"
 				}, {
 					"k": "権"
@@ -44375,7 +44375,7 @@
 				}
 			],
 			"frequencyRating": "120",
-			"usedIn": [{
+			"ui": [{
 					"k": "重"
 				}, {
 					"k": "垂"
@@ -44480,7 +44480,7 @@
 				}
 			],
 			"frequencyRating": "122",
-			"usedIn": [{
+			"ui": [{
 					"k": "種"
 				}, {
 					"k": "動"
@@ -44551,7 +44551,7 @@
 				}
 			],
 			"frequencyRating": "475",
-			"usedIn": [{
+			"ui": [{
 					"k": "乗"
 				}, {
 					"k": "華"
@@ -44623,7 +44623,7 @@
 				}
 			],
 			"frequencyRating": "476",
-			"usedIn": [{
+			"ui": [{
 					"k": "剰"
 				}
 			],
@@ -44879,7 +44879,7 @@
 			"t": ["BETA"],
 			"strokeCount": 9,
 			"frequencyRating": "385",
-			"usedIn": [{
+			"ui": [{
 					"k": "輝"
 				}, {
 					"k": "揮"
@@ -45286,7 +45286,7 @@
 				}
 			],
 			"frequencyRating": "123",
-			"usedIn": [{
+			"ui": [{
 					"k": "働"
 				}
 			],
@@ -45383,7 +45383,7 @@
 			"t": ["BETA", "PK", "SYMBOLIC", "DUH"],
 			"strokeCount": 8,
 			"frequencyRating": "639",
-			"usedIn": [{
+			"ui": [{
 					"k": "輩"
 				}, {
 					"k": "悲"
@@ -45532,7 +45532,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "373",
-			"usedIn": [{
+			"ui": [{
 					"k": "軽"
 				}, {
 					"k": "経"
@@ -45737,7 +45737,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "351",
-			"usedIn": [{
+			"ui": [{
 					"k": "雄"
 				}, {
 					"k": "布"
@@ -45774,7 +45774,7 @@
 			"t": ["BETA"],
 			"strokeCount": 4,
 			"frequencyRating": "567",
-			"usedIn": [{
+			"ui": [{
 					"k": "抜"
 				}, {
 					"k": "髪"
@@ -45909,7 +45909,7 @@
 				}
 			],
 			"frequencyRating": "847",
-			"usedIn": [{
+			"ui": [{
 					"k": "希"
 				}, {
 					"k": "怖"
@@ -46046,7 +46046,7 @@
 				}
 			],
 			"frequencyRating": "355",
-			"usedIn": [{
+			"ui": [{
 					"k": "若"
 				}
 			],
@@ -46093,7 +46093,7 @@
 				}
 			],
 			"frequencyRating": "518",
-			"usedIn": [{
+			"ui": [{
 					"k": "差"
 				}
 			]
@@ -46153,7 +46153,7 @@
 				}
 			],
 			"frequencyRating": "379",
-			"usedIn": [{
+			"ui": [{
 					"k": "堕"
 				}, {
 					"k": "賄"
@@ -46329,7 +46329,7 @@
 				}
 			],
 			"frequencyRating": "620",
-			"usedIn": [{
+			"ui": [{
 					"k": "版"
 				}
 			]
@@ -46395,7 +46395,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "1386",
-			"usedIn": [{
+			"ui": [{
 					"k": "暖"
 				}, {
 					"k": "援"
@@ -46577,7 +46577,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "214",
-			"usedIn": [{
+			"ui": [{
 					"k": "膨"
 				}, {
 					"k": "髪"
@@ -46828,7 +46828,7 @@
 				}
 			],
 			"frequencyRating": "636",
-			"usedIn": [{
+			"ui": [{
 					"k": "惨"
 				}
 			],
@@ -47005,7 +47005,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "1143",
-			"usedIn": [{
+			"ui": [{
 					"k": "珍"
 				}, {
 					"k": "診"
@@ -47121,7 +47121,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "101",
-			"usedIn": [{
+			"ui": [{
 					"k": "廊"
 				}, {
 					"k": "磨"
@@ -47468,7 +47468,7 @@
 			"t": ["BETA", "JERK", "STRONG"],
 			"strokeCount": 11,
 			"frequencyRating": "843",
-			"usedIn": [{
+			"ui": [{
 					"k": "摩"
 				}, {
 					"k": "魔"
@@ -47544,7 +47544,7 @@
 				}
 			],
 			"frequencyRating": "478",
-			"usedIn": [{
+			"ui": [{
 					"k": "拡"
 				}
 			]
@@ -47623,7 +47623,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "105",
-			"usedIn": [{
+			"ui": [{
 					"k": "庶"
 				}, {
 					"k": "席"
@@ -47722,7 +47722,7 @@
 				}
 			],
 			"frequencyRating": "108",
-			"usedIn": [{
+			"ui": [{
 					"k": "渡"
 				}
 			],
@@ -47800,7 +47800,7 @@
 			"t": ["SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "842",
-			"usedIn": [{
+			"ui": [{
 					"k": "鬼"
 				}, {
 					"k": "卑"
@@ -47837,7 +47837,7 @@
 				}
 			],
 			"frequencyRating": "844",
-			"usedIn": [{
+			"ui": [{
 					"k": "魔"
 				}, {
 					"k": "魅"
@@ -47980,7 +47980,7 @@
 				}
 			],
 			"frequencyRating": "1485",
-			"usedIn": [{
+			"ui": [{
 					"k": "痺"
 				}
 			],
@@ -48015,7 +48015,7 @@
 			"t": ["ILL PAIR", "PK", "STRONG", "JERK RADICAL"],
 			"strokeCount": 4,
 			"frequencyRating": "496",
-			"usedIn": [{
+			"ui": [{
 					"k": "紙"
 				}, {
 					"k": "婚"
@@ -48217,7 +48217,7 @@
 			"t": ["BETA", "ILL PAIR"],
 			"strokeCount": 5,
 			"frequencyRating": "497",
-			"usedIn": [{
+			"ui": [{
 					"k": "眠"
 				}
 			],
@@ -48306,7 +48306,7 @@
 				}
 			],
 			"frequencyRating": "810",
-			"usedIn": [{
+			"ui": [{
 					"k": "豊"
 				}, {
 					"k": "典"
@@ -48462,7 +48462,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "486",
-			"usedIn": [{
+			"ui": [{
 					"k": "農"
 				}, {
 					"k": "辱"
@@ -48495,7 +48495,7 @@
 			"t": ["BETA"],
 			"strokeCount": 13,
 			"frequencyRating": "1174",
-			"usedIn": [{
+			"ui": [{
 					"k": "濃"
 				}
 			],
@@ -48756,7 +48756,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "216",
-			"usedIn": [{
+			"ui": [{
 					"k": "登"
 				}, {
 					"k": "祭"
@@ -48822,7 +48822,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "473",
-			"usedIn": [{
+			"ui": [{
 					"k": "際"
 				}, {
 					"k": "察"
@@ -48912,7 +48912,7 @@
 				}
 			],
 			"frequencyRating": "627",
-			"usedIn": [{
+			"ui": [{
 					"k": "擦"
 				}
 			],
@@ -49014,7 +49014,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "217",
-			"usedIn": [{
+			"ui": [{
 					"k": "開"
 				}, {
 					"k": "発"
@@ -49091,7 +49091,7 @@
 			"t": ["BETA"],
 			"strokeCount": 9,
 			"frequencyRating": "218",
-			"usedIn": [{
+			"ui": [{
 					"k": "廃"
 				}
 			]
@@ -49204,7 +49204,7 @@
 			"t": ["BETA"],
 			"strokeCount": 6,
 			"frequencyRating": "905",
-			"usedIn": [{
+			"ui": [{
 					"k": "型"
 				}
 			]
@@ -49253,7 +49253,7 @@
 			"t": ["BETA"],
 			"strokeCount": 4,
 			"frequencyRating": "83",
-			"usedIn": [{
+			"ui": [{
 					"k": "牛"
 				}, {
 					"k": "許"
@@ -49346,7 +49346,7 @@
 				}
 			],
 			"frequencyRating": "84",
-			"usedIn": [{
+			"ui": [{
 					"k": "件"
 				}, {
 					"k": "特"
@@ -49505,7 +49505,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "64",
-			"usedIn": [{
+			"ui": [{
 					"k": "物"
 				}, {
 					"k": "惚"
@@ -49621,7 +49621,7 @@
 				}
 			],
 			"frequencyRating": "95",
-			"usedIn": [{
+			"ui": [{
 					"k": "湯"
 				}, {
 					"k": "揚"
@@ -49871,7 +49871,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "277",
-			"usedIn": [{
+			"ui": [{
 					"k": "免"
 				}, {
 					"k": "色"
@@ -49906,7 +49906,7 @@
 				}
 			],
 			"frequencyRating": "278",
-			"usedIn": [{
+			"ui": [{
 					"k": "絶"
 				}
 			],
@@ -49960,7 +49960,7 @@
 				}
 			],
 			"frequencyRating": "914",
-			"usedIn": [{
+			"ui": [{
 					"k": "逸"
 				}, {
 					"k": "晩"
@@ -50155,7 +50155,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "221",
-			"usedIn": [{
+			"ui": [{
 					"k": "声"
 				}, {
 					"k": "肥"
@@ -50256,7 +50256,7 @@
 				}
 			],
 			"frequencyRating": "65",
-			"usedIn": [{
+			"ui": [{
 					"k": "象"
 				}, {
 					"k": "縁"
@@ -50298,7 +50298,7 @@
 				}
 			],
 			"frequencyRating": "621",
-			"usedIn": [{
+			"ui": [{
 					"k": "像"
 				}
 			]
@@ -50411,7 +50411,7 @@
 				}
 			],
 			"frequencyRating": "67",
-			"usedIn": [{
+			"ui": [{
 					"k": "豪"
 				}, {
 					"k": "嫁"
@@ -50628,7 +50628,7 @@
 				}
 			],
 			"frequencyRating": "42",
-			"usedIn": [{
+			"ui": [{
 					"k": "御"
 				}, {
 					"k": "徒"
@@ -51040,7 +51040,7 @@
 				}
 			],
 			"frequencyRating": "752",
-			"usedIn": [{
+			"ui": [{
 					"k": "縦"
 				}
 			],
@@ -51344,7 +51344,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "139",
-			"usedIn": [{
+			"ui": [{
 					"k": "徹"
 				}, {
 					"k": "撤"
@@ -51646,7 +51646,7 @@
 			"t": ["BETA", "PN"],
 			"strokeCount": 6,
 			"frequencyRating": "958",
-			"usedIn": [{
+			"ui": [{
 					"k": "統"
 				}, {
 					"k": "銃"
@@ -51799,7 +51799,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "178",
-			"usedIn": [{
+			"ui": [{
 					"k": "到"
 				}, {
 					"k": "致"
@@ -51849,7 +51849,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 8,
 			"frequencyRating": "686",
-			"usedIn": [{
+			"ui": [{
 					"k": "倒"
 				}
 			],
@@ -52014,7 +52014,7 @@
 				}
 			],
 			"frequencyRating": "320",
-			"usedIn": [{
+			"ui": [{
 					"k": "法"
 				}, {
 					"k": "怯"
@@ -52118,7 +52118,7 @@
 				}
 			],
 			"frequencyRating": "180",
-			"usedIn": [{
+			"ui": [{
 					"k": "握"
 				}
 			],
@@ -52281,7 +52281,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "140",
-			"usedIn": [{
+			"ui": [{
 					"k": "魂"
 				}, {
 					"k": "転"
@@ -52441,7 +52441,7 @@
 				}
 			],
 			"frequencyRating": "141",
-			"usedIn": [{
+			"ui": [{
 					"k": "絵"
 				}
 			],
@@ -52504,7 +52504,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "514",
-			"usedIn": [{
+			"ui": [{
 					"k": "街"
 				}, {
 					"k": "掛"
@@ -52695,7 +52695,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "516",
-			"usedIn": [{
+			"ui": [{
 					"k": "陸"
 				}, {
 					"k": "勢"
@@ -52809,7 +52809,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "260",
-			"usedIn": [{
+			"ui": [{
 					"k": "抗"
 				}, {
 					"k": "冗"
@@ -53047,7 +53047,7 @@
 			"t": ["BETA"],
 			"strokeCount": 5,
 			"frequencyRating": "667",
-			"usedIn": [{
+			"ui": [{
 					"k": "拠"
 				}
 			],
@@ -53121,7 +53121,7 @@
 			"t": ["BETA"],
 			"strokeCount": 3,
 			"frequencyRating": "589",
-			"usedIn": [{
+			"ui": [{
 					"k": "築"
 				}, {
 					"k": "恐"
@@ -53247,7 +53247,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "413",
-			"usedIn": [{
+			"ui": [{
 					"k": "役"
 				}, {
 					"k": "投"
@@ -53555,7 +53555,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "225",
-			"usedIn": [{
+			"ui": [{
 					"k": "盾"
 				}, {
 					"k": "真"
@@ -53590,7 +53590,7 @@
 				}
 			],
 			"frequencyRating": "1633",
-			"usedIn": [{
+			"ui": [{
 					"k": "循"
 				}
 			]
@@ -53643,7 +53643,7 @@
 				}
 			],
 			"frequencyRating": "226",
-			"usedIn": [{
+			"ui": [{
 					"k": "慎"
 				}
 			],
@@ -53748,7 +53748,7 @@
 			"t": ["SIDEKICK", "SUF"],
 			"strokeCount": 9,
 			"frequencyRating": "1203",
-			"usedIn": [{
+			"ui": [{
 					"k": "懸"
 				}
 			],
@@ -53886,7 +53886,7 @@
 				}
 			],
 			"frequencyRating": "285",
-			"usedIn": [{
+			"ui": [{
 					"k": "置"
 				}, {
 					"k": "殖"
@@ -54150,7 +54150,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "279",
-			"usedIn": [{
+			"ui": [{
 					"k": "殖"
 				}, {
 					"k": "列"
@@ -54290,7 +54290,7 @@
 				}
 			],
 			"frequencyRating": "605",
-			"usedIn": [{
+			"ui": [{
 					"k": "裂"
 				}, {
 					"k": "烈"
@@ -54467,7 +54467,7 @@
 				}
 			],
 			"frequencyRating": "109",
-			"usedIn": [{
+			"ui": [{
 					"k": "鼓"
 				}, {
 					"k": "皮"
@@ -54516,7 +54516,7 @@
 				}
 			],
 			"frequencyRating": "110",
-			"usedIn": [{
+			"ui": [{
 					"k": "破"
 				}, {
 					"k": "彼"
@@ -54780,7 +54780,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "128",
-			"usedIn": [{
+			"ui": [{
 					"k": "勇"
 				}, {
 					"k": "予"
@@ -54829,7 +54829,7 @@
 			"t": ["BETA"],
 			"strokeCount": 4,
 			"frequencyRating": "257",
-			"usedIn": [{
+			"ui": [{
 					"k": "序"
 				}, {
 					"k": "預"
@@ -54978,7 +54978,7 @@
 			"t": ["OBSOLETE"],
 			"strokeCount": 5,
 			"frequencyRating": "630",
-			"usedIn": [{
+			"ui": [{
 					"k": "柔"
 				}, {
 					"k": "務"
@@ -55070,7 +55070,7 @@
 				}
 			],
 			"frequencyRating": "631",
-			"usedIn": [{
+			"ui": [{
 					"k": "霧"
 				}
 			],
@@ -55116,7 +55116,7 @@
 				}
 			],
 			"frequencyRating": "590",
-			"usedIn": [{
+			"ui": [{
 					"k": "疎"
 				}, {
 					"k": "頼"
@@ -55352,7 +55352,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "130",
-			"usedIn": [{
+			"ui": [{
 					"k": "通"
 				}, {
 					"k": "踊"
@@ -55453,7 +55453,7 @@
 			"t": ["DUH"],
 			"jukugo": [],
 			"frequencyRating": "498",
-			"usedIn": [{
+			"ui": [{
 					"k": "柄"
 				}, {
 					"k": "病"
@@ -55522,7 +55522,7 @@
 			"t": ["SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "499",
-			"usedIn": [{
+			"ui": [{
 					"k": "病"
 				}, {
 					"k": "痛"
@@ -55774,7 +55774,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "1455",
-			"usedIn": [{
+			"ui": [{
 					"k": "癒"
 				}, {
 					"k": "愉"
@@ -55949,7 +55949,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "867",
-			"usedIn": [{
+			"ui": [{
 					"k": "癖"
 				}, {
 					"k": "避"
@@ -56100,7 +56100,7 @@
 			"t": ["STRONG", "SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "1391",
-			"usedIn": [{
+			"ui": [{
 					"k": "療"
 				}, {
 					"k": "寮"
@@ -56206,7 +56206,7 @@
 				}
 			],
 			"frequencyRating": "227",
-			"usedIn": [{
+			"ui": [{
 					"k": "痩"
 				}, {
 					"k": "紳"
@@ -56431,7 +56431,7 @@
 				}
 			],
 			"frequencyRating": "586",
-			"usedIn": [{
+			"ui": [{
 					"k": "押"
 				}, {
 					"k": null,
@@ -56541,7 +56541,7 @@
 			"t": ["BETA", "JERK", "PK", "PN"],
 			"strokeCount": 5,
 			"frequencyRating": "393",
-			"usedIn": [{
+			"ui": [{
 					"k": "抽"
 				}, {
 					"k": "宙"
@@ -56732,7 +56732,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "1191",
-			"usedIn": [{
+			"ui": [{
 					"k": "偶"
 				}, {
 					"k": "隅"
@@ -56855,7 +56855,7 @@
 				}
 			],
 			"frequencyRating": "455",
-			"usedIn": [{
+			"ui": [{
 					"k": "霧"
 				}, {
 					"k": "雲"
@@ -56951,7 +56951,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "929",
-			"usedIn": [{
+			"ui": [{
 					"k": "曇"
 				}
 			],
@@ -57308,7 +57308,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "349",
-			"usedIn": [{
+			"ui": [{
 					"k": "霊"
 				}, {
 					"k": "湿"
@@ -57395,7 +57395,7 @@
 			"t": ["BETA"],
 			"strokeCount": 13,
 			"frequencyRating": "350",
-			"usedIn": [{
+			"ui": [{
 					"k": "僕"
 				}, {
 					"k": "撲"
@@ -57498,7 +57498,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "456",
-			"usedIn": [{
+			"ui": [{
 					"k": "竜"
 				}, {
 					"k": "滝"
@@ -57646,7 +57646,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "1476",
-			"usedIn": [{
+			"ui": [{
 					"k": "縄"
 				}
 			]
@@ -57692,7 +57692,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "661",
-			"usedIn": [{
+			"ui": [{
 					"k": "需"
 				}, {
 					"k": "耐"
@@ -57796,7 +57796,7 @@
 			"t": ["PK", "STRONG"],
 			"jukugo": [],
 			"frequencyRating": "112",
-			"usedIn": [{
+			"ui": [{
 					"k": "胸"
 				}, {
 					"k": "包"
@@ -57844,7 +57844,7 @@
 				}
 			],
 			"frequencyRating": "960",
-			"usedIn": [{
+			"ui": [{
 					"k": "胞"
 				}, {
 					"k": "泡"
@@ -58179,7 +58179,7 @@
 			"t": ["Same-ON", "BETA"],
 			"strokeCount": 5,
 			"frequencyRating": "697",
-			"usedIn": [{
+			"ui": [{
 					"k": "敬"
 				}, {
 					"k": "局"
@@ -58236,7 +58236,7 @@
 			"t": ["PN", "SIDEKICK"],
 			"strokeCount": 12,
 			"frequencyRating": "698",
-			"usedIn": [{
+			"ui": [{
 					"k": "驚"
 				}, {
 					"k": "警"
@@ -58488,7 +58488,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "1317",
-			"usedIn": [{
+			"ui": [{
 					"k": "渇"
 				}
 			],
@@ -58592,7 +58592,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "114",
-			"usedIn": [{
+			"ui": [{
 					"k": "約"
 				}, {
 					"k": "的"
@@ -58763,7 +58763,7 @@
 				}
 			],
 			"frequencyRating": "593",
-			"usedIn": [{
+			"ui": [{
 					"k": "盟"
 				}, {
 					"k": "盛"
@@ -58991,7 +58991,7 @@
 			"t": ["BETA"],
 			"strokeCount": 15,
 			"frequencyRating": "1136",
-			"usedIn": [{
+			"ui": [{
 					"k": "鑑"
 				}
 			],
@@ -59069,7 +59069,7 @@
 				}
 			],
 			"frequencyRating": "594",
-			"usedIn": [{
+			"ui": [{
 					"k": "衆"
 				}
 			]
@@ -59113,7 +59113,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "969",
-			"usedIn": [{
+			"ui": [{
 					"k": "誉"
 				}, {
 					"k": "挙"
@@ -59140,7 +59140,7 @@
 			"t": ["BETA"],
 			"strokeCount": 10,
 			"frequencyRating": "1227",
-			"usedIn": [{
+			"ui": [{
 					"k": "溢"
 				}
 			]
@@ -59312,7 +59312,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "649",
-			"usedIn": [{
+			"ui": [{
 					"k": "船"
 				}, {
 					"k": "航"
@@ -59433,7 +59433,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 10,
 			"frequencyRating": "1148",
-			"usedIn": [{
+			"ui": [{
 					"k": "盤"
 				}
 			],
@@ -59517,7 +59517,7 @@
 				}
 			],
 			"frequencyRating": "671",
-			"usedIn": [{
+			"ui": [{
 					"k": "猛"
 				}, {
 					"k": "猫"
@@ -59956,7 +59956,7 @@
 			"t": ["PK", "SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "380",
-			"usedIn": [{
+			"ui": [{
 					"k": "犯"
 				}, {
 					"k": "印"
@@ -60353,7 +60353,7 @@
 				}
 			],
 			"frequencyRating": "916",
-			"usedIn": [{
+			"ui": [{
 					"k": "節"
 				}
 			],
@@ -60456,7 +60456,7 @@
 			"t": ["ILL PAIR", "SIDEKICK"],
 			"strokeCount": 4,
 			"frequencyRating": "819",
-			"usedIn": [{
+			"ui": [{
 					"k": "危"
 				}
 			],
@@ -60546,7 +60546,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "953",
-			"usedIn": [{
+			"ui": [{
 					"k": "抑"
 				}, {
 					"k": "迎"
@@ -60715,7 +60715,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "551",
-			"usedIn": [{
+			"ui": [{
 					"k": "服"
 				}, {
 					"k": "報"
@@ -60841,7 +60841,7 @@
 			"t": ["PK", "STRONG"],
 			"jukugo": [],
 			"frequencyRating": "462",
-			"usedIn": [{
+			"ui": [{
 					"k": "阻"
 				}, {
 					"k": "狙"
@@ -61214,7 +61214,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "228",
-			"usedIn": [{
+			"ui": [{
 					"k": "祈"
 				}, {
 					"k": "祖"
@@ -61507,7 +61507,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "769",
-			"usedIn": [{
+			"ui": [{
 					"k": "副"
 				}, {
 					"k": "幅"
@@ -61740,7 +61740,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "782",
-			"usedIn": [{
+			"ui": [{
 					"k": "礼"
 				}, {
 					"k": "乱"
@@ -61957,7 +61957,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "313",
-			"usedIn": [{
+			"ui": [{
 					"k": "初"
 				}, {
 					"k": "裸"
@@ -62095,7 +62095,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "674",
-			"usedIn": [{
+			"ui": [{
 					"k": "複"
 				}, {
 					"k": "腹"
@@ -62222,7 +62222,7 @@
 			"t": ["Same-ON", "BETA"],
 			"strokeCount": 12,
 			"frequencyRating": "936",
-			"usedIn": [{
+			"ui": [{
 					"k": "履"
 				}
 			],
@@ -62310,7 +62310,7 @@
 				}
 			],
 			"frequencyRating": "548",
-			"usedIn": [{
+			"ui": [{
 					"k": "欲"
 				}, {
 					"k": "俗"
@@ -62469,7 +62469,7 @@
 			"t": ["BETA"],
 			"strokeCount": 10,
 			"frequencyRating": "550",
-			"usedIn": [{
+			"ui": [{
 					"k": "溶"
 				}
 			],
@@ -62632,7 +62632,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "400",
-			"usedIn": [{
+			"ui": [{
 					"k": "鼻"
 				}, {
 					"k": "葬"
@@ -62873,7 +62873,7 @@
 				}
 			],
 			"frequencyRating": "1445",
-			"usedIn": [{
+			"ui": [{
 					"k": "械"
 				}
 			]
@@ -62913,7 +62913,7 @@
 				}
 			],
 			"frequencyRating": "401",
-			"usedIn": [{
+			"ui": [{
 					"k": "翌"
 				}, {
 					"k": "習"
@@ -63113,7 +63113,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "436",
-			"usedIn": [{
+			"ui": [{
 					"k": "散"
 				}, {
 					"k": "展"
@@ -63258,7 +63258,7 @@
 				}
 			],
 			"frequencyRating": "823",
-			"usedIn": [{
+			"ui": [{
 					"k": "惜"
 				}, {
 					"k": "籍"
@@ -63421,7 +63421,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 11,
 			"frequencyRating": "491",
-			"usedIn": [{
+			"ui": [{
 					"k": "横"
 				}
 			],
@@ -63581,7 +63581,7 @@
 				}
 			],
 			"frequencyRating": "437",
-			"usedIn": [{
+			"ui": [{
 					"k": "巷"
 				}, {
 					"k": "供"
@@ -63657,7 +63657,7 @@
 				}
 			],
 			"frequencyRating": "695",
-			"usedIn": [{
+			"ui": [{
 					"k": "普"
 				}
 			],
@@ -63790,7 +63790,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "1341",
-			"usedIn": [{
+			"ui": [{
 					"k": "港"
 				}
 			]
@@ -63877,7 +63877,7 @@
 				}
 			],
 			"frequencyRating": "595",
-			"usedIn": [{
+			"ui": [{
 					"k": "翼"
 				}
 			]
@@ -63945,7 +63945,7 @@
 				}
 			],
 			"frequencyRating": "981",
-			"usedIn": [{
+			"ui": [{
 					"k": "爆"
 				}
 			]
@@ -63995,7 +63995,7 @@
 				}
 			],
 			"frequencyRating": "600",
-			"usedIn": [{
+			"ui": [{
 					"k": null,
 					"kanjiImageSource": "hells-circus-small.jpg"
 				}
@@ -64031,7 +64031,7 @@
 			"t": ["STRONG", "OBSOLETE"],
 			"jukugo": [],
 			"frequencyRating": "1030",
-			"usedIn": [{
+			"ui": [{
 					"k": "舗"
 				}, {
 					"k": "補"
@@ -64183,7 +64183,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "601",
-			"usedIn": [{
+			"ui": [{
 					"k": "構"
 				}, {
 					"k": "講"
@@ -64315,7 +64315,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "44",
-			"usedIn": [{
+			"ui": [{
 					"k": "降"
 				}, {
 					"k": null,
@@ -64417,7 +64417,7 @@
 				}
 			],
 			"frequencyRating": "148",
-			"usedIn": [{
+			"ui": [{
 					"k": "語"
 				}, {
 					"k": "悟"
@@ -64514,7 +64514,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "309",
-			"usedIn": [{
+			"ui": [{
 					"k": "偉"
 				}, {
 					"k": "違"
@@ -64629,7 +64629,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "715",
-			"usedIn": [{
+			"ui": [{
 					"k": "瞬"
 				}, {
 					"k": "舞"
@@ -64824,7 +64824,7 @@
 			"t": ["PK", "SYMBOLIC"],
 			"jukugo": [],
 			"frequencyRating": "578",
-			"usedIn": [{
+			"ui": [{
 					"k": "料"
 				}, {
 					"k": "科"
@@ -64981,7 +64981,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "342",
-			"usedIn": [{
+			"ui": [{
 					"k": "史"
 				}, {
 					"k": "更"
@@ -65006,7 +65006,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 5,
 			"frequencyRating": "343",
-			"usedIn": [{
+			"ui": [{
 					"k": "使"
 				}
 			],
@@ -65057,7 +65057,7 @@
 				}
 			],
 			"frequencyRating": "982",
-			"usedIn": [{
+			"ui": [{
 					"k": "便"
 				}, {
 					"k": "硬"
@@ -65255,7 +65255,7 @@
 				}
 			],
 			"frequencyRating": "147",
-			"usedIn": [{
+			"ui": [{
 					"k": "射"
 				}, {
 					"k": "窮"
@@ -65304,7 +65304,7 @@
 				}
 			],
 			"frequencyRating": "976",
-			"usedIn": [{
+			"ui": [{
 					"k": "謝"
 				}
 			]
@@ -65384,7 +65384,7 @@
 			"t": ["PK", "STRONG"],
 			"jukugo": [],
 			"frequencyRating": "91",
-			"usedIn": [{
+			"ui": [{
 					"k": "地"
 				}, {
 					"k": "池"
@@ -65586,7 +65586,7 @@
 			"t": ["STRONG", "OBSOLETE"],
 			"jukugo": [],
 			"frequencyRating": "883",
-			"usedIn": [{
+			"ui": [{
 					"k": "増"
 				}, {
 					"k": "贈"
@@ -65914,7 +65914,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 7,
 			"frequencyRating": "736",
-			"usedIn": [{
+			"ui": [{
 					"k": "宮"
 				}, {
 					"k": "営"
@@ -65932,7 +65932,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "504",
-			"usedIn": [{
+			"ui": [{
 					"k": "官"
 				}, {
 					"k": "追"
@@ -66004,7 +66004,7 @@
 			"t": ["SIDEKICK", "STRONG"],
 			"strokeCount": 8,
 			"frequencyRating": "613",
-			"usedIn": [{
+			"ui": [{
 					"k": "館"
 				}, {
 					"k": "棺"
@@ -66102,7 +66102,7 @@
 				}
 			],
 			"frequencyRating": "505",
-			"usedIn": [{
+			"ui": [{
 					"k": "遣"
 				}
 			]
@@ -66246,7 +66246,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "200",
-			"usedIn": [{
+			"ui": [{
 					"k": "営"
 				}, {
 					"k": "労"
@@ -66534,7 +66534,7 @@
 			"t": ["SIDEKICK"],
 			"strokeCount": 8,
 			"frequencyRating": "390",
-			"usedIn": [{
+			"ui": [{
 					"k": "賞"
 				}, {
 					"k": "常"
@@ -66588,7 +66588,7 @@
 			"t": ["BETA"],
 			"strokeCount": 15,
 			"frequencyRating": "1190",
-			"usedIn": [{
+			"ui": [{
 					"k": "償"
 				}
 			],
@@ -66805,7 +66805,7 @@
 				}
 			],
 			"frequencyRating": "998",
-			"usedIn": [{
+			"ui": [{
 					"k": "繕"
 				}
 			]
@@ -66858,7 +66858,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "168",
-			"usedIn": [{
+			"ui": [{
 					"k": "周"
 				}, {
 					"k": "高"
@@ -66900,7 +66900,7 @@
 				}
 			],
 			"frequencyRating": "345",
-			"usedIn": [{
+			"ui": [{
 					"k": "調"
 				}, {
 					"k": "週"
@@ -67028,7 +67028,7 @@
 				}
 			],
 			"frequencyRating": "169",
-			"usedIn": [{
+			"ui": [{
 					"k": "豪"
 				}
 			]
@@ -67181,7 +67181,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "369",
-			"usedIn": [{
+			"ui": [{
 					"k": "過"
 				}, {
 					"k": "骨"
@@ -67255,7 +67255,7 @@
 				}
 			],
 			"frequencyRating": "863",
-			"usedIn": [{
+			"ui": [{
 					"k": "滑"
 				}
 			]
@@ -67306,7 +67306,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "405",
-			"usedIn": [{
+			"ui": [{
 					"k": "率"
 				}, {
 					"k": "渋"
@@ -67429,7 +67429,7 @@
 				}
 			],
 			"frequencyRating": "406",
-			"usedIn": [{
+			"ui": [{
 					"k": "薬"
 				}
 			],
@@ -67512,7 +67512,7 @@
 			"t": ["SIDEKICK", "STRONG"],
 			"strokeCount": 6,
 			"frequencyRating": "657",
-			"usedIn": [{
+			"ui": [{
 					"k": "桃"
 				}, {
 					"k": "逃"
@@ -67722,7 +67722,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "50",
-			"usedIn": [{
+			"ui": [{
 					"k": "唐"
 				}, {
 					"k": "書"
@@ -67777,7 +67777,7 @@
 				}
 			],
 			"frequencyRating": "165",
-			"usedIn": [{
+			"ui": [{
 					"k": "律"
 				}, {
 					"k": "建"
@@ -67913,7 +67913,7 @@
 			"t": ["JERK", "SIDEKICK"],
 			"strokeCount": 10,
 			"frequencyRating": "1388",
-			"usedIn": [{
+			"ui": [{
 					"k": "糖"
 				}
 			],
@@ -68094,7 +68094,7 @@
 				}
 			],
 			"frequencyRating": "469",
-			"usedIn": [{
+			"ui": [{
 					"k": "群"
 				}
 			]
@@ -68172,7 +68172,7 @@
 				}
 			],
 			"frequencyRating": "713",
-			"usedIn": [{
+			"ui": [{
 					"k": "凄"
 				}
 			],
@@ -68257,7 +68257,7 @@
 				}
 			],
 			"frequencyRating": "635",
-			"usedIn": [{
+			"ui": [{
 					"k": "静"
 				}
 			]
@@ -68320,7 +68320,7 @@
 				}
 			],
 			"frequencyRating": "775",
-			"usedIn": [{
+			"ui": [{
 					"k": "嫌"
 				}, {
 					"k": "謙"
@@ -68466,7 +68466,7 @@
 				}
 			],
 			"frequencyRating": "626",
-			"usedIn": [{
+			"ui": [{
 					"k": "庭"
 				}, {
 					"k": "建"
@@ -68523,7 +68523,7 @@
 				}
 			],
 			"frequencyRating": "1242",
-			"usedIn": [{
+			"ui": [{
 					"k": "誕"
 				}
 			]
@@ -68596,7 +68596,7 @@
 			"t": ["STRONG"],
 			"jukugo": [],
 			"frequencyRating": "387",
-			"usedIn": [{
+			"ui": [{
 					"k": "残"
 				}, {
 					"k": "銭"
@@ -68722,7 +68722,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "857",
-			"usedIn": [{
+			"ui": [{
 					"k": "聴"
 				}, {
 					"k": "壊"
@@ -68996,7 +68996,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "1049",
-			"usedIn": [{
+			"ui": [{
 					"k": "劇"
 				}, {
 					"k": "慮"
@@ -69140,7 +69140,7 @@
 			"t": ["BETA"],
 			"strokeCount": 11,
 			"frequencyRating": "1176",
-			"usedIn": [{
+			"ui": [{
 					"k": "嘘"
 				}
 			],
@@ -69344,7 +69344,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "970",
-			"usedIn": [{
+			"ui": [{
 					"k": "沈"
 				}, {
 					"k": "就"
@@ -69415,7 +69415,7 @@
 				}
 			],
 			"frequencyRating": "1209",
-			"usedIn": [{
+			"ui": [{
 					"k": "蹴"
 				}
 			],
@@ -69475,7 +69475,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "744",
-			"usedIn": [{
+			"ui": [{
 					"k": "刻"
 				}, {
 					"k": "核"
@@ -69732,7 +69732,7 @@
 			],
 			"jukugo": [],
 			"frequencyRating": "814",
-			"usedIn": [{
+			"ui": [{
 					"k": "乏"
 				}, {
 					"k": "芝"
@@ -69811,7 +69811,7 @@
 			"t": ["STRONG", "OBSOLETE"],
 			"jukugo": [],
 			"frequencyRating": "481",
-			"usedIn": [{
+			"ui": [{
 					"k": "欺"
 				}, {
 					"k": "甚"
@@ -70057,7 +70057,7 @@
 				}
 			],
 			"frequencyRating": "1289",
-			"usedIn": [{
+			"ui": [{
 					"k": "勘"
 				}, {
 					"k": "堪"
@@ -70197,7 +70197,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "1134",
-			"usedIn": [{
+			"ui": [{
 					"k": "邪"
 				}, {
 					"k": "既"
@@ -70278,7 +70278,7 @@
 			"u": 3,
 			"strokeCount": 10,
 			"frequencyRating": "1333",
-			"usedIn": [{
+			"ui": [{
 					"k": "概"
 				}, {
 					"k": "慨"
@@ -70445,7 +70445,7 @@
 			"t": ["OBSOLETE"],
 			"jukugo": [],
 			"frequencyRating": "911",
-			"usedIn": [{
+			"ui": [{
 					"k": "純"
 				}, {
 					"k": "鈍"
@@ -70567,7 +70567,7 @@
 			"t": ["BETA", "PK"],
 			"strokeCount": 5,
 			"frequencyRating": "223",
-			"usedIn": [{
+			"ui": [{
 					"k": "似"
 				}
 			]
@@ -70626,7 +70626,7 @@
 				}
 			],
 			"frequencyRating": "1000",
-			"usedIn": [{
+			"ui": [{
 					"k": "蒸"
 				}
 			],
@@ -70721,7 +70721,7 @@
 			"t": ["PK"],
 			"jukugo": [],
 			"frequencyRating": "555",
-			"usedIn": [{
+			"ui": [{
 					"k": "段"
 				}, {
 					"k": "興"
@@ -70854,7 +70854,7 @@
 			"strokeCount": 16,
 			"jukugo": [],
 			"frequencyRating": "1472",
-			"usedIn": [{
+			"ui": [{
 					"k": "襲"
 				}
 			]
@@ -70911,7 +70911,7 @@
 			"u": 0,
 			"jukugo": [],
 			"frequencyRating": "1320",
-			"usedIn": [{
+			"ui": [{
 					"k": "巡"
 				}, {
 					"k": "災"
@@ -70981,7 +70981,7 @@
 			"t": ["STRONG", "OBSOLETE"],
 			"jukugo": [],
 			"frequencyRating": "1270",
-			"usedIn": [{
+			"ui": [{
 					"k": "誤"
 				}, {
 					"k": "娯"
@@ -71051,7 +71051,7 @@
 			"t": ["PK", "STRONG", "OBSOLETE"],
 			"jukugo": [],
 			"frequencyRating": "1429",
-			"usedIn": [{
+			"ui": [{
 					"k": "孤"
 				}, {
 					"k": "弧"
@@ -71136,7 +71136,7 @@
 				}
 			],
 			"frequencyRating": "890",
-			"usedIn": [{
+			"ui": [{
 					"k": "偽"
 				}
 			]

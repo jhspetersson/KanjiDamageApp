@@ -7,4 +7,5 @@
     <string name="kunyomi">Kunyomi</string>
     <string name="jisho">Jisho.org</string>
     <string name="copy">Copy</string>
+    <string name="used_in">Used in</string>
 </resources>

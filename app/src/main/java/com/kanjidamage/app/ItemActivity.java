@@ -13,6 +13,7 @@ import android.text.Html;
 import android.text.Spanned;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.Space;
@@ -230,6 +231,37 @@ public class ItemActivity extends AppCompatActivity {
 
                 kunyomiLabel.setVisibility(View.GONE);
                 kunyomi.setVisibility(View.GONE);
+            }
+
+            GridLayout usedInList = findViewById(R.id.usedin);
+            JSONArray usedIn = jsonObject.optJSONArray("ui");
+            if (usedIn != null && usedIn.length() > 0) {
+                for (int i = 0; i < usedIn.length(); i++) {
+                    JSONObject usedObject = usedIn.optJSONObject(i);
+                    if (usedObject != null) {
+                        final String kanji = usedObject.optString("k");
+                        if (kanji != null && !kanji.isEmpty() && !kanji.equals("null")) {
+                            TextView usedInKanji = new TextView(this);
+                            usedInKanji.setText(kanji);
+                            usedInKanji.setTextAppearance(this, R.style.link);
+                            usedInKanji.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View view) {
+                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                    intent.putExtra(MainActivity.KEYWORD_EXTRA, kanji);
+                                    startActivity(intent);
+                                }
+                            });
+
+                            usedInList.addView(usedInKanji);
+                        }
+                    }
+                }
+            } else {
+                TextView usedInLabel = findViewById(R.id.usedin_label);
+
+                usedInLabel.setVisibility(View.GONE);
+                usedInList.setVisibility(View.GONE);
             }
         } catch (Exception e) {
             e.printStackTrace();

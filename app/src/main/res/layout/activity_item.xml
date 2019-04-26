@@ -79,4 +79,18 @@
         android:layout_height="wrap_content">
     </TableLayout>
 
+    <TextView
+        android:id="@+id/usedin_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/label"
+        android:text="@string/used_in"
+        />
+    <GridLayout
+        android:id="@+id/usedin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="10"
+        />
+
 </LinearLayout>
