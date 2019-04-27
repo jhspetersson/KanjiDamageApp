@@ -254,6 +254,11 @@ public class ItemActivity extends AppCompatActivity {
                             });
 
                             usedInList.addView(usedInKanji);
+
+                            Space space = new Space(this);
+                            space.setMinimumWidth(15);
+
+                            usedInList.addView(space);
                         }
                     }
                 }
