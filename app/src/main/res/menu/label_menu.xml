@@ -2,5 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menu_item_search" android:title="@string/search" />
     <item android:id="@+id/menu_item_jisho" android:title="@string/jisho" />
+    <item android:id="@+id/menu_item_kanjistudy" android:title="@string/kanjistudy" />
     <item android:id="@+id/menu_item_copy" android:title="@string/copy" />
 </menu>

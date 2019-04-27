@@ -4,9 +4,11 @@ import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ResolveInfo;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
@@ -23,6 +25,8 @@ import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import java.util.List;
 
 public class ItemActivity extends AppCompatActivity {
 
@@ -291,6 +295,11 @@ public class ItemActivity extends AppCompatActivity {
     private void showPopupMenu(final View v) {
         PopupMenu popupMenu = new PopupMenu(this, v);
         popupMenu.inflate(R.menu.label_menu);
+
+        if (!isKanjiStudyInstalled() || Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+            popupMenu.getMenu().removeItem(R.id.menu_item_kanjistudy);
+        }
+
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -308,6 +317,14 @@ public class ItemActivity extends AppCompatActivity {
                         startActivity(i);
                         break;
 
+                    case R.id.menu_item_kanjistudy:
+                        Intent ks = new Intent(Intent.ACTION_VIEW);
+                        ks.setData(Uri.parse("kanjistudy://search"));
+                        ks.putExtra(Intent.EXTRA_PROCESS_TEXT, text.toString());
+                        ks.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(ks);
+                        break;
+
                     case R.id.menu_item_copy:
                         ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
                         ClipData clip = ClipData.newPlainText(text, text);
@@ -319,5 +336,12 @@ public class ItemActivity extends AppCompatActivity {
             }
         });
         popupMenu.show();
+    }
+
+    private boolean isKanjiStudyInstalled() {
+        final Intent kanjiStudyIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("kanjistudy://search"));
+        List<ResolveInfo> activities = getPackageManager().queryIntentActivities(kanjiStudyIntent, 0);
+
+        return !activities.isEmpty();
     }
 }
