@@ -190,6 +190,7 @@ public class ItemActivity extends AppCompatActivity {
 
                     TextView kunMeaning = new TextView(this);
                     kunMeaning.setText(kunReading.optString("m", ""));
+                    kunMeaning.setTextIsSelectable(true);
                     row.addView(kunMeaning);
 
                     JSONArray ktags = kunReading.optJSONArray("t");
@@ -225,6 +226,7 @@ public class ItemActivity extends AppCompatActivity {
 
                     TextView kunDescription = new TextView(this);
                     kunDescription.setText(kunReading.optString("d", ""));
+                    kunDescription.setTextIsSelectable(true);
                     TableRow.LayoutParams layoutParams = new TableRow.LayoutParams();
                     layoutParams.span = 4;
                     layoutParams.weight = 1;
