@@ -274,6 +274,75 @@ public class ItemActivity extends AppCompatActivity {
                 usedInLabel.setVisibility(View.GONE);
                 usedInList.setVisibility(View.GONE);
             }
+
+            TableLayout lookalikes = findViewById(R.id.lookalikes);
+            JSONArray las = jsonObject.optJSONArray("las");
+            if (las != null && las.length() > 0) {
+                TableRow.LayoutParams marginParams = new TableRow.LayoutParams();
+                marginParams.rightMargin = 15;
+
+                for (int i = 0; i < las.length(); i++) {
+                    JSONObject lasMember = las.getJSONObject(i);
+
+                    JSONArray lat = lasMember.getJSONArray("lat");
+                    for (int j = 0; j < lat.length(); j++) {
+                        JSONObject latMember = lat.getJSONObject(j);
+                        final String kanjiString = latMember.optString("k", "");
+
+                        TableRow row = new TableRow(this);
+                        row.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                intent.putExtra(MainActivity.KEYWORD_EXTRA, kanjiString);
+                                startActivity(intent);
+                            }
+                        });
+                        lookalikes.addView(row);
+
+                        TextView laKanji = new TextView(this);
+                        laKanji.setText(kanjiString);
+                        laKanji.setTextAppearance(this, R.style.link);
+                        row.addView(laKanji, marginParams);
+
+                        TextView laMeaning = new TextView(this);
+                        laMeaning.setText(latMember.optString("m", ""));
+                        laMeaning.setTextAppearance(this, R.style.component_label);
+                        row.addView(laMeaning, marginParams);
+
+                        TextView laHint = new TextView(this);
+                        laHint.setText(latMember.optString("hint", ""));
+                        row.addView(laHint, marginParams);
+
+                        TextView laRadical = new TextView(this);
+                        laRadical.setText(latMember.optString("radical", ""));
+                        row.addView(laRadical);
+                    }
+
+                    JSONArray lam = lasMember.optJSONArray("lam");
+                    if (Utils.isNotEmpty(lam)) {
+                        TableRow.LayoutParams layoutParams = new TableRow.LayoutParams();
+                        layoutParams.span = 4;
+                        layoutParams.weight = 1;
+
+                        for (int j = 0; j < lam.length(); j++) {
+                            TableRow row = new TableRow(this);
+                            lookalikes.addView(row);
+
+                            TextView laMnemonic = new TextView(this);
+                            laMnemonic.setText(Html.fromHtml(lam.getString(j)));
+                            laMnemonic.setTextIsSelectable(true);
+                            row.addView(laMnemonic, layoutParams);
+                        }
+                    }
+                }
+            } else {
+                TextView lookalikesLabel = findViewById(R.id.lookalikes_label);
+
+                lookalikesLabel.setVisibility(View.GONE);
+                lookalikes.setVisibility(View.GONE);
+            }
+
         } catch (Exception e) {
             e.printStackTrace();
         }

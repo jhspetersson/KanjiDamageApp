@@ -14,4 +14,5 @@
     <string name="kd_url">http://KanjiDamage.com</string>
     <string name="author_credits">App developer</string>
     <string name="author_url">https://github.com/jhspetersson/KanjiDamageApp</string>
+    <string name="lookalikes">Lookalikes</string>
 </resources>

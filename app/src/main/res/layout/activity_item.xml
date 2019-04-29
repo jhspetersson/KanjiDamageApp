@@ -107,6 +107,19 @@
                 android:layout_height="wrap_content"
                 android:columnCount="16"
                 />
+
+            <TextView
+                android:id="@+id/lookalikes_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/label"
+                android:text="@string/lookalikes"
+                />
+            <TableLayout
+                android:id="@+id/lookalikes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TableLayout>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
