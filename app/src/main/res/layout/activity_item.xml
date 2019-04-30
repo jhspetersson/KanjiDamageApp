@@ -14,12 +14,30 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <TextView
-                android:id="@+id/label"
+
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/mainLabel"
-                />
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/mainLabel"
+                    />
+
+                <RatingBar
+                    android:id="@+id/usefulness"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:isIndicator="true"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:theme="@style/usefulness"
+                    />
+            </RelativeLayout>
 
             <TextView
                 android:id="@+id/reading"

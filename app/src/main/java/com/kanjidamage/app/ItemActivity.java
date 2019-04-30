@@ -18,6 +18,7 @@ import android.view.View;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
+import android.widget.RatingBar;
 import android.widget.Space;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -52,6 +53,14 @@ public class ItemActivity extends AppCompatActivity {
                     showPopupMenu(view);
                 }
             });
+
+            RatingBar usefulness = findViewById(R.id.usefulness);
+            double use = jsonObject.optDouble("u", -1);
+            if (use >= 0) {
+                usefulness.setRating((float) use);
+            } else {
+                usefulness.setVisibility(View.GONE);
+            }
 
             TextView reading = findViewById(R.id.reading);
             String read = jsonObject.optString("r");

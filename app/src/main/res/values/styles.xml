@@ -55,4 +55,11 @@
         <item name="android:textColor">#f89406</item>
     </style>
 
+    <style name="usefulness">
+        <item name="colorControlNormal">#d3d3d3</item>
+        <item name="colorControlActivated">#ffc40d</item>
+        <item name="android:numStars">5</item>
+        <item name="android:stepSize">1</item>
+    </style>
+
 </resources>
