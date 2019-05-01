@@ -10,11 +10,12 @@ import java.util.List;
 import java.util.Map;
 
 public class DataAdapter extends RecyclerView.Adapter<DataRow> {
-
     private List<Map<String, String>> data;
+    private View.OnClickListener callback;
 
-    public DataAdapter(List<Map<String, String>> data) {
+    public DataAdapter(List<Map<String, String>> data, View.OnClickListener callback) {
         this.data = data;
+        this.callback = callback;
     }
 
     @NonNull
@@ -23,7 +24,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataRow> {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.card, parent, false);
 
-        return new DataRow(view);
+        return new DataRow(view, callback);
     }
 
     @Override

@@ -6,4 +6,8 @@ import java.util.Map;
 
 public abstract class Data {
     public static List<Map<String, String>> data = Collections.emptyList();
+
+    interface DataLoadCallback {
+        void onDataLoaded();
+    }
 }

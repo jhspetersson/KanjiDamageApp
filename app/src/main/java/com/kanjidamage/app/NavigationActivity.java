@@ -1,17 +1,19 @@
 package com.kanjidamage.app;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.Menu;
-import android.view.MenuInflater;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.GravityCompat;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
-import android.widget.EditText;
+import android.support.design.widget.NavigationView;
+import android.support.v4.widget.DrawerLayout;
+
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.widget.FrameLayout;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -22,88 +24,131 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class NavigationActivity extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener, Data.DataLoadCallback, SearchFragment.OnSearchInteractionListener {
 
-    static final String KEYWORD_EXTRA = "keyword";
-
-    private RecyclerView cards;
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_navigation);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        EditText search = findViewById(R.id.search);
-        search.addTextChangedListener(new TextWatcherHelper() {
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                String keyword = String.valueOf(s);
-                updateSearchResults(keyword);
-            }
-        });
+        navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
 
-        cards = findViewById(R.id.cards);
-        cards.setLayoutManager(new LinearLayoutManager(this));
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.addDrawerListener(toggle);
+        toggle.syncState();
 
         loadData();
 
-        CharSequence keyword = getIntent().getStringExtra(KEYWORD_EXTRA);
-        if (keyword == null) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                keyword = getIntent().getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
-            }
-        }
-        if (keyword != null) {
-            search.setText(keyword.toString());
+        if (!Data.data.isEmpty()) {
+            navigateFirstMenuItem();
         }
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu, menu);
+    public void onBackPressed() {
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            FrameLayout container = findViewById(R.id.container);
+            if (container.getChildCount() == 1) {
+                super.onBackPressed();
+                if (container.getChildCount() == 0) {
+                    finish();
+                }
+            } else if (container.getChildCount() == 0) {
+                navigateFirstMenuItem();
+            } else {
+                super.onBackPressed();
+            }
+        }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        Fragment fragment = null;
+
+        int id = item.getItemId();
+
+        if (id == R.id.nav_search) {
+            fragment = SearchFragment.newInstance(this);
+        } else if (id == R.id.nav_kanji) {
+            fragment = new KanjiListFragment();
+        } else if (id == R.id.nav_kanjidamage) {
+            Utils.openUrl("http://www.kanjidamage.com", this);
+        } else if (id == R.id.nav_github) {
+            Utils.openUrl("https://github.com/jhspetersson/KanjiDamageApp", this);
+        }
+
+        if (fragment != null) {
+            navigateMenuItem(item, fragment);
+        }
+
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.menu_about:
-                Intent intent = new Intent(this, AboutActivity.class);
-                startActivity(intent);
-                break;
-        }
+    private void navigateMenuItem(MenuItem item, Fragment fragment) {
+        item.setChecked(true);
+        setTitle(item.getTitle());
 
-        return super.onOptionsItemSelected(item);
+        changeFragment(fragment);
     }
 
-    private void updateSearchResults(String keyword) {
-        //cards.setAdapter(new DataAdapter(filter(keyword)));
-    }
-
-    private List<Map<String, String>> filter(String keyword) {
-        List<Map<String, String>> result = new ArrayList<>();
-
-        keyword = keyword.trim();
-        if (!keyword.isEmpty()) {
-            for (Map<String, String> row : Data.data) {
-                if (row.get("label").contains(keyword) || row.get("comment").contains(keyword) ||
-                        (row.containsKey("onyomi") && row.get("onyomi").contains(keyword))) {
-                    result.add(row);
-                }
-            }
-        }
-
-        return result;
+    private void changeFragment(Fragment fragment) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, fragment)
+                .addToBackStack(null)
+                .commit();
     }
 
     private void loadData() {
         if (Data.data.isEmpty()) {
-            new LoadDataTask().doInBackground(this);
+            LoadDataTask task = new LoadDataTask();
+            task.callback = this;
+            task.execute(this);
         }
     }
 
+    @Override
+    public void onDataLoaded() {
+        navigateFirstMenuItem();
+    }
+
+    private void navigateFirstMenuItem() {
+        MenuItem searchMenuItem = navigationView.getMenu().getItem(0);
+
+        try {
+            navigateMenuItem(searchMenuItem, SearchFragment.newInstance(this));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public void onSearchInteraction(String title, String jsonString) {
+        setTitle(title);
+
+        ItemFragment fragment = new ItemFragment();
+        fragment.setJson(jsonString);
+
+        changeFragment(fragment);
+    }
+
     private static class LoadDataTask extends AsyncTask<Context, Void, Void> {
+        private Data.DataLoadCallback callback;
+
         @Override
         protected Void doInBackground(Context... params) {
             JSONObject json = loadJSONFromAsset(params[0]);
@@ -185,6 +230,12 @@ public class MainActivity extends AppCompatActivity {
             Data.data = data;
 
             return null;
+        }
+
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            callback.onDataLoaded();
         }
     }
 

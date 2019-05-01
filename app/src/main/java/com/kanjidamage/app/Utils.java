@@ -1,5 +1,9 @@
 package com.kanjidamage.app;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 
@@ -62,5 +66,11 @@ public class Utils {
         }
 
         return false;
+    }
+
+    public static void openUrl(String url, Context context) {
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        context.startActivity(i);
     }
 }

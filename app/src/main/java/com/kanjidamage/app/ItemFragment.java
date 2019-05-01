@@ -1,5 +1,6 @@
 package com.kanjidamage.app;
 
+
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -9,12 +10,14 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.text.Spanned;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.PopupMenu;
@@ -29,23 +32,30 @@ import org.json.JSONObject;
 
 import java.util.List;
 
-public class ItemActivity extends AppCompatActivity {
+
+public class ItemFragment extends Fragment {
+
+    private String json;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_item);
+    }
 
-        Intent intent = getIntent();
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_item, container, false);
+
         try {
-            JSONObject jsonObject = new JSONObject(intent.getStringExtra("json"));
+            JSONObject jsonObject = new JSONObject(json);
             String labelString = jsonObject.getString("k");
             JSONObject okurigana = jsonObject.optJSONObject("o");
             if (okurigana != null) {
                 labelString = okurigana.optString("pre", "") + labelString + okurigana.optString("post", "");
             }
 
-            TextView label = findViewById(R.id.label);
+            TextView label = view.findViewById(R.id.label);
             label.setText(labelString);
             label.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -54,7 +64,7 @@ public class ItemActivity extends AppCompatActivity {
                 }
             });
 
-            RatingBar usefulness = findViewById(R.id.usefulness);
+            RatingBar usefulness = view.findViewById(R.id.usefulness);
             double use = jsonObject.optDouble("u", -1);
             if (use >= 0) {
                 usefulness.setRating((float) use);
@@ -62,7 +72,7 @@ public class ItemActivity extends AppCompatActivity {
                 usefulness.setVisibility(View.GONE);
             }
 
-            TextView reading = findViewById(R.id.reading);
+            TextView reading = view.findViewById(R.id.reading);
             String read = jsonObject.optString("r");
             if (read != null && !read.isEmpty()) {
                 if (okurigana != null) {
@@ -73,22 +83,22 @@ public class ItemActivity extends AppCompatActivity {
                 reading.setVisibility(View.GONE);
             }
 
-            LinearLayout tagsHolder = findViewById(R.id.tags_holder);
+            LinearLayout tagsHolder = view.findViewById(R.id.tags_holder);
             JSONArray tags = jsonObject.optJSONArray("t");
             if (tags != null) {
                 for (int i = 0; i < tags.length(); i++) {
                     String tag = tags.getString(i);
 
-                    TextView tagView = new TextView(this);
+                    TextView tagView = new TextView(getContext());
                     tagView.setText(tag);
                     tagView.setTextColor(Color.WHITE);
-                    tagView.setTextAppearance(this, R.style.tag);
+                    tagView.setTextAppearance(getContext(), R.style.tag);
                     tagView.setBackgroundResource(R.drawable.rounded_corners);
                     ((GradientDrawable) tagView.getBackground()).setColor(Color.parseColor("#2d6987"));
 
                     tagsHolder.addView(tagView);
 
-                    Space space = new Space(this);
+                    Space space = new Space(getContext());
                     space.setMinimumWidth(5);
                     tagsHolder.addView(space);
                 }
@@ -97,46 +107,46 @@ public class ItemActivity extends AppCompatActivity {
             }
 
             String itemMeaning = jsonObject.getString("m");
-            TextView meaning = findViewById(R.id.meaning);
+            TextView meaning = view.findViewById(R.id.meaning);
             meaning.setText(itemMeaning);
 
-            TableLayout components = findViewById(R.id.components);
+            TableLayout components = view.findViewById(R.id.components);
             JSONArray comps = jsonObject.optJSONArray("c");
             if (comps != null && comps.length() > 0) {
                 for (int i = 0; i < comps.length(); i++) {
                     JSONObject comp = comps.getJSONObject(i);
                     final String compString = !comp.optString("k", "").equals("null") ? comp.optString("k") : "";
 
-                    TableRow row = new TableRow(this);
+                    TableRow row = new TableRow(getContext());
                     row.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            Intent intent = new Intent(getContext(), MainActivity.class);
                             intent.putExtra(MainActivity.KEYWORD_EXTRA, compString);
                             startActivity(intent);
                         }
                     });
                     components.addView(row);
 
-                    TextView compKanji = new TextView(this);
+                    TextView compKanji = new TextView(getContext());
                     compKanji.setText(compString);
-                    compKanji.setTextAppearance(this, R.style.link);
+                    compKanji.setTextAppearance(getContext(), R.style.link);
                     row.addView(compKanji);
 
-                    Space space = new Space(this);
+                    Space space = new Space(getContext());
                     space.setMinimumWidth(10);
                     row.addView(space);
 
-                    TextView compMeaning = new TextView(this);
+                    TextView compMeaning = new TextView(getContext());
                     compMeaning.setText(comp.optString("m", ""));
-                    compMeaning.setTextAppearance(this, R.style.component_label);
+                    compMeaning.setTextAppearance(getContext(), R.style.component_label);
                     row.addView(compMeaning);
                 }
             } else {
                 components.setVisibility(View.GONE);
             }
 
-            TextView description = findViewById(R.id.description);
+            TextView description = view.findViewById(R.id.description);
             String descr = jsonObject.optString("d");
             if (descr != null && !descr.isEmpty()) {
                 description.setText(formatHtmlString(descr));
@@ -144,96 +154,96 @@ public class ItemActivity extends AppCompatActivity {
                 description.setVisibility(View.GONE);
             }
 
-            TextView onyomi = findViewById(R.id.onyomi);
+            TextView onyomi = view.findViewById(R.id.onyomi);
             JSONArray on = jsonObject.optJSONArray("on");
             if (Utils.isNotEmpty(on)) {
                 onyomi.setText(Utils.join(on));
             } else {
-                TextView onyomiLabel = findViewById(R.id.onyomi_label);
+                TextView onyomiLabel = view.findViewById(R.id.onyomi_label);
 
                 onyomiLabel.setVisibility(View.GONE);
                 onyomi.setVisibility(View.GONE);
             }
 
-            TextView mnemonic = findViewById(R.id.mnemonic);
+            TextView mnemonic = view.findViewById(R.id.mnemonic);
             String mnemo = jsonObject.optString("mn");
             if (mnemo != null && !mnemo.isEmpty()) {
                 mnemonic.setText(formatHtmlString(mnemo));
             } else {
-                TextView mnemonicLabel = findViewById(R.id.mnemonic_label);
+                TextView mnemonicLabel = view.findViewById(R.id.mnemonic_label);
 
                 mnemonicLabel.setVisibility(View.GONE);
                 mnemonic.setVisibility(View.GONE);
             }
 
-            TableLayout kunyomi = findViewById(R.id.kunyomi);
+            TableLayout kunyomi = view.findViewById(R.id.kunyomi);
             JSONArray kun = jsonObject.optJSONArray("kun");
             if (Utils.isNotEmpty(kun)) {
                 for (int i = 0; i < kun.length(); i++) {
-                    TableRow row = new TableRow(this);
+                    TableRow row = new TableRow(getContext());
                     kunyomi.addView(row);
 
-                    TableRow row2 = new TableRow(this);
+                    TableRow row2 = new TableRow(getContext());
                     kunyomi.addView(row2);
 
                     JSONObject kunReading = kun.getJSONObject(i);
 
-                    TextView preParticle = new TextView(this);
+                    TextView preParticle = new TextView(getContext());
                     preParticle.setText(kunReading.optString("preParticle", ""));
-                    preParticle.setTextAppearance(this, R.style.particle);
+                    preParticle.setTextAppearance(getContext(), R.style.particle);
                     row.addView(preParticle);
 
-                    TextView kreading = new TextView(this);
+                    TextView kreading = new TextView(getContext());
                     kreading.setText(kunReading.optString("r", ""));
-                    kreading.setTextAppearance(this, R.style.reading);
+                    kreading.setTextAppearance(getContext(), R.style.reading);
                     row.addView(kreading);
 
-                    TextView kokurigana = new TextView(this);
+                    TextView kokurigana = new TextView(getContext());
                     kokurigana.setText(kunReading.optString("o", ""));
                     row.addView(kokurigana);
 
-                    TextView postParticle = new TextView(this);
+                    TextView postParticle = new TextView(getContext());
                     postParticle.setText(kunReading.optString("postParticle", ""));
-                    postParticle.setTextAppearance(this, R.style.particle);
+                    postParticle.setTextAppearance(getContext(), R.style.particle);
                     row.addView(postParticle);
 
-                    TextView kunMeaning = new TextView(this);
+                    TextView kunMeaning = new TextView(getContext());
                     kunMeaning.setText(kunReading.optString("m", ""));
                     kunMeaning.setTextIsSelectable(true);
                     row.addView(kunMeaning);
 
                     JSONArray ktags = kunReading.optJSONArray("t");
                     if (ktags != null) {
-                        LinearLayout ktagsHolder = new LinearLayout(this);
+                        LinearLayout ktagsHolder = new LinearLayout(getContext());
 
                         for (int j = 0; j < ktags.length(); j++) {
                             String tag = ktags.getString(j);
 
-                            TextView tagView = new TextView(this);
+                            TextView tagView = new TextView(getContext());
                             tagView.setText(tag);
                             tagView.setTextColor(Color.WHITE);
-                            tagView.setTextAppearance(this, R.style.tag);
+                            tagView.setTextAppearance(getContext(), R.style.tag);
                             tagView.setBackgroundResource(R.drawable.rounded_corners);
                             ((GradientDrawable) tagView.getBackground()).setColor(Color.parseColor("#2d6987"));
 
                             ktagsHolder.addView(tagView);
 
-                            Space space = new Space(this);
+                            Space space = new Space(getContext());
                             space.setMinimumWidth(5);
                             ktagsHolder.addView(space);
                         }
 
-                        TableRow tagsRow = new TableRow(this);
+                        TableRow tagsRow = new TableRow(getContext());
                         kunyomi.addView(tagsRow);
-                        tagsRow.addView(new TextView(this));
+                        tagsRow.addView(new TextView(getContext()));
                         TableRow.LayoutParams layoutParams = new TableRow.LayoutParams();
                         layoutParams.span = 4;
                         tagsRow.addView(ktagsHolder, layoutParams);
                     }
 
-                    row2.addView(new TextView(this));
+                    row2.addView(new TextView(getContext()));
 
-                    TextView kunDescription = new TextView(this);
+                    TextView kunDescription = new TextView(getContext());
                     kunDescription.setText(kunReading.optString("d", ""));
                     kunDescription.setTextIsSelectable(true);
                     TableRow.LayoutParams layoutParams = new TableRow.LayoutParams();
@@ -242,13 +252,13 @@ public class ItemActivity extends AppCompatActivity {
                     row2.addView(kunDescription, layoutParams);
                 }
             } else {
-                TextView kunyomiLabel = findViewById(R.id.kunyomi_label);
+                TextView kunyomiLabel = view.findViewById(R.id.kunyomi_label);
 
                 kunyomiLabel.setVisibility(View.GONE);
                 kunyomi.setVisibility(View.GONE);
             }
 
-            GridLayout usedInList = findViewById(R.id.usedin);
+            GridLayout usedInList = view.findViewById(R.id.usedin);
             JSONArray usedIn = jsonObject.optJSONArray("ui");
             if (usedIn != null && usedIn.length() > 0) {
                 for (int i = 0; i < usedIn.length(); i++) {
@@ -256,13 +266,13 @@ public class ItemActivity extends AppCompatActivity {
                     if (usedObject != null) {
                         final String kanji = usedObject.optString("k");
                         if (kanji != null && !kanji.isEmpty() && !kanji.equals("null")) {
-                            TextView usedInKanji = new TextView(this);
+                            TextView usedInKanji = new TextView(getContext());
                             usedInKanji.setText(kanji);
-                            usedInKanji.setTextAppearance(this, R.style.link);
+                            usedInKanji.setTextAppearance(getContext(), R.style.link);
                             usedInKanji.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-                                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                    Intent intent = new Intent(getContext(), MainActivity.class);
                                     intent.putExtra(MainActivity.KEYWORD_EXTRA, kanji);
                                     startActivity(intent);
                                 }
@@ -270,7 +280,7 @@ public class ItemActivity extends AppCompatActivity {
 
                             usedInList.addView(usedInKanji);
 
-                            Space space = new Space(this);
+                            Space space = new Space(getContext());
                             space.setMinimumWidth(15);
 
                             usedInList.addView(space);
@@ -278,13 +288,13 @@ public class ItemActivity extends AppCompatActivity {
                     }
                 }
             } else {
-                TextView usedInLabel = findViewById(R.id.usedin_label);
+                TextView usedInLabel = view.findViewById(R.id.usedin_label);
 
                 usedInLabel.setVisibility(View.GONE);
                 usedInList.setVisibility(View.GONE);
             }
 
-            TableLayout lookalikes = findViewById(R.id.lookalikes);
+            TableLayout lookalikes = view.findViewById(R.id.lookalikes);
             JSONArray las = jsonObject.optJSONArray("las");
             if (las != null && las.length() > 0) {
                 TableRow.LayoutParams marginParams = new TableRow.LayoutParams();
@@ -298,32 +308,32 @@ public class ItemActivity extends AppCompatActivity {
                         JSONObject latMember = lat.getJSONObject(j);
                         final String kanjiString = latMember.optString("k", "");
 
-                        TableRow row = new TableRow(this);
+                        TableRow row = new TableRow(getContext());
                         row.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                Intent intent = new Intent(getContext(), MainActivity.class);
                                 intent.putExtra(MainActivity.KEYWORD_EXTRA, kanjiString);
                                 startActivity(intent);
                             }
                         });
                         lookalikes.addView(row);
 
-                        TextView laKanji = new TextView(this);
+                        TextView laKanji = new TextView(getContext());
                         laKanji.setText(kanjiString);
-                        laKanji.setTextAppearance(this, R.style.link);
+                        laKanji.setTextAppearance(getContext(), R.style.link);
                         row.addView(laKanji, marginParams);
 
-                        TextView laMeaning = new TextView(this);
+                        TextView laMeaning = new TextView(getContext());
                         laMeaning.setText(latMember.optString("m", ""));
-                        laMeaning.setTextAppearance(this, R.style.component_label);
+                        laMeaning.setTextAppearance(getContext(), R.style.component_label);
                         row.addView(laMeaning, marginParams);
 
-                        TextView laHint = new TextView(this);
+                        TextView laHint = new TextView(getContext());
                         laHint.setText(latMember.optString("hint", ""));
                         row.addView(laHint, marginParams);
 
-                        TextView laRadical = new TextView(this);
+                        TextView laRadical = new TextView(getContext());
                         laRadical.setText(latMember.optString("radical", ""));
                         row.addView(laRadical);
                     }
@@ -335,10 +345,10 @@ public class ItemActivity extends AppCompatActivity {
                         layoutParams.weight = 1;
 
                         for (int j = 0; j < lam.length(); j++) {
-                            TableRow row = new TableRow(this);
+                            TableRow row = new TableRow(getContext());
                             lookalikes.addView(row);
 
-                            TextView laMnemonic = new TextView(this);
+                            TextView laMnemonic = new TextView(getContext());
                             laMnemonic.setText(Html.fromHtml(lam.getString(j)));
                             laMnemonic.setTextIsSelectable(true);
                             row.addView(laMnemonic, layoutParams);
@@ -346,7 +356,7 @@ public class ItemActivity extends AppCompatActivity {
                     }
                 }
             } else {
-                TextView lookalikesLabel = findViewById(R.id.lookalikes_label);
+                TextView lookalikesLabel = view.findViewById(R.id.lookalikes_label);
 
                 lookalikesLabel.setVisibility(View.GONE);
                 lookalikes.setVisibility(View.GONE);
@@ -355,6 +365,8 @@ public class ItemActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+        return view;
     }
 
     private static Spanned formatHtmlString(String string) {
@@ -373,7 +385,7 @@ public class ItemActivity extends AppCompatActivity {
     }
 
     private void showPopupMenu(final View v) {
-        PopupMenu popupMenu = new PopupMenu(this, v);
+        PopupMenu popupMenu = new PopupMenu(getContext(), v);
         popupMenu.inflate(R.menu.label_menu);
 
         if (!isKanjiStudyInstalled() || Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
@@ -386,7 +398,7 @@ public class ItemActivity extends AppCompatActivity {
                 CharSequence text = ((TextView) v).getText();
                 switch (item.getItemId()) {
                     case R.id.menu_item_search:
-                        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                        Intent intent = new Intent(getContext(), MainActivity.class);
                         intent.putExtra(MainActivity.KEYWORD_EXTRA, text);
                         startActivity(intent);
                         break;
@@ -406,7 +418,7 @@ public class ItemActivity extends AppCompatActivity {
                         break;
 
                     case R.id.menu_item_copy:
-                        ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                        ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
                         ClipData clip = ClipData.newPlainText(text, text);
                         clipboard.setPrimaryClip(clip);
                         break;
@@ -420,8 +432,12 @@ public class ItemActivity extends AppCompatActivity {
 
     private boolean isKanjiStudyInstalled() {
         final Intent kanjiStudyIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("kanjistudy://search"));
-        List<ResolveInfo> activities = getPackageManager().queryIntentActivities(kanjiStudyIntent, 0);
+        List<ResolveInfo> activities = getActivity().getPackageManager().queryIntentActivities(kanjiStudyIntent, 0);
 
         return !activities.isEmpty();
+    }
+
+    public void setJson(String json) {
+        this.json = json;
     }
 }
