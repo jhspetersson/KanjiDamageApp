@@ -103,7 +103,7 @@ public class NavigationActivity extends AppCompatActivity
         if (id == R.id.nav_search) {
             fragment = SearchFragment.newInstance("", this);
         } else if (id == R.id.nav_kanji) {
-            fragment = new KanjiListFragment();
+            fragment = KanjiListFragment.newInstance(this);
         } else if (id == R.id.nav_about) {
             fragment = new AboutFragment();
         } else if (id == R.id.nav_kanjidamage) {
@@ -224,6 +224,11 @@ public class NavigationActivity extends AppCompatActivity
                     }
 
                     data.add(row);
+
+                    String k = kanji.getString("k");
+                    if (Utils.isNotEmpty(k)) {
+                        Data.kanji.add(k);
+                    }
                 }
 
                 JSONArray jukugos = json.getJSONArray("jukugo");

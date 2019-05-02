@@ -69,7 +69,7 @@ public class Utils {
     }
 
     public static boolean isNotEmpty(String string) {
-        return string != null && !string.isEmpty();
+        return string != null && !string.isEmpty() && !string.equals("null");
     }
 
     public static void openUrl(String url, Context context) {
