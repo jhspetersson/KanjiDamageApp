@@ -25,7 +25,7 @@ import java.util.List;
 import java.util.Map;
 
 public class NavigationActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, Data.DataLoadCallback, SearchFragment.OnSearchInteractionListener {
+        implements NavigationView.OnNavigationItemSelectedListener, Data.DataLoadCallback, SearchFragment.OnOpenItemListener, ItemFragment.OnSearchListener {
 
     private NavigationView navigationView;
 
@@ -48,7 +48,7 @@ public class NavigationActivity extends AppCompatActivity
         loadData();
 
         if (!Data.data.isEmpty()) {
-            navigateFirstMenuItem();
+            navigateFirstMenuItem("");
         }
     }
 
@@ -61,11 +61,19 @@ public class NavigationActivity extends AppCompatActivity
             FrameLayout container = findViewById(R.id.container);
             if (container.getChildCount() == 1) {
                 super.onBackPressed();
+
+                FragmentManager fm = getSupportFragmentManager();
+                if (fm.getBackStackEntryCount() > 0) {
+                    FragmentManager.BackStackEntry backStackEntry = fm.getBackStackEntryAt(fm.getBackStackEntryCount() - 1);
+                    String title = backStackEntry.getName();
+                    setTitle(title);
+                }
+
                 if (container.getChildCount() == 0) {
                     finish();
                 }
             } else if (container.getChildCount() == 0) {
-                navigateFirstMenuItem();
+                navigateFirstMenuItem("");
             } else {
                 super.onBackPressed();
             }
@@ -79,7 +87,7 @@ public class NavigationActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_search) {
-            fragment = SearchFragment.newInstance(this);
+            fragment = SearchFragment.newInstance("", this);
         } else if (id == R.id.nav_kanji) {
             fragment = new KanjiListFragment();
         } else if (id == R.id.nav_kanjidamage) {
@@ -100,16 +108,16 @@ public class NavigationActivity extends AppCompatActivity
 
     private void navigateMenuItem(MenuItem item, Fragment fragment) {
         item.setChecked(true);
-        setTitle(item.getTitle());
-
-        changeFragment(fragment);
+        changeFragment(fragment, item.getTitle().toString());
     }
 
-    private void changeFragment(Fragment fragment) {
+    private void changeFragment(Fragment fragment, String title) {
+        setTitle(title);
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
-                .addToBackStack(null)
+                .addToBackStack(title)
                 .commit();
     }
 
@@ -123,27 +131,28 @@ public class NavigationActivity extends AppCompatActivity
 
     @Override
     public void onDataLoaded() {
-        navigateFirstMenuItem();
+        navigateFirstMenuItem("");
     }
 
-    private void navigateFirstMenuItem() {
+    private void navigateFirstMenuItem(String keyword) {
         MenuItem searchMenuItem = navigationView.getMenu().getItem(0);
 
         try {
-            navigateMenuItem(searchMenuItem, SearchFragment.newInstance(this));
+            navigateMenuItem(searchMenuItem, SearchFragment.newInstance(keyword, this));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     @Override
-    public void onSearchInteraction(String title, String jsonString) {
-        setTitle(title);
+    public void onOpenItem(String title, String jsonString) {
+        ItemFragment fragment = ItemFragment.newInstance(jsonString, this);
+        changeFragment(fragment, title);
+    }
 
-        ItemFragment fragment = new ItemFragment();
-        fragment.setJson(jsonString);
-
-        changeFragment(fragment);
+    @Override
+    public void onSearch(String keyword) {
+        navigateFirstMenuItem(keyword);
     }
 
     private static class LoadDataTask extends AsyncTask<Context, Void, Void> {

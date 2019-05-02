@@ -68,6 +68,10 @@ public class Utils {
         return false;
     }
 
+    public static boolean isNotEmpty(String string) {
+        return string != null && !string.isEmpty();
+    }
+
     public static void openUrl(String url, Context context) {
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));

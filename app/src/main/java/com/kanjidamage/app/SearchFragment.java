@@ -1,8 +1,6 @@
 package com.kanjidamage.app;
 
 
-import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,10 +20,13 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
 
     private RecyclerView cards;
 
-    private OnSearchInteractionListener listener;
+    private String keyword;
 
-    public static SearchFragment newInstance(OnSearchInteractionListener listener) {
+    private OnOpenItemListener listener;
+
+    public static SearchFragment newInstance(String keyword, OnOpenItemListener listener) {
         SearchFragment fragment = new SearchFragment();
+        fragment.keyword = keyword;
         fragment.listener = listener;
 
         return fragment;
@@ -58,6 +59,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         cards.setLayoutManager(new LinearLayoutManager(getContext()));
 
         try {
+            /*
             CharSequence keyword = getActivity().getIntent().getStringExtra(KEYWORD_EXTRA);
 
             if (keyword == null) {
@@ -67,6 +69,10 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
             }
 
             if (keyword != null) {
+                search.setText(keyword.toString());
+            }
+            */
+            if (Utils.isNotEmpty(keyword)) {
                 search.setText(keyword.toString());
             }
         } catch (Exception e) {
@@ -83,7 +89,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        listener.onSearchInteraction(v.getTag(R.id.label).toString(), v.getTag(R.id.description).toString());
+        listener.onOpenItem(v.getTag(R.id.label).toString(), v.getTag(R.id.description).toString());
     }
 
     private List<Map<String, String>> filter(String keyword) {
@@ -102,7 +108,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         return result;
     }
 
-    public interface OnSearchInteractionListener {
-        void onSearchInteraction(String title, String jsonString);
+    public interface OnOpenItemListener {
+        void onOpenItem(String title, String jsonString);
     }
 }

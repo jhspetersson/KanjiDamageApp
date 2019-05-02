@@ -37,6 +37,18 @@ public class ItemFragment extends Fragment {
 
     private String json;
 
+    ItemFragment.OnSearchListener listener;
+
+    public static ItemFragment newInstance(String json, ItemFragment.OnSearchListener listener) {
+        ItemFragment fragment = new ItemFragment();
+        fragment.json = json;
+        fragment.listener = listener;
+
+        return fragment;
+    }
+
+    private ItemFragment() { }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -121,9 +133,7 @@ public class ItemFragment extends Fragment {
                     row.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            Intent intent = new Intent(getContext(), MainActivity.class);
-                            intent.putExtra(MainActivity.KEYWORD_EXTRA, compString);
-                            startActivity(intent);
+                            listener.onSearch(compString);
                         }
                     });
                     components.addView(row);
@@ -272,9 +282,7 @@ public class ItemFragment extends Fragment {
                             usedInKanji.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View view) {
-                                    Intent intent = new Intent(getContext(), MainActivity.class);
-                                    intent.putExtra(MainActivity.KEYWORD_EXTRA, kanji);
-                                    startActivity(intent);
+                                    listener.onSearch(kanji);
                                 }
                             });
 
@@ -312,9 +320,7 @@ public class ItemFragment extends Fragment {
                         row.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                Intent intent = new Intent(getContext(), MainActivity.class);
-                                intent.putExtra(MainActivity.KEYWORD_EXTRA, kanjiString);
-                                startActivity(intent);
+                                listener.onSearch(kanjiString);
                             }
                         });
                         lookalikes.addView(row);
@@ -398,15 +404,11 @@ public class ItemFragment extends Fragment {
                 CharSequence text = ((TextView) v).getText();
                 switch (item.getItemId()) {
                     case R.id.menu_item_search:
-                        Intent intent = new Intent(getContext(), MainActivity.class);
-                        intent.putExtra(MainActivity.KEYWORD_EXTRA, text);
-                        startActivity(intent);
+                        listener.onSearch(text.toString());
                         break;
 
                     case R.id.menu_item_jisho:
-                        Intent i = new Intent(Intent.ACTION_VIEW);
-                        i.setData(Uri.parse("https://jisho.org/search/" + Uri.encode(text.toString())));
-                        startActivity(i);
+                        Utils.openUrl("https://jisho.org/search/" + Uri.encode(text.toString()), getContext());
                         break;
 
                     case R.id.menu_item_kanjistudy:
@@ -437,7 +439,7 @@ public class ItemFragment extends Fragment {
         return !activities.isEmpty();
     }
 
-    public void setJson(String json) {
-        this.json = json;
+    public interface OnSearchListener {
+        void onSearch(String keyword);
     }
 }
