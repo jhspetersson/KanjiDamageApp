@@ -107,7 +107,7 @@ public class NavigationActivity extends AppCompatActivity
         } else if (id == R.id.nav_about) {
             fragment = new AboutFragment();
         } else if (id == R.id.nav_kanjidamage) {
-            Utils.openUrl("http://www.kd.com", this);
+            Utils.openUrl("http://www.kanjidamage.com", this);
         } else if (id == R.id.nav_github) {
             Utils.openUrl("https://github.com/jhspetersson/KanjiDamageApp", this);
         }
