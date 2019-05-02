@@ -1,7 +1,9 @@
 package com.kanjidamage.app;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -48,8 +50,20 @@ public class NavigationActivity extends AppCompatActivity
         loadData();
 
         if (!Data.data.isEmpty()) {
-            navigateFirstMenuItem("");
+            String keyword = getDefaultKeyword();
+            navigateFirstMenuItem(keyword);
         }
+    }
+
+    private String getDefaultKeyword() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            CharSequence extra = getIntent().getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
+            if (extra != null) {
+                return extra.toString();
+            }
+        }
+
+        return "";
     }
 
     @Override
@@ -123,6 +137,7 @@ public class NavigationActivity extends AppCompatActivity
 
     private void loadData() {
         if (Data.data.isEmpty()) {
+            setTitle(R.string.loading);
             LoadDataTask task = new LoadDataTask();
             task.callback = this;
             task.execute(this);
@@ -131,7 +146,7 @@ public class NavigationActivity extends AppCompatActivity
 
     @Override
     public void onDataLoaded() {
-        navigateFirstMenuItem("");
+        navigateFirstMenuItem(getDefaultKeyword());
     }
 
     private void navigateFirstMenuItem(String keyword) {
