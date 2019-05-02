@@ -1,4 +1,4 @@
-package com.kanjidamage.app;
+package jhspetersson.kd.app;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;

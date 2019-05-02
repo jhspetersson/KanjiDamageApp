@@ -1,4 +1,4 @@
-package com.kanjidamage.app;
+package jhspetersson.kd.app;
 
 import android.content.Context;
 import android.content.Intent;
@@ -39,7 +39,7 @@ public class Utils {
         return sb.substring(0, sb.length() - delimeter.length());
     }
 
-    public static boolean isNotEmpty(JSONArray jsonArray) throws JSONException {
+    static boolean isNotEmpty(JSONArray jsonArray) throws JSONException {
         if (jsonArray == null || jsonArray.length() == 0) {
             return false;
         }
@@ -54,7 +54,7 @@ public class Utils {
         return false;
     }
 
-    public static boolean isNotEmpty(Collection<String> collection) {
+    static boolean isNotEmpty(Collection<String> collection) {
         if (collection == null || collection.isEmpty()) {
             return false;
         }
@@ -68,11 +68,11 @@ public class Utils {
         return false;
     }
 
-    public static boolean isNotEmpty(String string) {
+    static boolean isNotEmpty(String string) {
         return string != null && !string.isEmpty() && !string.equals("null");
     }
 
-    public static void openUrl(String url, Context context) {
+    static void openUrl(String url, Context context) {
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         context.startActivity(i);

@@ -1,4 +1,4 @@
-package com.kanjidamage.app;
+package jhspetersson.kd.app;
 
 import java.util.ArrayList;
 import java.util.Collections;

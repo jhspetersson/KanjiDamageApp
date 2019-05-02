@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.kanjidamage.app">
+    package="jhspetersson.kd.app">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".NavigationActivity"
+            android:name="jhspetersson.kd.app.NavigationActivity"
             android:label="@string/kanjidamage"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>

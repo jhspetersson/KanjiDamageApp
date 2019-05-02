@@ -1,4 +1,4 @@
-package com.kanjidamage.app;
+package jhspetersson.kd.app;
 
 import android.text.Editable;
 import android.text.TextWatcher;

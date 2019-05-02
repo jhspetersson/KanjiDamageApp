@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     style="@style/item"
-    tools:context=".ItemFragment"
+    tools:context="jhspetersson.kd.app.ItemFragment"
     >
     <ScrollView
         android:layout_width="match_parent"

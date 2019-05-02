@@ -1,4 +1,4 @@
-package com.kanjidamage.app;
+package jhspetersson.kd.app;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

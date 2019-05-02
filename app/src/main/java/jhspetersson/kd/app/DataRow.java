@@ -1,4 +1,4 @@
-package com.kanjidamage.app;
+package jhspetersson.kd.app;
 
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
