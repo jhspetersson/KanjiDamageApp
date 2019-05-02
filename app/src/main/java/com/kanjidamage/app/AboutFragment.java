@@ -2,19 +2,22 @@ package com.kanjidamage.app;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutFragment extends Fragment {
+    public AboutFragment() { }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_about, container, false);
 
-        final TextView kdLink = findViewById(R.id.kd_url);
+        final TextView kdLink = view.findViewById(R.id.kd_url);
         kdLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -25,7 +28,7 @@ public class AboutActivity extends AppCompatActivity {
             }
         });
 
-        final TextView authorLink = findViewById(R.id.author_url);
+        final TextView authorLink = view.findViewById(R.id.author_url);
         authorLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,5 +38,7 @@ public class AboutActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        return view;
     }
 }

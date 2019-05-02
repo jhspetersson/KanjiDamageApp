@@ -104,6 +104,8 @@ public class NavigationActivity extends AppCompatActivity
             fragment = SearchFragment.newInstance("", this);
         } else if (id == R.id.nav_kanji) {
             fragment = new KanjiListFragment();
+        } else if (id == R.id.nav_about) {
+            fragment = new AboutFragment();
         } else if (id == R.id.nav_kanjidamage) {
             Utils.openUrl("http://www.kanjidamage.com", this);
         } else if (id == R.id.nav_github) {

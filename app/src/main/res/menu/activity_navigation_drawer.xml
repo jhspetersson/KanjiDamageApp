@@ -12,6 +12,11 @@
             android:id="@+id/nav_kanji"
             android:icon="@drawable/ic_action_kanji_list"
             android:title="@string/menu_kanji_list" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_action_about"
+            android:title="@string/about" />
     </group>
 
     <item android:title="@string/go_to">
