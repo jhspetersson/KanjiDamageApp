@@ -18,14 +18,14 @@ It is NOT official app. It's not even published on Google Play or F-Droid just i
 
 ## How to install?
 
-Download [.apk](https://github.com/jhspetersson/KanjiDamageApp/releases/download/2019-05-02/KanjiDamage.apk) and open on your Android device. 
+Download [.apk](https://github.com/jhspetersson/KanjiDamageApp/releases/download/2019-05-05/KanjiDamage.apk) and open on your Android device. 
 Confirm installation from unknown source.
 
 ## Features
 
 * search by kanji, jukugo, or onyomi
-* open kanji/jukugo in [Jisho.org](https://jisho.org/) or [Kanji Study](https://play.google.com/store/apps/details?id=com.mindtwisted.kanjistudy&hl=en)
-* select text from browser and search it with this app
+* open kanji/jukugo in [Jisho.org](https://jisho.org/), [Kanji Study](https://play.google.com/store/apps/details?id=com.mindtwisted.kanjistudy&hl=en), or [Takoboto](https://play.google.com/store/apps/details?id=jp.takoboto&hl=en)
+* select text from Chrome or another app and search it with this one
 
 ## Found a bug? Got an idea?
 
