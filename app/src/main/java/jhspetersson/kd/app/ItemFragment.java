@@ -398,6 +398,10 @@ public class ItemFragment extends Fragment {
             popupMenu.getMenu().removeItem(R.id.menu_item_kanjistudy);
         }
 
+        if (!isTakobotoInstalled()) {
+            popupMenu.getMenu().removeItem(R.id.menu_item_takoboto);
+        }
+
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -405,6 +409,12 @@ public class ItemFragment extends Fragment {
                 switch (item.getItemId()) {
                     case R.id.menu_item_search:
                         listener.onSearch(text.toString());
+                        break;
+
+                    case R.id.menu_item_copy:
+                        ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
+                        ClipData clip = ClipData.newPlainText(text, text);
+                        clipboard.setPrimaryClip(clip);
                         break;
 
                     case R.id.menu_item_jisho:
@@ -419,10 +429,11 @@ public class ItemFragment extends Fragment {
                         startActivity(ks);
                         break;
 
-                    case R.id.menu_item_copy:
-                        ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
-                        ClipData clip = ClipData.newPlainText(text, text);
-                        clipboard.setPrimaryClip(clip);
+                    case R.id.menu_item_takoboto:
+                        Intent takoboto = new Intent("jp.takoboto.SEARCH");
+                        takoboto.putExtra("q", text.toString());
+                        takoboto.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(takoboto);
                         break;
                 }
 
@@ -433,10 +444,15 @@ public class ItemFragment extends Fragment {
     }
 
     private boolean isKanjiStudyInstalled() {
-        final Intent kanjiStudyIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("kanjistudy://search"));
-        List<ResolveInfo> activities = getActivity().getPackageManager().queryIntentActivities(kanjiStudyIntent, 0);
+        final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("kanjistudy://search"));
 
-        return !activities.isEmpty();
+        return Utils.isIntentSupported(intent, getActivity());
+    }
+
+    private boolean isTakobotoInstalled() {
+        final Intent intent = new Intent("jp.takoboto.SEARCH");
+
+        return Utils.isIntentSupported(intent, getActivity());
     }
 
     public interface OnSearchListener {

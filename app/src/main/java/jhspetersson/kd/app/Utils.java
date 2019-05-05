@@ -2,6 +2,7 @@ package jhspetersson.kd.app;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ResolveInfo;
 import android.net.Uri;
 
 import org.json.JSONArray;
@@ -76,5 +77,11 @@ public class Utils {
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         context.startActivity(i);
+    }
+
+    static boolean isIntentSupported(Intent intent, Context context) {
+        List<ResolveInfo> activities = context.getPackageManager().queryIntentActivities(intent, 0);
+
+        return !activities.isEmpty();
     }
 }
