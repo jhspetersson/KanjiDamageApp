@@ -16,8 +16,7 @@ It is NOT a learning method app. No quizzes, no animations, no shit. Just a dict
 
 ## How to install?
 
-Download [.apk](https://github.com/jhspetersson/KanjiDamageApp/releases/download/2019-05-05/KanjiDamage.apk) and open on your Android device. 
-Confirm installation from unknown source.
+Download from [Google Play](https://play.google.com/store/apps/details?id=jhspetersson.kd.app). 
 
 ## Features
 
