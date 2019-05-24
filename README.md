@@ -14,8 +14,6 @@ It is NOT a full-blown dictionary! I highly recommend [Takoboto](https://play.go
 
 It is NOT a learning method app. No quizzes, no animations, no shit. Just a dictionary to have an offline copy of KanjiDamage.
 
-It is NOT official app. It's not even published on Google Play or F-Droid just in case.
-
 ## How to install?
 
 Download [.apk](https://github.com/jhspetersson/KanjiDamageApp/releases/download/2019-05-05/KanjiDamage.apk) and open on your Android device. 
