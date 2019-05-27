@@ -39,7 +39,14 @@
                     android:id="@+id/description"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_span="2"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/tags_holder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal"
                     />
             </TableRow>
         </TableLayout>

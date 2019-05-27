@@ -83,7 +83,7 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
     }
 
     private void updateSearchResults(String keyword) {
-        DataAdapter adapter = new DataAdapter(filter(keyword), this);
+        DataAdapter adapter = new DataAdapter(filter(keyword), this, getContext());
         cards.setAdapter(adapter);
     }
 

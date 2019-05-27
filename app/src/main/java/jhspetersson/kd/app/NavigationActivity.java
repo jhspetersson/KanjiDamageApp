@@ -252,6 +252,12 @@ public class NavigationActivity extends AppCompatActivity
                     }
 
                     row.put("comment", reading);
+
+                    JSONArray tags = jukugo.optJSONArray("t");
+                    if (Utils.isNotEmpty(tags)) {
+                        row.put("tags", Utils.join(tags));
+                    }
+
                     data.add(row);
                 }
             } catch (Exception e) {

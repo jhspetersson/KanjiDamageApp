@@ -1,5 +1,6 @@
 package jhspetersson.kd.app;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,10 +13,12 @@ import java.util.Map;
 public class DataAdapter extends RecyclerView.Adapter<DataRow> {
     private List<Map<String, String>> data;
     private View.OnClickListener callback;
+    private Context context;
 
-    public DataAdapter(List<Map<String, String>> data, View.OnClickListener callback) {
+    public DataAdapter(List<Map<String, String>> data, View.OnClickListener callback, Context context) {
         this.data = data;
         this.callback = callback;
+        this.context = context;
     }
 
     @NonNull
@@ -45,6 +48,11 @@ public class DataAdapter extends RecyclerView.Adapter<DataRow> {
         }
 
         holder.setComment(comment);
+
+        String tags = rowData.get("tags");
+        if (Utils.isNotEmpty(tags)) {
+            holder.setTags(tags.split(", "), context);
+        }
     }
 
     @Override
