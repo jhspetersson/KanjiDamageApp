@@ -11,8 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.Space;
 import android.widget.TextView;
 
-import java.util.List;
-
 public class DataRow extends RecyclerView.ViewHolder {
     private CardView card;
     private TextView label;

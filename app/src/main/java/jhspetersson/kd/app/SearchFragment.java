@@ -16,8 +16,6 @@ import java.util.Map;
 
 
 public class SearchFragment extends Fragment implements View.OnClickListener {
-    static final String KEYWORD_EXTRA = "keyword";
-
     private RecyclerView cards;
 
     private String keyword;
@@ -59,21 +57,8 @@ public class SearchFragment extends Fragment implements View.OnClickListener {
         cards.setLayoutManager(new LinearLayoutManager(getContext()));
 
         try {
-            /*
-            CharSequence keyword = getActivity().getIntent().getStringExtra(KEYWORD_EXTRA);
-
-            if (keyword == null) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    keyword = getActivity().getIntent().getCharSequenceExtra(Intent.EXTRA_PROCESS_TEXT);
-                }
-            }
-
-            if (keyword != null) {
-                search.setText(keyword.toString());
-            }
-            */
             if (Utils.isNotEmpty(keyword)) {
-                search.setText(keyword.toString());
+                search.setText(keyword);
             }
         } catch (Exception e) {
             e.printStackTrace();
